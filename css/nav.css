@@ -1,0 +1,48 @@
+header{
+    background-color:#135A32;
+    color: #fff;
+    height:fit-content;
+    position:fixed;
+    top:0;
+    z-index: 1;
+    width: 100%;
+}
+#open-menu,#menu-mobile,#menu_logo{
+    display: none;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    padding-top: 10.6px;
+    flex-direction:row;
+    justify-content:space-around;
+
+}
+header nav ul .menu_navegacao{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+header nav ul .menu_contato{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+header nav ul li{
+    min-width:fit-content;
+    height: fit-content;
+    padding: 0 0.75rem;
+    font-size: small;
+    cursor: pointer;
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration:none;
+    color: #fff;
+}
+a:hover {
+    color:#6c757d;
+}
+

@@ -1,131 +1,83 @@
-<!--nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-
-    <div class="col-md-2 d-flex justify-content-evenly">
-      <a href="mailto:contato@goytaborgs.com.br" class="link-dark"><i class="bi bi-envelope"></i></a>
-      <a href="tel:22997407035" class="link-dark"><i class="bi bi-telephone-forward"></i></a>
-    </div>
-    <div class="col-md-1">
-      <img src="images/indio.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
-    </div>
-    <div class="col-md-2 d-flex justify-content-evenly">
-      <a href="https://www.instagram.com/goytaborgs/" class="link-dark"><i class="bi bi-instagram"></i></a>
-      <i class="bi bi-twitter"></i>
-      <i class="bi bi-youtube"></i>
-    </div>
-  </div>
-</nav-->
-
-<nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <!--div class="row align-items-start col-md-4">
-      <div class="col-md-4">
-        <p>Telefone: <a href="tel:(22) 99740 7035" style="color: inherit;">(22) 99740 7035</a></p>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet"href="css/mobile.css">
+  </head>
+<body id="body">
+  <header>
+    <nav style="height: 86px;">
+        <ul id="menu">
+          <div>
+            <li>
+              <a href="https://goytaborgs.github.io/Site-Oficial/index.html">
+                <img id="logo" src="images/logo 1.svg" alt="" style="width:60.68px;height: 67.19px;">
+              </a>
+            </li>
+          </div>
+          <div class="menu_navegacao  menu_home">
+            <li> <a id="index-link" href="index.html">Inicio</a></li>
+            <li><a href="projects.html">Projetos</a></li>
+            <li><a href="members.html">Membros</a></li>
+            <li><a href="joinus.html">Processo Seletivo</a></li>
+            <li><a href="partners.html">Patrocinadores</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="contact.html">Contato</a></li>
+          </div>
+          <div class="menu_contato menu_home" >
+            <li>
+              <a href="">
+                <img src="images/gmail.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/goytaborgs/">
+                <img src="images/instagram.svg" alt="">
+              </a>
+            </li>
+          </div>
+        </ul>
       </div>
-      <div class="col-md-6">
-        <p>Email: <a href="mailto:contato@goytaborgs.com.br" style="color: inherit;">contato@goytaborgs.com.br</a></p>
+      <!--menu  mobile-->
+      <div id="menu-mobile">
+        <div class="menu_home">
+            <li> <a id="index-link" href="index.html">Inicio</a></li>
+            <li><a href="projects.html">Projetos</a></li>
+            <li><a href="members.html">Membros</a></li>
+            <li><a href="joinus.html">Processo Seletivo</a></li>
+            <li><a href="partners.html">Patrocinadores</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="contact.html">Contato</a></li>
+        </div>
+        <!--<div class="menu_icons">
+          <a id="menu_items" href="#">Entrar</a>
+          <button id="button">Cadastrar</button>
+        </div>-->
       </div>
-    </div-->
+      <div id="logo_e_cardapio">
 
-    <div class="col d-flex justify-content-evenly text-start">
-      <a href="mailto:contato@goytaborgs.com.br" class="link-dark"><i class="bi bi-envelope"></i></a>
-      <a href="tel:22997407035" class="link-dark"><i class="bi bi-telephone-forward"></i></a>
-    </div>
-    <div class="col-md-3"></div>
-    <div class="col-md-1 text-center">
-      <img src="images/indio.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
-      <!--h4 class="text-center">Goytaborgs</h4-->
-    </div>
-    <div class="col-md-3"></div>
-    <div class="col d-flex justify-content-evenly text-end">
-      <a href="https://www.instagram.com/goytaborgs/" class="link-dark"><i class="bi bi-instagram"></i></a>
-      <i class="bi bi-twitter"></i>
-      <i class="bi bi-youtube"></i>
-    </div>
-  </div>
-</nav>
+        <a href="https://goytaborgs.github.io/Site-Oficial/index.html">
+          <img  id="menu_logo"  src="images/logo 1.svg" alt="" style="width:60.68px;height: 67.19px;">
+        </a>
+        <img id="open-menu" src="images/icons8-cardápio (1).svg" alt="imagem Menu de pontos"style="width:60px;height: 60px;">
 
-<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-  <div class="container-fluid">
-    <img src="images/logo-cut.png" alt="" width="70" height="70" class="d-inline-block align-text-top">
-    <!--a class="navbar-brand" href="#">Goytaborgs</a-->
+      </div>
+   
+    </nav>
+  </header>
+  <script type="text/javascript">
+    const menuOpen= document.getElementById('open-menu');
 
-    <div class="col"></div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a id="index-link" class="nav-link" href="index.html">Início</a>
-        </li>
-        <li class="nav-item">
-          <a id="projects-link" class="nav-link" href="projects.html">Projetos</a>
-        </li>
-        <li class="nav-item">
-          <a id="members-link" class="nav-link" href="members.html">Membros</a>
-        </li>
-        <li class="nav-item">
-          <a id="joinus-link" class="nav-link" href="joinus.html">Processo Seletivo</a>
-        </li>
-        <li class="nav-item">
-          <a id="partners-link"class="nav-link" href="partners.html">Parceiros</a>
-        </li>
-        <li class="nav-item">
-          <a id="about-link" class="nav-link" href="about.html">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a id="contact-link" class="nav-link" href="contact.html">Contato</a>
-        </li>
-        <!--li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li-->
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-      </form>
-    </div>
-  </div>
-</nav>
+    function openMenu(){
+    const menu= document.getElementById('menu-mobile');
+    const body= document.getElementById('body');
+    menu.classList.toggle('active');
+    body.classList.toggle('active');
+    }
+    menuOpen.addEventListener('click',openMenu);
+  </script>
+</body>
 
-<script type="text/javascript">
-  var path = window.location.pathname;
-  var page = path.split("/").pop();
-  switch (page) {
-    case "index.html":
-      document.getElementById("index-link").classList.add('active');
-      break;
-    case "projects.html":
-      document.getElementById("projects-link").classList.add('active');
-      break;
-    case "members.html":
-      document.getElementById("members-link").classList.add('active');
-      break;
-    case "joinus.html":
-      document.getElementById("joinus-link").classList.add('active');
-      break;
-    case "partners.html":
-      document.getElementById("partners-link").classList.add('active');
-      break;
-    case "contact.html":
-      document.getElementById("contact-link").classList.add('active');
-      break;
-    case "about.html":
-      document.getElementById("about-link").classList.add('active');
-      break;
-    default:
-      break;
-  }
-</script>
