@@ -53,28 +53,18 @@
         top:80px;
         display: flex;
         flex-direction: column;
-        align-items:center;
+        align-items:left;
         width: 100%;
         height:100vh;
-        background-color:white;
-
+        background-color:#135A32;
     }
      .menu_home {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         margin-top: 2rem;
-        gap:15px
-    }
-    #menu_items{
-        color:#135A32;
-        margin-bottom: 2rem;
-    }
-    .menu_buttons{
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        margin-bottom: 2rem;
+        gap:15px;
+        margin-left:116px;
     }
     #open-menu,#menu_logo{
         display:inline-block;
@@ -82,7 +72,7 @@
        
     }
     #open-meu{
-        color: #FFFFFF;
+        color: #135A32;
     }
     #logo_e_cardapio{
         display: flex;
@@ -221,7 +211,11 @@ a:hover {
     color:#198754;
 }
 a{
-    color:#135A32;
+    color:#FFFFFF;
     text-decoration:none;
+    font-size: 200%;
+}
+li{
+    list-style: none
 }
 
