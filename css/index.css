@@ -2,8 +2,28 @@
   clip-path: polygon(0 0, 79% 8%, 100% 0%, 100% 98%, 85% 96%, 65% 100%, 50% 85%, 35% 100%, 15% 99%, 0 95%);
 }
 
-#carouselhome {
- /*clip-path: polygon(0 0, 100% 0, 100% 56vh, 35vw 100%, 0 100%);*/
+main{
+  padding-top: 85px;
+}
+.goytaborgs_text{
+  width: 735.53px;
+  height:200.41px;
+}
+.section-primary{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:200px;
+  a{
+    width: 35%;
+    background-color: #135A32;
+    border-color: #fff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  }
+  a:hover {
+    background-color:#198754;
+    border-color: #fff;
+  }
 }
 
 #carouselhome .carousel-item img{
@@ -27,6 +47,7 @@
 }
 
 .cv-image{
+    
     position: relative;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -57,7 +78,6 @@
 .cv-image img{
   object-fit: cover;
   object-position: center;
-  height: 85vh;
   overflow: hidden;
 }
 #cv-image1 {
@@ -257,7 +277,7 @@
 */
 
 
-@media (max-width: 975px){
+@media (max-width: 990px){
   #row1 {
     clip-path: polygon(0 0, 88% 5%, 100% 0%, 100% 100%, 0 100%) !important;
   }
@@ -280,5 +300,15 @@
   .hex3 {
     display: none;
   }
+  .goytaborgs_text{
+    width:245.18px;
+    height:66.8px;
+  }
+  .section-primary{
+    gap:3px;
+    a{
+      width: 84%;
+    }
+  } 
 
 }
