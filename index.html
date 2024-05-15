@@ -32,8 +32,8 @@
                <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);">
                   <div class="d-flex justify-content-center align-items-center h-100">
                      <div class="section-primary">
-                        <img src="images/svg/goytaborgs.svg" alt="" class="goytaborgs_text">
-                        <a type="button" class="btn btn-primary shadow-lg p-3" style="border-radius:30px"
+                        <img id="gif"  src="gif/logo-indio.gif" alt="" class="goytaborgs_text">
+                        <a type="button" class="btn btn-primary shadow-lg" style="border-radius:30px"
                            href="about.html">Conheça Nossa História
                         </a>
                      </div>
@@ -158,42 +158,18 @@
                </div>
             </div>
          </div>
+     
       </section>
-   
-      <div class="container-fluid">
-         <div class="row d-flex justify-content-evenly" style="height: 70vh;">
-            <div class="col  m-0 p-0">
-               <div class="d-flex justify-content-center align-items-center h-100">
-                  <div class="text-center">
-                     <h1 class="mb-0">Nossas Redes Sociais</h1>
-                     <br />
-                     <p class="mb-0 text-wrap" style="width: 30rem;">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium
-                        labore accusamus sequi, voluptate debitis tenetur in deleniti possimus modi voluptatum
-                        neque maiores dolorem unde? Aut dolorum quod excepturi fugit.
-                     </p>
-                     <br />
-                     <a type="button" class="btn btn-outline-primary shadow-lg p-3" style="border-radius:30px">Conheça
-                        Nossas Redes</a>
-                  </div>
-               </div>
-            </div>
-            <div class="col  m-0 p-0">
-               <div class="d-flex justify-content-center align-items-center h-100">
-                  <div class="text-center">
-                     <h1 class="mb-0">Nosso Instagram</h1>
-                     <br />
-                     <p class="mb-0 text-wrap" style="width: 30rem;">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium
-                        labore accusamus sequi, voluptate debitis tenetur in deleniti possimus modi voluptatum
-                        neque maiores dolorem unde? Aut dolorum quod excepturi fugit.
-                     </p>
-                     <br />
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+      <!-- Sexta seção-->
+      <section class="section-six">
+         <h1>Nos Acompanhe</h1>
+         <!-- LightWidget WIDGET -->
+         <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
+            src="//lightwidget.com/widgets/39c91b461e325fa7a2d926e6bbd1a0fe.html" scrolling="no" allowtransparency="true"
+            class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+         <a type="button" class="btn btn-light shadow-lg" style="border-radius:30px" href="https://www.instagram.com/goytaborgs/">Instagram</a>
+      </section>
+         
    </main>
 
     <div id="footer-placeholder"></div>
@@ -201,5 +177,24 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/navfooter.js"></script>
+    <script>
+      function trocarGif() {
+        var gif = document.getElementById('gif');
+        if (window.innerWidth > 502 && window.innerWidth < 850) { 
+            // Altere 768 para o tamanho da sua breakpoint para mobile
+               gif.src ="gif/logo-indio-celular.gif"; // Caminho do seu GIF pequeno  
+        }
+        else if(window.innerWidth <= 500){
+            gif.src ="gif/logo-indio-celular.gif";
+         }
+        else {
+          gif.src ="gif/logo-indio.gif"; // Caminho do seu GIF grande
+        }
+      }
+    
+      // Executa a função quando a página é carregada e redimensionada
+      window.onload = trocarGif;
+      window.onresize = trocarGif;
+    </script>
   </body>
 </html>
