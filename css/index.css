@@ -25,6 +25,86 @@ main{
     border-color: #fff;
   }
 }
+.section-projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:50px;
+  width: 100%;
+  a{
+    width: 30%;
+    background-color: #135A32;
+    border-color: #fff;
+  }
+  a:hover {
+    background-color:#198754;
+    border-color: #fff;
+  }
+  p{
+    width:50%;
+    text-align: justify;
+    font-size: 130%;
+  }
+}
+.section-four{
+  display:flex;
+  flex-direction:row;
+  margin-bottom:30px;
+}
+.section-members,.section-se-juntar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px; 
+  width: 100%;
+  margin-top: 20px;
+  a{
+      color: #fff;
+      background-color: #135A32;
+      border-color: #fff;
+      width: 26%;
+  }
+  a:hover {
+      background-color:#198754;
+      border-color: #fff;
+  }
+  p{
+      text-align: justify;
+      width:50%;
+  }
+}
+.section-uniao{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:50px;
+  padding-top:300px;
+  span{
+    font-size:500%;
+  }
+  p{
+    width: 50%;
+    text-align:center;
+    font-size: 150%;
+  }
+  div{
+    display: flex;
+    flex-direction:row;
+    gap: 50px;
+  }
+  a{
+    background-color: #135A32;
+    border-color: #fff;
+    color: #fff;
+    padding:18px;
+  }
+  a:hover {
+    background-color:#198754;
+    border-color: #fff;
+    color: #fff;
+  }
+}
 
 #carouselhome .carousel-item img{
   object-fit: cover;
@@ -117,8 +197,6 @@ main{
   border-right: 20vw solid rgba(248, 249, 250);
 }
 
-
-
 #cut-carousel {
   height: 80vh;
   background: transparent;
@@ -141,7 +219,6 @@ main{
   border-top: 20vh solid transparent;
   border-right: 15vw solid rgba(248, 249, 250);
 }
-
 
 #cut-panel{
   width: 100%;
@@ -169,80 +246,20 @@ main{
   border-left: 15vw solid rgba(248, 249, 250);
 }
 
-
-  #octagon {
-    width: 100%;
-    height: 80vh;
-    background: transparent;
-    position: relative;
-  }
-  #octagon:before {
-    content: "";
-    width: 100%;
-    height: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-bottom: 20vh solid transparent;
-    border-left: 20vw solid #eee;
-    border-right: 20vw solid #eee;
-  }
-  #octagon:after {
-    content: "";
-    width: 100%;
-    height: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-top: 20vh solid transparent;
-    border-left: 20vw solid #eee;
-    border-right: 20vw solid #eee;
-  }
-
-  #octagon {
-    top: -10vh;
-    width: 15vw;
-    height: 20vh;
-    background: transparent;
-    position: relative;
-  }
-  #octagon:before {
-    content: "";
-    width: 15vw;
-    height: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-bottom: 4.5vh solid rgba(248, 249, 250);
-    border-left: 4.5vw solid transparent;
-    border-right: 4.5vw solid transparent;
-  }
-  #octagon:after {
-    content: "";
-    width: 15vw;
-    height: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-top: 4.5vh solid rgba(248, 249, 250);
-    border-left: 4.5vw solid transparent;
-    border-right: 4.5vw solid transparent;
-  }
-
   .hex3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 10vw;
     height: 20vh;
-    background: rgba(248, 249, 250);
-    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    z-index: 999;
   }
 
   #cv-image2{
-    margin-top: -10vh;
+    margin-top:20px;
     height: 80vh;
-    clip-path: polygon(0% 0%, 26% 10%, 64% 0, 100% 16%, 100% 100%, 63% 86%, 26% 100%, 0 86%);
+    /*clip-path: polygon(0% 0%, 26% 10%, 64% 0, 100% 16%, 100% 100%, 63% 86%, 26% 100%, 0 86%);*/
   }
+
 /*
   Site para facilitar os Clip-path:
   https://bennettfeely.com/clippy/
@@ -277,9 +294,11 @@ main{
 */
 
 
-@media (max-width: 990px){
+@media screen and (max-width:990px){
   #row1 {
-    clip-path: polygon(0 0, 88% 5%, 100% 0%, 100% 100%, 0 100%) !important;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0) !important;
+    min-height: 60vh;
+    width: 100%;
   }
   #cv-image1 {
     /*-webkit-clip-path: polygon(30% 0%, 100% 0, 100% 70%, 70% 100%, 0 100%, 0% 30%);*/
@@ -293,22 +312,75 @@ main{
   #carouselhome {
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0) !important;
   }
-  #cv-image2{
-    margin-top: 0;
-    clip-path: polygon(0% 0%, 27% 5%, 64% 0, 100% 5%, 100% 100%, 63% 95%, 26% 100%, 0 94%);
-  }
   .hex3 {
     display: none;
   }
   .goytaborgs_text{
-    width:245.18px;
-    height:66.8px;
+    width:161.82px;
+    height:44.09px;
   }
   .section-primary{
-    gap:3px;
+    gap:5px;
     a{
-      width: 84%;
+      width: 90%;
+      font-size: 55%;
+    }
+  }
+  .section-projects{
+    a{
+      width:60%;
+    }
+    p{
+      width:90%;
+      text-align:justify;
+      font-size: 100%;
     }
   } 
+  .section-four{
+    display:flex;
+    flex-direction:column;
+    margin-top:60px;
+    gap:10px;
+  }
+  .section-members,.section-se-juntar{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
+    a{
+        width: 60%;
+    }
+    p{
+        width:80%;
+    }
+  }
+  .section-uniao{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2px;
+    padding-top:1px;
+    span{
+      font-size:160%;
+    }
+    p{
+      width: 98%;
+      text-align:center;
+      font-size:70%;
+    }
+    div{
+      display: flex;
+      flex-direction:row;
+      gap:16px;
+    }
+    a{
+      padding:10px;
+      font-size: 60%;
+      background-color: #135A32;
+      border-color: #fff;
+      color: #fff;
+    }
+  }
 
 }
