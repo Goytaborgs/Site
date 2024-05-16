@@ -1,0 +1,85 @@
+.section-informações{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;
+    gap:122px;
+
+    margin-top:20px;
+    background-color:#135A32;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    span,p{
+        color: #fff;
+    }
+    img{
+        cursor: pointer;
+    }
+}
+.logo{
+    width: 129.44px;
+    height: 143.33px;
+}
+.informações{
+    display: flex;
+    flex-direction:column;
+}
+.rede-social{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.icone-instagram{
+    width:24.98px; 
+    height: 25px;
+}
+.icone-gmail{
+    width:33.31 ; 
+    height:25px;
+}
+.section-goytaborgs{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color:#198754;
+    padding-top: 12px;
+    padding-bottom:12px;
+    span{
+        color: #fff;
+        font-size: 100%;
+    }
+}
+@media screen and (max-width:600px){
+
+    .logo{
+       display: none;
+    }
+    .rede-social{
+        display: flex;
+        flex-wrap:wrap
+    }
+    .section-informações{
+        width: 100%;
+        display: flex;
+        gap:0px;
+        p{
+            display:flex;
+            text-align: center;
+            font-size: 90%;
+            flex-wrap: wrap;
+        }
+    }
+    .icone-instagram{
+        width:19.99px; 
+        height: 20px;
+    }
+    .icone-gmail{
+        width:26.65px; 
+        height:20px;
+    }
+}

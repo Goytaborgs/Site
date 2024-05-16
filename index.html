@@ -32,7 +32,7 @@
                <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);">
                   <div class="d-flex justify-content-center align-items-center h-100">
                      <div class="section-primary">
-                        <img id="gif"  src="gif/logo-indio.gif" alt="" class="goytaborgs_text">
+                        <img id="gif"  src="images/svg/goytaborgs.svg" alt="" class="goytaborgs_text">
                         <a type="button" class="btn btn-primary shadow-lg" style="border-radius:30px"
                            href="about.html">Conheça Nossa História
                         </a>
@@ -77,13 +77,13 @@
             <div id="panel1" class="col m-0 p-0 bg-success text-white">
                <div class="d-flex justify-content-center align-items-center h-100">
                   <div class="section-projects">
-                     <h1 class="mb-0">Projetos</h1>
-                     <p class="mb-0 text-wrap">
+                     <h1>Projetos</h1>
+                     <p>
                         Ao longo do tempo, os projetos da equipe tem acumulado uma notável coleção de troféus, fruto dos esforços dedicados e
                         do talento dos seus membros. Estes prêmios representam o reconhecimento do nosso empenho e competência por parte da
                         comunidade robótica.
                      </p>
-                     <a type="button" class="btn btn-primary shadow-lg p-3" style="border-radius:30px"
+                     <a type="button" class="btn btn-primary shadow-lg" style="border-radius:30px"
                         href="projects.html">Conheça
                         Nossos Projetos</a>
                   </div>
@@ -109,7 +109,7 @@
                prol de
                um objetivo comum: impulsionar a robótica para novos horizontes.
             </p>
-            <a type="button" class="btn btn-outline-primary shadow-lg p-3" style="border-radius:30px"
+            <a type="button" class="btn btn-outline-primary shadow-lg" style="border-radius:30px"
                href="members.html">Conheça Nossos Membros</a>
          </div>
          <div class="section-se-juntar">
@@ -121,7 +121,7 @@
                disponíveis para
                você se envolver conosco.
             </p>
-            <a type="button" class="btn btn-outline-primary shadow-lg p-3" style="border-radius:30px" href="joinus.html">Se
+            <a type="button" class="btn btn-outline-primary shadow-lg" style="border-radius:30px" href="joinus.html">Se
                Inscreva!</a>
          </div>
       </section>
@@ -180,15 +180,12 @@
     <script>
       function trocarGif() {
         var gif = document.getElementById('gif');
-        if (window.innerWidth > 502 && window.innerWidth < 850) { 
+        if (window.innerWidth > 1172) { 
             // Altere 768 para o tamanho da sua breakpoint para mobile
-               gif.src ="gif/logo-indio-celular.gif"; // Caminho do seu GIF pequeno  
+               gif.src ="gif/logo-indio.gif"; // Caminho do seu GIF pequeno  
         }
-        else if(window.innerWidth <= 500){
-            gif.src ="gif/logo-indio-celular.gif";
-         }
         else {
-          gif.src ="gif/logo-indio.gif"; // Caminho do seu GIF grande
+          gif.src ="images/svg/goytaborgs.svg"; // Caminho do seu GIF grande
         }
       }
     
