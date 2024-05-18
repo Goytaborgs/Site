@@ -6,6 +6,9 @@ main{
   padding-top: 85px;
 }
 .section-primary{
+  max-width: 100%;
+  overflow: hidden;
+  height: auto; /* Defina a altura do contêiner como automática */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -338,16 +341,19 @@ main{
     display: none;
   }
   .section-primary{
+    max-width: 100%;
+    overflow: hidden;
+    height: auto; /* Defina a altura do contêiner como automática */
     display: flex;
     width: 100%;
     gap:30px;
     a{
-      width: 30%;
-      font-size: 100%;
+      width: 38%;
+      font-size: 90%;
     }
     img{
       width:388.37px;
-      height:105.82px;   
+      height:100%;   
     }
 }
   .section-projects{
@@ -440,16 +446,19 @@ main{
     display: none;
   }
   .section-primary{
+    max-width: 100%;
+    overflow: hidden;
+    height: auto; /* Defina a altura do contêiner como automática */
     width: 100%;
     gap:5px;
     a{
       padding: 8px;
-      width: 35%;
-      font-size: 60%;
+      width: 32%;
+      font-size: 58%;
     }
     img{
       width:161.82px;
-      height:44.09px;
+      height:100%;
     }
   }
   .section-projects{

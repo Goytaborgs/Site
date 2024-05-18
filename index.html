@@ -32,7 +32,15 @@
                <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);">
                   <div class="d-flex justify-content-center align-items-center h-100">
                      <div class="section-primary">
-                        <img id="gif"  src="images/svg/goytaborgs.svg" alt="" class="goytaborgs_text">
+                        <img id="gif"  src="gif/logo-indio.gif" alt="" class="goytaborgs_text">
+                        <script>
+                           function trocarGif() {
+                             var gif = document.getElementById('gif');
+                             gif.src ="gif/logo-indio.gif"; // Caminho do seu GIF pequeno 
+                           }
+                           // Executa a função quando a página é redimensionada
+                           window.onresize = trocarGif;
+                        </script>
                         <a type="button" class="btn btn-primary shadow-lg" style="border-radius:30px"
                            href="about.html">Conheça Nossa História
                         </a>
@@ -177,21 +185,5 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/navfooter.js"></script>
-    <script>
-      function trocarGif() {
-        var gif = document.getElementById('gif');
-        if (window.innerWidth > 1172) { 
-            // Altere 768 para o tamanho da sua breakpoint para mobile
-               gif.src ="gif/logo-indio.gif"; // Caminho do seu GIF pequeno  
-        }
-        else {
-          gif.src ="images/svg/goytaborgs.svg"; // Caminho do seu GIF grande
-        }
-      }
-    
-      // Executa a função quando a página é carregada e redimensionada
-      window.onload = trocarGif;
-      window.onresize = trocarGif;
-    </script>
   </body>
 </html>
