@@ -28,7 +28,7 @@
     }
     
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 620px){
     #filter-btn-box{
         gap: 0.5rem;
         a{

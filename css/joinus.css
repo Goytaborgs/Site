@@ -62,9 +62,97 @@ main{
         text-align: center;
         font-size: 150%;
         a{
-            color:blue;
+            color:#198754;
             font-size: 90%;
         }
     }
 
+}
+@media screen and (max-width:1172px){
+    .processo-seletivo{
+        display:flex;
+        margin-top: 1rem;
+        a{
+            width:20%;
+            background-color: #198754;
+            padding: 1.75rem 1.25rem;
+            border-radius: 0rem 1.25rem 1.25rem 0rem;
+            font-size: 98%;
+        }
+        a:hover{
+            color: #fff;
+        }
+    }
+    .texto-processo-seletivo,.texto-carrossel{
+        p{
+            width: 95%;
+            text-align:justify;
+            font-size: 120%;
+        }
+        h2{
+            text-align: center;
+        }
+    }
+    .perguntas{
+        width: 100%;
+        h3{
+            margin-top: 1.25rem;
+        }
+        span{
+            margin-top: 0.625rem;
+            width: 80%;
+            text-align: justify;
+            font-size: 120%;
+            a{
+                color:#198754;
+                font-size: 90%;
+            }
+        }
+    
+    }
+
+}
+@media screen and (max-width:620px){
+    .processo-seletivo{
+        display:flex;
+        margin-top: 1rem;
+        a{
+            width:20%;
+            background-color: #198754;
+            padding: 0.8rem 0.8rem;
+            border-radius: 0rem 1.25rem 1.25rem 0rem;
+            font-size: 78%;
+        }
+        a:hover{
+            color: #fff;
+        }
+    }
+    .texto-processo-seletivo,.texto-carrossel{
+        p{
+            width: 95%;
+            text-align:justify;
+            font-size: 100%;
+        }
+        h2{
+            text-align: center;
+        }
+    }
+    .perguntas{
+        width: 95%;
+        text-align: center;
+        h3{
+            margin-top: 1.25rem;
+        }
+        span{
+            margin-top: 0.625rem;
+            width: 90%;
+            text-align:justify;
+            font-size: 120%;
+            a{
+                color:#198754;
+                font-size: 90%;
+            }
+        }
+    
+    }
 }
