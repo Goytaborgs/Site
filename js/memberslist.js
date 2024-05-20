@@ -6,7 +6,6 @@ Heverton Souza| Software | Capitão de Software | Engenharia de Computação | 2
 Raphael Castelar Saraiva de Almeida| Gestao | Capitão de Gestão | Sistemas de Informação | 2023 | - | images/membros/Raphael_Castelar.jpg | L:raphael-castelar
 Giulia Mota | Comunicacao | Capitã de Comunicação | Engenharia de Controle e Automação | 2023 | - | images/membros/Giulia_Mota.jpg |
 Diogo Moraes | Eletronica | Capitão de Eletrônica | Engenharia de Controle e Automação | 2022 | - | images/membros/Diogo_Moraes.jpg | I:diogo__s9
-Alguém | Mecanica | Capitão de Mecânica | Engenharia de Controle e Automação | 2020 | - | images/membros/default.jpg |
 `,`
 Dênys Pessanha dos Santos | Mecanica | | Engenharia de Computação | 2023 | - | images/membros/default.jpg | I:denys_gtr_
 Eduardo Correa Peres | Eletronica | | Engenharia de Computação | 2022 | - | images/membros/Dudu_Peres.jpg |
