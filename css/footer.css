@@ -4,21 +4,21 @@
     flex-direction:row;
     align-items: center;
     justify-content:center;
-    gap:122px;
+    gap:7.625rem;
 
-    margin-top:20px;
+    margin-top:1.25rem;
     background-color:#135A32;
 
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
     span,p{
         color: #fff;
     }
     
 }
 .logo{
-    width: 129.44px;
-    height: 143.33px;
+    width: 8.09rem;
+    height: 8.9581rem;
 }
 .informações{
     display: flex;
@@ -35,12 +35,12 @@
     }
 }
 .icone-instagram{
-    width:24.98px; 
-    height: 25px;
+    width:1.5613rem; 
+    height: 1.5625rem;
 }
 .icone-gmail{
-    width:33.31 ; 
-    height:25px;
+    width:2.0819rem ; 
+    height:1.5625rem;
 }
 .section-goytaborgs{
     display: flex;
@@ -48,8 +48,8 @@
     justify-content: center;
     align-items: center;
     background-color:#198754;
-    padding-top: 12px;
-    padding-bottom:12px;
+    padding-top: 0.75rem;
+    padding-bottom:0.75rem;
     span{
         color: #fff;
         font-size: 100%;
@@ -67,7 +67,7 @@
     .section-informações{
         width: 100%;
         display: flex;
-        gap:0px;
+        gap:0rem;
         p{
             display:flex;
             text-align: center;
@@ -76,11 +76,11 @@
         }
     }
     .icone-instagram{
-        width:19.99px; 
-        height: 20px;
+        width:1.2494rem; 
+        height: 1.25rem;
     }
     .icone-gmail{
-        width:26.65px; 
-        height:20px;
+        width:1.6656rem; 
+        height:1.25rem;
     }
 }

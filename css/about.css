@@ -1,5 +1,265 @@
-.container{
+main{
     width: 100%;
-    height: 100vh;
     margin-top: 1.25rem;
 }
+.section-quem-somos{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+
+}
+.texto-quem-somos{
+    display: flex;
+    width: 44.875rem;
+    flex-direction: column;
+    align-items:start;
+    text-align: start;
+    padding-left: 1.25rem;
+    justify-content: center;
+    background-color: #135A32;
+    color: #fff;
+    h1{
+        margin-bottom: 1.25rem;
+    }
+    span{
+        font-size: 140%;
+        width: 100%;
+    }
+
+}
+.section-historia{
+    width: 100%;
+    margin-top: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-size: 300%;
+    }
+    p{
+        width: 85%;
+        text-align: center;
+        font-size: 150%;
+        margin-top: 1.25rem;
+    }
+    img{
+        width: 30%;
+    }
+}
+.container-historia{
+    margin-top: 1.25rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.retangulo-historia{
+    width: 100%;
+    height:15vh;
+    background-color: #135A32;
+    position: absolute;
+}
+.img-historia{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.estrutura,.section-ensino,.section-social{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-size: 300%;
+    }
+    p{
+        width: 85%;
+        text-align: center;
+        font-size: 150%;
+        margin-bottom: 1.25rem;
+    }
+    img{
+        width: 30%;
+    }
+
+}
+.estrutura{
+    img{
+        width: 60%;
+    }
+}
+.container-ensino{
+    margin-top: 1.25rem;
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+.retangulo-ensino{
+    width: 100%;
+    height:20vh;
+    background-color: #135A32;
+    position: absolute;
+}
+.img-ensino{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    padding-bottom: 26px;
+}
+.img-social{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width:1172px){
+    .texto-quem-somos{
+        padding-left: 1.25rem;
+        justify-content: center;
+        background-color: #135A32;
+        color: #fff;
+        h1{
+            font-size: 150%;
+            margin-bottom: 1rem;
+        }
+        span{
+            font-size: 90%;
+            width: 100%;
+        }
+    
+    }
+    .section-historia{
+        width: 100%;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            font-size:200%;
+        }
+        p{
+            width: 95%;
+            text-align: justify;
+            font-size: 120%;
+            margin-top: 1.25rem;
+        }
+    }
+    .retangulo-historia{
+        height:7vh;
+    }
+    .estrutura,.section-ensino,.section-social{
+        width: 100%;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            font-size: 200%;
+        }
+        p{
+            width: 95%;
+            text-align:justify;
+            font-size: 120%;
+            margin-bottom: 1.25rem;
+        }
+    
+    }
+    .retangulo-ensino{
+        height:8vh;
+    }
+}
+@media screen and (max-width:620px){
+    main{
+        margin-top: 0.1rem;
+    }
+    .section-quem-somos{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:center;
+    
+    }
+    .texto-quem-somos{
+        width: 100%;
+        padding-left:0rem;
+        align-items: center;
+        justify-content: center;
+        background-color: #135A32;
+        color: #fff;
+        h1{
+            font-size: 150%;
+            margin-top: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+        span{
+            text-align: center;
+            font-size: 70%;
+            width: 95%;
+            margin-bottom:0.8rem ;
+        }
+    
+    }
+    .section-historia{
+        width: 100%;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            font-size:200%;
+        }
+        p{
+            width: 95%;
+            text-align: justify;
+            font-size: 100%;
+            margin-top: 1.25rem;
+        }
+        img{
+            width: 45%;
+        }
+        img:nth-child( 2 ){
+            display: none;
+        } 
+    }
+    .retangulo-historia{
+        height:5.5vh;
+    }
+    .estrutura,.section-ensino,.section-social{
+        width: 100%;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            font-size: 200%;
+        }
+        p{
+            width: 95%;
+            text-align:justify;
+            font-size: 100%;
+            margin-bottom: 1.25rem;
+        }
+        img:nth-child(2){
+            display: none;
+        }
+        img{
+            width: 45%;
+        }
+    
+    }
+    .estrutura{
+        img{
+            width: 95%;
+        }
+    }
+    .retangulo-ensino{
+        height:7vh;
+    }
+    .img-ensino{
+        padding-bottom:0.9375rem;
+    }
+
+}
+

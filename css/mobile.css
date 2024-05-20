@@ -36,7 +36,7 @@
         flex-direction: row;
         align-items: center;
         justify-content:space-around;
-        padding: 8px;
+        padding: 0.5rem;
         font-style: medium; 
         font-weight: 500;
         font-size: 1rem;
@@ -50,7 +50,7 @@
     }
     #menu-mobile.active{
         position:absolute;
-        top:80px;
+        top:5rem;
         display: flex;
         flex-direction: column;
         align-items:left;
@@ -63,8 +63,8 @@
         flex-direction: column;
         align-items: left;
         margin-top: 2rem;
-        gap:15px;
-        margin-left:84px;
+        gap:0.9375rem;
+        margin-left:5.25rem;
     }
     #open-menu,#menu_logo{
         display:inline-block;
@@ -79,7 +79,7 @@
         flex-direction: row;
         justify-content:space-around;
         align-items:center;
-        padding-top:10.6px;
+        padding-top:0.6625rem;
      }
    
     
@@ -106,7 +106,7 @@
 
 @media screen and (max-width:576px){
     .header-container{
-        padding:96px 10px;
+        padding:6rem 0.625rem;
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -197,12 +197,12 @@
     }
     footer #email{
         background-color: #FFFFFF;
-        border: 1px solid #D0D5DD;
+        border: 0.0625rem solid #D0D5DD;
         margin-right: 1rem;
-        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        box-shadow: 0rem 0.0625rem 0.125rem rgba(16, 24, 40, 0.05);
         border-radius: 0.5rem;
         width: 130%;
-        height: 48px;
+        height: 3rem;
         margin-bottom: 0.5rem;
        
     }

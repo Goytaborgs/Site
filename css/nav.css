@@ -14,7 +14,7 @@ header{
 header nav ul{
     display: flex;
     align-items: center;
-    padding-top: 10.6px;
+    padding-top: 0.6625rem;
     flex-direction:row;
     justify-content:space-around;
 
