@@ -87,7 +87,22 @@ function checkInputs() {
   });
 
   if (formIsValid) {
-    alert("Mensagem enviada com sucesso!!");
+    //alert("Mensagem enviada com sucesso!!");
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.onmouseenter = Swal.stopTimer;
+        toast.onmouseleave = Swal.resumeTimer;
+      },
+    });
+    Toast.fire({
+      icon: "success",
+      title: "Mensagem enviada com sucesso!!",
+    });
     // Limpa o campo
     limpaCampo();
   }
