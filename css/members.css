@@ -23,3 +23,25 @@
   color: white;
   border-color: #6610f2;*/
 }
+.membros{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width: 100%;
+}
+
+@media screen and (max-width:1404px) {
+  .membros{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width:1200px) {
+  .membros{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width:780px) {
+  .membros{
+    grid-template-columns: 1fr;
+  }
+}

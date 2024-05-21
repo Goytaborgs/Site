@@ -4,10 +4,10 @@ Julia Ribeiro Baptista | Gestao | Capitã Geral / Ex - Capitã de Software - 202
 Jade Bretas | Gestao | Vice Capitã Geral | Engenharia de Controle e Automação | 2023 | - | images/membros/Jade_Bretas.jpeg | L:jade-bretas-3844431ab / E:jade.bretas@gsuite.iff.edu.br
 Heverton Souza| Software | Capitão de Software | Engenharia de Computação | 2023 | - | images/membros/Heverton_Souza.jpeg | I:heverton.souza.01 / G:Heverton-Souza / L:heverton-souza-b29b90208 / E:hevertonsilvadesouza@gmail.com
 Raphael Castelar Saraiva de Almeida| Gestao | Capitão de Gestão | Sistemas de Informação | 2023 | - | images/membros/Raphael_Castelar.jpg | L:raphael-castelar
-Giulia Mota | Comunicacao | Capitã de Comunicação | Engenharia de Controle e Automação | 2023 | - | images/membros/Giulia_Mota.jpg |
+Giulia Mota | Comunicacao | Capitã de Comunicação | Engenharia de Controle e Automação | 2023 | - | images/membros/Giulia_Mota.jpeg |
 Diogo Moraes | Eletronica | Capitão de Eletrônica | Engenharia de Controle e Automação | 2022 | - | images/membros/Diogo_Moraes.jpg | I:diogo__s9
 `,`
-Dênys Pessanha dos Santos | Mecanica | | Engenharia de Computação | 2023 | - | images/membros/default.jpg | I:denys_gtr_
+Dênys Pessanha dos Santos | Mecanica | | Engenharia de Computação | 2023 | - | images/membros/Denys_Pessanha.jpeg | I:denys_gtr_
 Eduardo Correa Peres | Eletronica | | Engenharia de Computação | 2022 | - | images/membros/Dudu_Peres.jpg |
 Ester de Almeida Gomes | Eletronica | | Engenharia de Controle e Automação | 2022 | - | images/membros/Ester_Almeida.jpg | I:esterdalmeida_ / L:ester-de-almeida-gomes-52099517b / E:ester.dalmeidagomes@gmail.com
 Felipe Roen | Eletronica | Ex - Capitão de Eletrônica 2018 - 2021 | Engenharia de Computação | 2018 | - | images/membros/default.jpg | I:feliperoen
