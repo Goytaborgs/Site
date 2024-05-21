@@ -2,105 +2,96 @@
 <html lang="pt-br">
   <head>
     <title>Goytaborgs - Contato</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="icon" href="images/svg/logo 1.svg">
-    <link rel="stylesheet" href="css/bootstrap-icons.css">
-    <link href="css/all.min.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="icon" href="images/svg/logo 1.svg" />
   </head>
   <body>
+    <header>
+      <div id="nav-placeholder"></div>
+    </header>
 
-    <div id="nav-placeholder"></div>
+    <main>
+      <h1>Fale Conosco</h1>
+      <div class="contato">
+        <section class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.4769651986558!2d-41.33936682549317!3d-21.761793797954535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdd43f2476c3ad%3A0xb32af6e0cbf8c2f8!2sIFF%20Campos%20Centro!5e0!3m2!1spt-BR!2sbr!4v1716239418561!5m2!1spt-BR!2sbr"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </section>
+        <section class="form">
+          <h2>Goytaborgs</h2>
+          <!-- Bootstrap 5 starter form -->
+          <form
+            id="contactForm"
+            action="https://formsubmit.co/hevertonsilvadesouza@gmail.com"
+            method="POST"
+          >
+            <!-- Name input -->
+            <div>
+              <div class="form-cont">
+                <label for="name">Nome Completo</label>
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Digite seu nome...."
+                />
+                <small> Mensagem de erro. </small>
+              </div>
 
-    <div class="container">
-      <div class="main-body">
-        <h3 class="card-title" style="line-height: 50px;">Fale com a gente!</h3>
-        <br>
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">Contato</h5>
+              <!-- Email address input -->
+              <div>
+                <div class="form-cont">
+                  <label for="emailAddress">Email</label>
+                  <input
+                    id="emailAddress"
+                    name="email"
+                    type="email"
+                    placeholder="Digite seu email...."
+                  />
+                  <small> Mensagem de erro</small>
+                </div>
+              </div>
+            </div>
+            <!-- Subject address input -->
+            <div>
+              <div class="form-cont">
+                <label for="subject">Assunto</label>
+                <input id="subject" type="text" placeholder="Assunto..." />
+                <small> Mensagem de erro </small>
+              </div>
+            </div>
 
-            <ul class="list-unstyled">
-              <li>
-                <p><i class="fas fa-map-marker-alt pe-2"></i>R. Dr Siqueira, 273</p>
-              </li>
-              <li>
-                <p><i class="pe-4"></i>Campos dos Goytacazes, RJ</p>
-              </li>
-              <li>
-                <p><i class="fas fa-phone pe-2"></i>(22) 99740-7035</p>
-              </li>
-              <li>
-                <p><i class="fas fa-envelope pe-2 mb-0"></i>contato.goytaborgs@gmail.com</p>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
+            <!-- Message input -->
+            <div class="form-cont">
+              <label for="message">Escreva sua menssagem:</label>
+              <textarea
+                id="message"
+                type="text"
+                placeholder="Menssagem"
+                style="height: 5rem"
+              ></textarea>
+              <small> Escreva sua menssagem. </small>
+            </div>
 
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
-
-            <!-- Bootstrap 5 starter form -->
-           <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-
-             <div class="row">
-
-               <!-- Name input -->
-               <div class="col-md-6 mb-3">
-                 <label class="label" for="name">Nome Completo</label>
-                 <input class="form-control" id="name" type="text" placeholder="Nome" data-sb-validations="required" />
-                 <div class="invalid-feedback" data-sb-feedback="name:required">É Necessário um nome.</div>
-               </div>
-
-               <!-- Email address input -->
-               <div class="col-md-6 mb-3">
-                 <label class="label" for="emailAddress">Email</label>
-                 <input class="form-control" id="emailAddress" type="email" placeholder="Email" data-sb-validations="required, email" />
-                 <div class="invalid-feedback" data-sb-feedback="emailAddress:required">É Necessário um endereço de email válido.</div>
-                 <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Endereço de email inválido.</div>
-               </div>
-
-             </div>
-             <!-- Subject address input -->
-             <div class="mb-3">
-               <label class="label" for="subject">Assunto</label>
-               <input class="form-control" id="subject" type="email" placeholder="Assunto" data-sb-validations="required" />
-               <div class="invalid-feedback" data-sb-feedback="subject:required">É Necessário um assunto.</div>
-             </div>
-
-             <!-- Message input -->
-             <div class="mb-3">
-               <label class="label" for="message">Escreva sua menssagem:</label>
-               <textarea class="form-control" id="message" type="text" placeholder="Menssagem" style="height: 5rem;" data-sb-validations="required"></textarea>
-               <div class="invalid-feedback" data-sb-feedback="message:required">Escreva sua menssagem.</div>
-             </div>
-
-             <!-- Form submissions success message -->
-             <div class="d-none" id="submitSuccessMessage">
-               <div class="text-center mb-3">Menssagem enviada com sucesso!</div>
-             </div>
-
-             <!-- Form submissions error message -->
-             <div class="d-none" id="submitErrorMessage">
-               <div class="text-center text-danger mb-3">Erro ao enviar menssagem!</div>
-             </div>
-
-             <!-- Form submit button -->
-             <div class="d-grid">
-               <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
-             </div>
-           </form>
-          </div>
-        </div>
+            <!-- Form submit button -->
+            <div class="botao">
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </section>
       </div>
-    </div>
-    <br>
+    </main>
     <div id="footer-placeholder"></div>
-
+    <script src="js/form.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/navfooter.js"></script>
