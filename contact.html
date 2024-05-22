@@ -32,6 +32,7 @@
           <!-- Bootstrap 5 starter form -->
           <form
             id="contactForm"
+            target="_blank"
             action="https://formsubmit.co/goytaborgs.centro@iff.edu.br"
             method="POST"
           >
@@ -42,7 +43,9 @@
                 <input
                   id="name"
                   type="text"
+                  name="name"
                   placeholder="Digite seu nome...."
+                  required
                 />
                 <small> Mensagem de erro. </small>
               </div>
@@ -56,6 +59,7 @@
                     name="email"
                     type="email"
                     placeholder="Digite seu email...."
+                    required
                   />
                   <small> Mensagem de erro</small>
                 </div>
@@ -65,7 +69,13 @@
             <div>
               <div class="form-cont">
                 <label for="subject">Assunto</label>
-                <input id="subject" type="text" placeholder="Assunto..." />
+                <input
+                  id="subject"
+                  type="text"
+                  name="subject"
+                  placeholder="Assunto..."
+                  required
+                />
                 <small> Mensagem de erro </small>
               </div>
             </div>
@@ -76,8 +86,10 @@
               <textarea
                 id="message"
                 type="text"
+                name="message"
                 placeholder="Menssagem"
                 style="height: 5rem"
+                required
               ></textarea>
               <small> Escreva sua menssagem. </small>
             </div>
@@ -86,13 +98,19 @@
             <div class="botao">
               <button type="submit">Enviar</button>
             </div>
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="http://127.0.0.1:5500/contact.html"
+            />
           </form>
         </section>
       </div>
     </main>
     <div id="footer-placeholder"></div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js/form.js"></script>
+    <!--<script src="js/form.js"></script>-->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/navfooter.js"></script>
