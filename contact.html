@@ -30,12 +30,8 @@
         <section class="form">
           <h2>Goytaborgs</h2>
           <!-- Bootstrap 5 starter form -->
-          <form
-            id="contactForm"
-            target="_blank"
-            action="https://formsubmit.co/goytaborgs.centro@iff.edu.br"
-            method="POST"
-          >
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="72ba84aa-d128-44b7-8e20-42650166e6e4">
             <!-- Name input -->
             <div>
               <div class="form-cont">
@@ -87,7 +83,7 @@
                 id="message"
                 type="text"
                 name="message"
-                placeholder="Menssagem"
+                placeholder="Mensagem"
                 style="height: 5rem"
                 required
               ></textarea>
@@ -98,19 +94,15 @@
             <div class="botao">
               <button type="submit">Enviar</button>
             </div>
-            <input type="hidden" name="_captcha" value="false" />
-            <input
-              type="hidden"
-              name="_next"
-              value="http://127.0.0.1:5500/contact.html"
-            />
+
+            <div id="result"></div>
           </form>
         </section>
       </div>
     </main>
     <div id="footer-placeholder"></div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!--<script src="js/form.js"></script>-->
+    <script src="js/form.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/navfooter.js"></script>

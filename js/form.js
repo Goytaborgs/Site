@@ -6,6 +6,7 @@ const mensagem = document.getElementById("message");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  envioDeForm();
   checkInputs();
 });
 email.addEventListener("blur", () => {
@@ -57,26 +58,18 @@ function checkInputs() {
   const mensagemValue = mensagem.value;
 
   if (usernameValue === "") {
-    setErrorFor(nome, "O nome de usuário é obrigatório.");
   } else {
     setSuccessFor(nome);
   }
   if (emailValue === "") {
-    setErrorFor(email, "O email é obrigatório.");
-  } else if (!checkEmail(emailValue)) {
-    setErrorFor(email, "Por favor, insira um email válido.");
   } else {
     setSuccessFor(email);
   }
   if (assuntoValue === "") {
-    setErrorFor(assunto, " O assunto é obrigatório.");
   } else {
     setSuccessFor(assunto);
   }
   if (mensagemValue === "") {
-    setErrorFor(mensagem, " A mensagem é obrigatória.");
-  } else if (mensagemValue.length < 10) {
-    setErrorFor(mensagem, "Sua mensagem precisa ter mais de 10 caracteres");
   } else {
     setSuccessFor(mensagem);
   }
@@ -114,16 +107,6 @@ function limpaCampo() {
   assunto.parentElement.querySelector("input").value = "";
   mensagem.parentElement.querySelector("textarea").value = "";
 }
-function setErrorFor(input, message) {
-  const formControl = input.parentElement;
-  const small = formControl.querySelector("small");
-
-  // Adiciona a mensagem de erro
-  small.innerText = message;
-
-  // Adiciona a classe de erro
-  formControl.className = "form-cont error";
-}
 
 function setSuccessFor(input) {
   const formControl = input.parentElement;
@@ -132,8 +115,18 @@ function setSuccessFor(input) {
   formControl.className = "form-cont success";
 }
 
-function checkEmail(email) {
-  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-    email
-  );
+
+function envioDeForm(){
+  const formData = new FormData(form);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        });
 }
