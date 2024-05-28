@@ -23,7 +23,7 @@ Marllon Batista | Software | | Engenharia de Controle e Automação | 2023 | - |
 Rogerio Gomes | Eletronica | | Engenharia de Controle e Automação | 2019 | - | images/membros/default.jpg |
 Sarah | Eletronica | | Engenharia de Controle e Automação | 2023 | - | images/membros/default.jpg |
 `,`
-Victor Hugo Nogueira Salvador | Mecanica | Ex - Capitão Geral 2021 - 2022 / Ex - Capitão de Eletrônica 2020 - 2021 | Engenharia de Controle e Automação | 2019 | - | images/membros/Victor_Salvador.jpg | I:vhnsalvador / E:victor.hugo.salvador99@gmail.com
+Victor Hugo Nogueira Salvador | Mecanica | Ex - Capitão Geral 2021 - 2022 / Ex - Capitão de Mecânica 2020 - 2021 | Engenharia de Controle e Automação | 2019 | - | images/membros/Victor_Salvador.jpg | I:vhnsalvador / E:victor.hugo.salvador99@gmail.com
 Vinícius Zanella da Fonseca | Software | | Licenciatura em Matemática | 2023 | - | images/membros/Vinícius_Fonseca.png |
 Vitor Dutra | Gestao | | Engenharia de Controle e Automação | 2023 | - | images/membros/default.jpg |
 Wesley Velasco | Mecanica | | Engenharia de Controle e Automação | 2020 | - | images/membros/Wesley_Velasco.jpg | I:wesley_velasc0 / E:wesley01velasco@gmail.com

@@ -23,6 +23,7 @@
   color: white;
   border-color: #6610f2;*/
 }
+
 .membros{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

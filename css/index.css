@@ -466,6 +466,7 @@ main {
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0) !important;
     /*clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0% 70%);*/
     min-height: 60vh;
+    
   }
   #carouselhome {
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0) !important;
