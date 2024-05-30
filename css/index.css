@@ -458,7 +458,8 @@ main {
   .section-primary {
     a {
       padding: 0.625rem;
-      width: 15.625rem;
+      width: 32%;
+      font-size: 58%;
     }
   }
   #row1 {
