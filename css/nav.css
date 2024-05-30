@@ -1,11 +1,11 @@
 header {
   background-color: #135a32;
   color: #fff;
-  height: fit-content;
   position: fixed;
   top: 0;
   z-index: 2;
   width: 100%;
+  height: 86px;
 }
 #open-menu,
 #menu-mobile,
@@ -45,4 +45,9 @@ header nav ul li a {
 }
 a:hover {
   color: #6c757d;
+}
+@media screen and (max-width: 990px) {
+  header {
+    height: 70px;
+  }
 }

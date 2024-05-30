@@ -14,7 +14,8 @@
 }
 
 main {
-  padding-top: 85px;
+  margin-top: 5.3125rem;
+  height: 100%;
 }
 .section-primary {
   max-width: 100%;
@@ -161,14 +162,20 @@ main {
   width: 100%;
   height: 100%;
 }
-
+.cv-video {
+  position: relative;
+  width: 100%;
+}
+#back-video {
+  position: relative;
+}
 .cv-image {
   position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.cv-image .mask {
+.mask {
   position: absolute;
   top: 0;
   right: 0;
@@ -179,17 +186,16 @@ main {
   overflow: hidden;
   color: #fff;
 }
-
 .cv-image .mask .text {
   height: 100%;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
 }
-
 .cv-image .mask .text p {
   margin: 0;
 }
+
 .cv-image img {
   object-fit: cover;
   object-position: center;
@@ -334,6 +340,9 @@ main {
   clip-path: polygon(0% 0%, 0 35%, 27% 0, 35% 0, 0 46%, 0 100%, 100% 100%, 100% 0%);
 */
 @media screen and (max-width: 1172px) {
+  main {
+    margin-top: 4.375rem;
+  }
   #row1 {
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0) !important;
     min-height: 60vh;
@@ -445,7 +454,39 @@ main {
     }
   }
 }
+@media screen and (max-width: 765px) {
+  .section-primary {
+    a {
+      padding: 0.625rem;
+      width: 15.625rem;
+    }
+  }
+  #row1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .section-projects {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    a {
+      padding: 0.625rem;
+      width: 15.625rem;
+    }
+    p {
+      width: 90%;
+      text-align: justify;
+      font-size: 100%;
+    }
+  }
+}
 @media screen and (max-width: 620px) {
+  main {
+    margin-top: 70px;
+  }
   #row1 {
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0) !important;
     min-height: 60vh;
@@ -466,7 +507,6 @@ main {
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0) !important;
     /*clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0% 70%);*/
     min-height: 60vh;
-    
   }
   #carouselhome {
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0) !important;
@@ -480,25 +520,9 @@ main {
     height: auto; /* Defina a altura do contêiner como automática */
     width: 100%;
     gap: 0.3125rem;
-    a {
-      padding: 0.5rem;
-      width: 32%;
-      font-size: 58%;
-    }
     img {
       width: 10.1137rem;
       height: 100%;
-    }
-  }
-  .section-projects {
-    a {
-      padding: 0.625rem;
-      width: 15.625rem;
-    }
-    p {
-      width: 90%;
-      text-align: justify;
-      font-size: 100%;
     }
   }
   .section-four {

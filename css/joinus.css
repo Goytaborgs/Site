@@ -1,6 +1,6 @@
 main {
   width: 100%;
-  margin-top: 0.09rem;
+  margin-top: 5.3125rem;
 }
 .processo-seletivo {
   display: flex;
@@ -67,6 +67,9 @@ main {
   }
 }
 @media screen and (max-width: 1172px) {
+  main {
+    margin-top: 4.375rem;
+  }
   .processo-seletivo {
     display: flex;
     margin-top: 1rem;

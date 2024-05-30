@@ -1,8 +1,13 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html, body{
-    overflow-x:hidden !important;
+html,
+body {
+  overflow-x: hidden !important;
+}
+
+video {
+  display: block;
 }

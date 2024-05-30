@@ -2,184 +2,302 @@
 <html lang="pt-br">
   <head>
     <title>Goytaborgs</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="images/svg/logo 1.svg">
-    <link rel="stylesheet" href="css/bootstrap-icons.css">
-    <link href="css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/mobile.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="images/svg/logo 1.svg" />
+    <link rel="stylesheet" href="css/bootstrap-icons.css" />
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mobile.css" />
   </head>
   <body id="body">
-   <header>
+    <header>
       <div id="nav-placeholder"></div>
-   </header>
-   <main>
+    </header>
+    <main>
       <!-- primeira seção --->
-      <section class="cv-image">
-            <video id="back-video" autoplay="autoplay" loop="true" muted playsinline class="w-100">
-               <source src="videos/video capa.mp4" type="video/mp4">
-            </video>
-            <div class="mask" style="
-                   background: linear-gradient(
-                   45deg,
-                   rgba(91, 14, 214, 0.5),
-                   rgba(0, 183, 74, 0.4) 
-                   );
-                   ">
-               <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);">
-                  <div class="d-flex justify-content-center align-items-center h-100">
-                     <div class="section-primary">
-                        <img id="gif"  src="gif/logo-indio.gif" alt="" class="goytaborgs_text">
-                        <script>
-                           function trocarGif() {
-                             var gif = document.getElementById('gif');
-                             gif.src ="gif/logo-indio.gif"; // Caminho do seu GIF pequeno 
-                           }
-                           // Executa a função quando a página é redimensionada
-                           window.onresize = trocarGif;
-                           window.onload= trocarGif;
-                        </script>
-                        <a type="button" class="btn btn-primary shadow-lg" style="border-radius:30px"
-                           href="about.html">Conheça Nossa História
-                        </a>
-                     </div>
-                  </div>
-               </div>
+      <section class="cv-video">
+        <video
+          id="back-video"
+          autoplay="autoplay"
+          loop="true"
+          muted
+          playsinline
+          width="100%"
+        >
+          <source src="videos/video capa.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="mask"
+          style="
+            background: linear-gradient(
+              45deg,
+              hsla(263, 88%, 45%, 0.502),
+              hsla(144, 100%, 36%, 0.4)
+            );
+          "
+        >
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="section-primary">
+              <img
+                id="gif"
+                src="gif/logo-indio.gif"
+                alt=""
+                class="goytaborgs_text"
+              />
+              <script>
+                function trocarGif() {
+                  var gif = document.getElementById("gif");
+                  gif.src = "gif/logo-indio.gif"; // Caminho do seu GIF pequeno
+                }
+                // Executa a função quando a página é redimensionada
+                window.onresize = trocarGif;
+                window.onload = trocarGif;
+              </script>
+              <a
+                type="button"
+                class="btn btn-primary shadow-lg"
+                style="border-radius: 30px"
+                href="about.html"
+                >Conheça Nossa História
+              </a>
             </div>
+          </div>
+        </div>
       </section>
       <!-- segunda seção --->
-      <section class="container-fluid" id="row1">
-         <div class="row d-flex justify-content-evenly">
-            <div class="col-md-6 m-0 p-0">
-               <div id="carouselhome" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-indicators">
-                     <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="0" class="active" aria-current="true"
-                        aria-label="Slide 1">
-                     </button>
-                     <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                     <button type="button" data-bs-target="#carouselhome" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  </div>
-                  <div class="carousel-inner">
-                     <div class="carousel-item active">
-                        <img src="images/index/IMG-20240514-WA0021.jpg" class="d-block" style="width: 100%;"alt="...">
-                     </div>
-                     <div class="carousel-item">
-                        <img src="images/index/20240502_150013.jpg" class="d-block" style="width: 100%;"alt="...">
-                     </div>
-                     <div class="carousel-item">
-                        <img src="images/index/IMG-20240514-WA0019.jpg" class="d-block" style="width: 100% ;"alt="...">
-                     </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselhome" data-bs-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselhome" data-bs-slide="next">
-                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Next</span>
-                  </button>
-               </div>
+      <section class="container-fluid">
+        <div class="row d-flex justify-content-evenly" id="row1">
+          <div class="col-md-6 m-0 p-0">
+            <div
+              id="carouselhome"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselhome"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselhome"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselhome"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/index/IMG-20240514-WA0021.jpg"
+                    class="d-block"
+                    style="width: 100%"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/index/20240502_150013.jpg"
+                    class="d-block"
+                    style="width: 100%"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/index/IMG-20240514-WA0019.jpg"
+                    class="d-block"
+                    style="width: 100%"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselhome"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselhome"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div id="panel1" class="col m-0 p-0 bg-success text-white">
-               <div class="d-flex justify-content-center align-items-center h-100">
-                  <div class="section-projects">
-                     <h1>Projetos</h1>
-                     <p>
-                        Ao longo do tempo, os projetos da equipe tem acumulado uma notável coleção de troféus, fruto dos esforços dedicados e
-                        do talento dos seus membros. Estes prêmios representam o reconhecimento do nosso empenho e competência por parte da
-                        comunidade robótica.
-                     </p>
-                     <a type="button" class="btn btn-primary shadow-lg" style="border-radius:30px"
-                        href="projects.html">Conheça
-                        Nossos Projetos</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-       <!-- terceira seção --->
-      <section class="container-fluid d-flex justify-content-center text-center" style="margin-top: -8vh;">
-         <div class="hex3 text-center ">
+          </div>
+          <div id="panel1" class="col m-0 p-0 bg-success text-white">
             <div class="d-flex justify-content-center align-items-center h-100">
-               <img src="images/svg/logo 1.svg" alt="" width="109.13px" height="120.9px">
+              <div class="section-projects">
+                <h1>Projetos</h1>
+                <p>
+                  Ao longo do tempo, os projetos da equipe tem acumulado uma
+                  notável coleção de troféus, fruto dos esforços dedicados e do
+                  talento dos seus membros. Estes prêmios representam o
+                  reconhecimento do nosso empenho e competência por parte da
+                  comunidade robótica.
+                </p>
+                <a
+                  type="button"
+                  class="btn btn-primary shadow-lg"
+                  style="border-radius: 30px"
+                  href="projects.html"
+                  >Conheça Nossos Projetos</a
+                >
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
       </section>
-       <!-- Quarta seção --->
+      <!-- terceira seção --->
+      <section
+        class="container-fluid d-flex justify-content-center text-center"
+        style="margin-top: -8vh"
+      >
+        <div class="hex3 text-center">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <img
+              src="images/svg/logo 1.svg"
+              alt=""
+              width="109.13px"
+              height="120.9px"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Quarta seção --->
       <section class="section-four">
-         <div class="section-members">
-            <h1>Membros</h1>
-            <p>
-               A nossa equipe é composta por uma variedade de membros especializados em diversas áreas, abrangendo desde o
-               desenvolvimento de software até as habilidades de comunicação. Unimos nossas habilidades e conhecimentos em
-               prol de
-               um objetivo comum: impulsionar a robótica para novos horizontes.
-            </p>
-            <a type="button" class="btn btn-outline-primary shadow-lg" style="border-radius:30px"
-               href="members.html">Conheça Nossos Membros</a>
-         </div>
-         <div class="section-se-juntar">
-            <h1>Quer se juntar a equipe?</h1>
-            <p>
-               Se você está buscando aprimorar suas habilidades e conhecimentos na área da robótica e tem interesse em fazer
-               parte
-               da nossa equipe, clique abaixo para obter mais informações e ficar atualizado sobre as oportunidades
-               disponíveis para
-               você se envolver conosco.
-            </p>
-            <a type="button" class="btn btn-outline-primary shadow-lg" style="border-radius:30px" href="joinus.html">Se
-               Inscreva!</a>
-         </div>
+        <div class="section-members">
+          <h1>Membros</h1>
+          <p>
+            A nossa equipe é composta por uma variedade de membros
+            especializados em diversas áreas, abrangendo desde o desenvolvimento
+            de software até as habilidades de comunicação. Unimos nossas
+            habilidades e conhecimentos em prol de um objetivo comum:
+            impulsionar a robótica para novos horizontes.
+          </p>
+          <a
+            type="button"
+            class="btn btn-outline-primary shadow-lg"
+            style="border-radius: 30px"
+            href="members.html"
+            >Conheça Nossos Membros</a
+          >
+        </div>
+        <div class="section-se-juntar">
+          <h1>Quer se juntar a equipe?</h1>
+          <p>
+            Se você está buscando aprimorar suas habilidades e conhecimentos na
+            área da robótica e tem interesse em fazer parte da nossa equipe,
+            clique abaixo para obter mais informações e ficar atualizado sobre
+            as oportunidades disponíveis para você se envolver conosco.
+          </p>
+          <a
+            type="button"
+            class="btn btn-outline-primary shadow-lg"
+            style="border-radius: 30px"
+            href="joinus.html"
+            >Se Inscreva!</a
+          >
+        </div>
       </section>
       <!-- Quinta seção-->
       <section class="container-fluid p-0">
-         <div class="col w-100">
-            <div class="cv-image m-0 p-0 col">
-               <img src="images/index/foto da equipe.png" class="w-100" alt="..." />
-               <div class="mask" style="
-                 background: linear-gradient(
-                 45deg,
-                 rgba(91, 14, 214, 0.7),
-                 rgba(0, 183, 74, 0.6) 60%
-                 );
-                 ">
-                     <div class="mask" style="background-color: rgba(0, 0, 0, 0.4);">
-                        <div class="section-uniao">
-                           <span>A união faz a força</span>
-                           <p>
-                              A Goytaborgs está pronta para uma jornada emocionante em direção à inovação e excelência tecnológica. 
-                              Estamos em busca de parceiros comprometidos para nos ajudar a alcançar novos patamares.
-                              Se você compartilha nossa paixão pela tecnologia e deseja apoiar o desenvolvimento de jovens talentosos, junte-se a nós como patrocinador!
-                           </p>
-                           <div>
-                              <a type="button" class="btn btn-light shadow-lg" style="border-radius:30px" href="contact.html">Seja
-                                 Nosso Parceiro</a>
-                              <a type="button" class="btn btn-light shadow-lg" style="border-radius:30px" href="partners.html">Conheça
-                                 Nossos Parceiros</a>
-                              
-                           </div>
-                        </div>
-                     </div>
+        <div class="col w-100">
+          <div class="cv-image m-0 p-0 col">
+            <img
+              src="images/index/foto da equipe.png"
+              class="w-100"
+              alt="..."
+            />
+            <div
+              class="mask"
+              style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(91, 14, 214, 0.7),
+                  rgba(0, 183, 74, 0.6) 60%
+                );
+              "
+            >
+              <div class="mask" style="background-color: rgba(0, 0, 0, 0.4)">
+                <div class="section-uniao">
+                  <span>A união faz a força</span>
+                  <p>
+                    A Goytaborgs está pronta para uma jornada emocionante em
+                    direção à inovação e excelência tecnológica. Estamos em
+                    busca de parceiros comprometidos para nos ajudar a alcançar
+                    novos patamares. Se você compartilha nossa paixão pela
+                    tecnologia e deseja apoiar o desenvolvimento de jovens
+                    talentosos, junte-se a nós como patrocinador!
+                  </p>
+                  <div>
+                    <a
+                      type="button"
+                      class="btn btn-light shadow-lg"
+                      style="border-radius: 30px"
+                      href="contact.html"
+                      >Seja Nosso Parceiro</a
+                    >
+                    <a
+                      type="button"
+                      class="btn btn-light shadow-lg"
+                      style="border-radius: 30px"
+                      href="partners.html"
+                      >Conheça Nossos Parceiros</a
+                    >
                   </div>
-               </div>
+                </div>
+              </div>
             </div>
-         </div>
-     
+          </div>
+        </div>
       </section>
       <!-- Sexta seção-->
       <section class="section-six">
-         <h1>Nos Acompanhe</h1>
-         <!-- LightWidget WIDGET -->
-         <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
-         src="https://cdn.lightwidget.com/widgets/5135dc53f17e543ba664c85d99cf4723.html" scrolling="no"
-         allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-         <a type="button" class="btn btn-light shadow-lg" style="border-radius:30px" href="https://www.instagram.com/goytaborgs/">Instagram</a>
+        <h1>Nos Acompanhe</h1>
+        <!-- LightWidget WIDGET -->
+        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+        <iframe
+          src="//lightwidget.com/widgets/d0620694152a5705b5c326cb69204836.html"
+          scrolling="no"
+          allowtransparency="true"
+          class="lightwidget-widget"
+          style="width: 100%; border: 0; overflow: hidden"
+        ></iframe>
+        <a
+          type="button"
+          class="btn btn-light shadow-lg"
+          style="border-radius: 30px"
+          href="https://www.instagram.com/goytaborgs/"
+          >Instagram</a
+        >
       </section>
-         
-   </main>
+    </main>
 
     <div id="footer-placeholder"></div>
 

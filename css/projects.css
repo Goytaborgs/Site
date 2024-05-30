@@ -1,48 +1,54 @@
-#filter-btn-box{
-    margin-top:7.5rem;
-    gap:1.875rem;
-    a{
-        color: #fff;
-        background-color:#135A33;
-        border-radius: 1.875rem;
-        padding: 1.25rem;
-        width: 12%;
-        text-align: center;
-        font-size: 80%;
-    }
-    a:hover{
-        background-color: #198754;
-    }
+#filter-btn-box {
+  margin-top: 7.5rem;
+  gap: 1.875rem;
+  a {
+    color: #fff;
+    background-color: #135a33;
+    border-radius: 1.875rem;
+    padding: 1.25rem;
+    width: 12%;
+    text-align: center;
+    font-size: 80%;
+  }
+  a:hover {
+    background-color: #198754;
+  }
 }
-@media screen and (max-width: 1172px){
-    #filter-btn-box{
-        a{
-            color: #fff;
-            background-color:#135A33;
-            border-radius: 1.875rem;
-            padding: 1.25rem;
-            width: 30%;
-            text-align: center;
-            font-size: 80%;
-        }
-    }
-    
+@media screen and (max-width: 1398px) {
+  .name-projects {
+    margin-top: 10px;
+  }
 }
-@media screen and (max-width: 620px){
-    #filter-btn-box{
-        gap: 0.5rem;
-        a{
-            color: #fff;
-            background-color:#135A33;
-            border-radius: 1.875rem;
-            padding: 1.25rem;
-            width: 52%;
-            text-align: center;
-            font-size: 80%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+@media screen and (max-width: 1172px) {
+  .container {
+    width: 100%;
+  }
+  #filter-btn-box {
+    a {
+      color: #fff;
+      background-color: #135a33;
+      border-radius: 1.875rem;
+      padding: 1.25rem;
+      width: 30%;
+      text-align: center;
+      font-size: 80%;
     }
-    
+  }
+}
+@media screen and (max-width: 620px) {
+  #filter-btn-box {
+    gap: 0.5rem;
+    a {
+      color: #fff;
+      background-color: #135a33;
+      border-radius: 1.875rem;
+      padding: 1.25rem;
+      width: 52%;
+      text-align: center;
+      font-size: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
