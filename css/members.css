@@ -1,48 +1,22 @@
-.gestao{
-  /*background-color: #198754;
-  color: white;
-  border-color: #198754;*/
-}
-.eletronica{
-  /*background-color: #0d6efd;
-  color: white;
-  border-color: #0d6efd;*/
-}
-.mecanica{
-  /*background-color: #ffc107;
-  color: white;
-  border-color: #ffc107;*/
-}
-.software{
-  /*background-color: #fd7e14;
-  color: white;
-  border-color: #fd7e14;*/
-}
-.comunicacao{
-  /*background-color: #6610f2;
-  color: white;
-  border-color: #6610f2;*/
-}
-
-.membros{
+.membros {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   width: 100%;
 }
 
-@media screen and (max-width:1404px) {
-  .membros{
+@media screen and (max-width: 1404px) {
+  .membros {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media screen and (max-width:1200px) {
-  .membros{
+@media screen and (max-width: 1200px) {
+  .membros {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (max-width:780px) {
-  .membros{
+@media screen and (max-width: 780px) {
+  .membros {
     grid-template-columns: 1fr;
   }
 }
