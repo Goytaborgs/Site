@@ -26,7 +26,7 @@ $(function () {
       } else if (dados[1] == "Mecanica") {
         areaicon = `<i style='color:#054F77'class="bi bi-gear"></i>`;
         //areaiconcolor = "text-warning";
-      } else if (dados[1] == "Eletronica") {
+      } else if (dados[1] == "Eletrônica") {
         areaicon = `<i style='color:#F7D917;' class="bi bi-cpu"></i>`;
         //areaiconcolor = "text-success";
       } else if (dados[1] == "Comunicacao") {
