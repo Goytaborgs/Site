@@ -29,6 +29,10 @@ main {
     text-align: center;
     font-size: 150%;
   }
+  a {
+    color: #198754;
+    font-size: 90%;
+  }
 }
 .perguntas-frequentes {
   width: 100%;
