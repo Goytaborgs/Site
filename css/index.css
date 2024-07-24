@@ -468,11 +468,11 @@ main {
     flex-direction: column-reverse;
   }
   .section-projects {
-    height: 60vh;
+    height: 53vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 35px;
     a {
       padding: 0.625rem;
       width: 15.625rem;
@@ -507,7 +507,7 @@ main {
   #panel1 {
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0) !important;
     /*clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0% 70%);*/
-    min-height: 60vh;
+    min-height: 50vh;
   }
   #carouselhome {
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0) !important;

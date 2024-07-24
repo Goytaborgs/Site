@@ -91,7 +91,7 @@ main {
   .texto-processo-seletivo,
   .texto-carrossel {
     p {
-      width: 95%;
+      width: 80%;
       text-align: justify;
       font-size: 120%;
     }
@@ -134,9 +134,9 @@ main {
   .texto-processo-seletivo,
   .texto-carrossel {
     p {
-      width: 95%;
+      width: 90%;
       text-align: justify;
-      font-size: 100%;
+      font-size: 120%;
     }
     h2 {
       text-align: center;
