@@ -121,7 +121,7 @@
     <script>
         // Função para carregar a lista de robôs
         function loadRoboList() {
-            fetch('http://localhost:8083/robo', {
+            fetch('http://143.137.49.133:8080/goytaborgs/robo', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`
@@ -152,7 +152,7 @@
                 peso: parseFloat(document.getElementById('weight').value)
             };
 
-            fetch('http://localhost:8083/robo', {
+            fetch('http://143.137.49.133:8080/goytaborgs/robo', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

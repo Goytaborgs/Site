@@ -113,7 +113,7 @@
     <script>
         // Função para carregar a lista de membros
         function loadMemberList() {
-            fetch('http://localhost:8083/equipe/integrantes', {
+            fetch('http://143.137.49.133:8080/goytaborgs/equipe/integrantes', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`
@@ -142,7 +142,7 @@
                 email: document.getElementById('memberEmail').value
             };
 
-            fetch('http://localhost:8083/equipe/adicionar-integrante', {
+            fetch('http://143.137.49.133:8080/goytaborgs/equipe/adicionar-integrante', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

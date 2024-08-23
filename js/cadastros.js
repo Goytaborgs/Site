@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             password: document.getElementById('password').value
         };
 
-        fetch('http://localhost:8083/auth/login', {
+        fetch('http://143.137.49.133:8080/goytaborgs/auth/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             telefone: document.getElementById('telefone').value
         };
 
-        fetch('http://localhost:8083/auth/register', {
+        fetch('http://143.137.49.133:8080/goytaborgs/auth/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
