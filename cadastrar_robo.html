@@ -92,7 +92,12 @@
                 </div>
                 <div class="mb-3">
                     <label for="category" class="form-label">Categoria</label>
-                    <input type="text" class="form-control" id="category" required>
+                    <select class="form-select" id="category" required>
+                        <option value="Cupim">Cupim</option>
+                        <option value="Seguidor de linha">Seguidor de linha</option>
+                        <option value="Sumo mini auto">Sumo mini auto</option>
+                        <option value="Fairyweight">Fairyweight</option>
+                    </select>
                 </div>
                 <div class="mb-3">
                     <label for="weight" class="form-label">Peso (kg)</label>
@@ -152,7 +157,7 @@
                 peso: parseFloat(document.getElementById('weight').value)
             };
 
-            fetch('http://143.137.49.133:8080/goytaborgs/robo', {
+            fetch('https://site-backend-ayjt.onrender.com/robo', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

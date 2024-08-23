@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             password: document.getElementById('password').value
         };
 
-        fetch('http://143.137.49.133:8080/goytaborgs/auth/login', {
+        fetch('https://site-backend-ayjt.onrender.com/auth/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             telefone: document.getElementById('telefone').value
         };
 
-        fetch('http://143.137.49.133:8080/goytaborgs/auth/register', {
+        fetch('https://site-backend-ayjt.onrender.com/auth/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
