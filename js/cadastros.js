@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('loginForm').addEventListener('submit', (event) => {
         event.preventDefault();
 
+        const loginButton = event.target.querySelector('button[type="submit"]');
+        loginButton.disabled = true; // Desabilita o botão de login
+
         const loginData = {
             login: document.getElementById('login').value,
             password: document.getElementById('password').value
@@ -35,12 +38,18 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => {
             document.getElementById('mensagem').innerHTML = '<div class="alert alert-danger">Erro ao conectar com o servidor.</div>';
+        })
+        .finally(() => {
+            loginButton.disabled = false; // Reabilita o botão de login
         });
     });
 
     // Requisição de Registro
     document.getElementById('registerUserForm').addEventListener('submit', (event) => {
         event.preventDefault();
+
+        const registerButton = event.target.querySelector('button[type="submit"]');
+        registerButton.disabled = true; // Desabilita o botão de registro
 
         const userData = {
             nome: document.getElementById('username').value,
@@ -70,6 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => {
             document.getElementById('mensagem').innerHTML = '<div class="alert alert-danger">Erro ao registrar usuário.</div>';
+        })
+        .finally(() => {
+            registerButton.disabled = false; // Reabilita o botão de registro
         });
     });
 

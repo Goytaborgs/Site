@@ -49,15 +49,23 @@
             border-color: #1e7e34; /* Verde mais escuro */
         }
 
+        .btn-primary:disabled {
+            background-color: #99b39f; /* Verde */
+            border-color: #28a745; /* Verde */
+            color: #fff; /* Branco para o texto */
+            opacity: 0.65; /* Torna o botão ligeiramente transparente */
+            cursor: not-allowed; /* Indica que o botão não pode ser clicado */
+        }
+
         .mb-3 label {
             color: #28a745; /* Verde */
         }
 
-        .mb-3 input {
+        .mb-3 input, .mb-3 select {
             border-color: #28a745; /* Verde */
         }
 
-        .mb-3 input:focus {
+        .mb-3 input:focus, .mb-3 select:focus {
             border-color: #218838; /* Verde mais escuro */
             box-shadow: 0 0 5px rgba(33, 136, 56, 0.5);
         }
@@ -74,6 +82,7 @@
         #roboList {
             margin-top: 30px;
         }
+        
     </style>
 </head>
 <body>
@@ -124,62 +133,68 @@
     <script src="js/cadastros.js"></script>
     <script src="js/navfooter.js"></script>
     <script>
-        // Função para carregar a lista de robôs
-        function loadRoboList() {
-            fetch('http://143.137.49.133:8080/goytaborgs/robo', {
-                method: 'GET',
-                headers: {
-                    'Authorization': `Bearer ${localStorage.getItem('token')}`
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                const roboListContainer = document.getElementById('roboListContainer');
-                roboListContainer.innerHTML = '';
-                data.forEach(robo => {
-                    const listItem = document.createElement('li');
-                    listItem.className = 'list-group-item';
-                    listItem.textContent = `${robo.nome} - Categoria: ${robo.email}`;
-                    roboListContainer.appendChild(listItem);
-                });
-            })
-            .catch(error => {
-                console.error('Erro ao carregar a lista de robôs:', error);
-            });
-        }
-
-        document.getElementById('registerRoboForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            const roboData = {
-                nome: document.getElementById('roboName').value,
-                categoria: document.getElementById('category').value,
-                peso: parseFloat(document.getElementById('weight').value)
-            };
-
-            fetch('https://site-backend-ayjt.onrender.com/robo', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${localStorage.getItem('token')}`
-                },
-                body: JSON.stringify(roboData)
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.id) {
-                    document.getElementById('mensagem').innerHTML = '<div class="alert alert-success">Robô cadastrado com sucesso!</div>';
-                    loadRoboList();  // Recarrega a lista de robôs após o cadastro
-                } else {
-                    document.getElementById('mensagem').innerHTML = '<div class="alert alert-danger">Falha no cadastro do robô.</div>';
-                }
-            })
-            .catch(error => {
-                document.getElementById('mensagem').innerHTML = '<div class="alert alert-danger">Ocorreu um erro de formatação nos seus dados digitados.</div>';
-            });
-        });
-
         document.addEventListener('DOMContentLoaded', function() {
+            // Função para carregar a lista de robôs
+            function loadRoboList() {
+                fetch('https://site-backend-ayjt.onrender.com/robo', {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${localStorage.getItem('token')}`
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const roboListContainer = document.getElementById('roboListContainer');
+                    roboListContainer.innerHTML = '';
+                    data.forEach(robo => {
+                        const listItem = document.createElement('li');
+                        listItem.className = 'list-group-item';
+                        listItem.textContent = `${robo.nome} - Categoria: ${robo.email}`;
+                        roboListContainer.appendChild(listItem);
+                    });
+                })
+                .catch(error => {
+                    console.error('Erro ao carregar a lista de robôs:', error);
+                });
+            }
+
+            document.getElementById('registerRoboForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const submitButton = event.target.querySelector('button[type="submit"]');
+                submitButton.disabled = true; // Desabilita o botão de cadastro
+
+                const roboData = {
+                    nome: document.getElementById('roboName').value,
+                    categoria: document.getElementById('category').value,
+                    peso: parseFloat(document.getElementById('weight').value)
+                };
+
+                fetch('https://site-backend-ayjt.onrender.com/robo', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${localStorage.getItem('token')}`
+                    },
+                    body: JSON.stringify(roboData)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.id) {
+                        document.getElementById('mensagem').innerHTML = '<div class="alert alert-success">Robô cadastrado com sucesso!</div>';
+                        loadRoboList();  // Recarrega a lista de robôs após o cadastro
+                    } else {
+                        document.getElementById('mensagem').innerHTML = '<div class="alert alert-danger">Falha no cadastro do robô.</div>';
+                    }
+                })
+                .catch(error => {
+                    document.getElementById('mensagem').innerHTML = '<div class="alert alert-danger">Ocorreu um erro de formatação nos seus dados digitados ou o limite de cadastro excedeu.</div>';
+                })
+                .finally(() => {
+                    submitButton.disabled = false; // Reabilita o botão de cadastro
+                });
+            });
+
             loadRoboList(); // Carrega a lista de robôs ao carregar a página
         });
     </script>

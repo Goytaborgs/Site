@@ -45,6 +45,14 @@
             border-color: #1e7e34;
         }
 
+        .btn-primary:disabled {
+            background-color: #738477;
+            border-color: #28a745;
+            color: #fff;
+            opacity: 0.65;
+            cursor: not-allowed;
+        }
+
         .mb-3 label {
             color: #28a745;
         }
@@ -135,6 +143,9 @@
             document.getElementById('registerTeamForm').addEventListener('submit', (event) => {
                 event.preventDefault();
 
+                const submitButton = event.target.querySelector('button[type="submit"]');
+                submitButton.disabled = true; // Desabilita o botão de cadastro
+
                 const teamData = {
                     nomeequipe: document.getElementById('teamName').value,
                     instituicao: document.getElementById('institution').value
@@ -162,6 +173,9 @@
                 })
                 .catch(error => {
                     document.getElementById('mensagem').innerHTML = '<div class="alert alert-danger">Erro ao cadastrar equipe, tente se autenticar novamente.</div>';
+                })
+                .finally(() => {
+                    submitButton.disabled = false; // Reabilita o botão de cadastro
                 });
             });
 

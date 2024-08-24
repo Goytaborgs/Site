@@ -49,6 +49,14 @@
             border-color: #1e7e34; /* Verde mais escuro */
         }
 
+        .btn-primary:disabled {
+            background-color: #28a745; /* Verde */
+            border-color: #28a745; /* Verde */
+            color: #fff; /* Branco para o texto */
+            opacity: 0.65; /* Torna o botão ligeiramente transparente */
+            cursor: not-allowed; /* Indica que o botão não pode ser clicado */
+        }
+
         .mb-3 label {
             color: #28a745; /* Verde */
         }
@@ -138,6 +146,9 @@
         document.getElementById('registerMemberForm').addEventListener('submit', function(event) {
             event.preventDefault();
 
+            const submitButton = event.target.querySelector('button[type="submit"]');
+            submitButton.disabled = true; // Desabilita o botão de cadastro
+
             const memberData = {
                 email: document.getElementById('memberEmail').value
             };
@@ -161,6 +172,9 @@
             })
             .catch(error => {
                 document.getElementById('mensagem').innerHTML = '<div class="alert alert-danger">O email digitado não está cadastrado na base de dados.</div>';
+            })
+            .finally(() => {
+                submitButton.disabled = false; // Reabilita o botão de cadastro
             });
         });
 
