@@ -59,6 +59,10 @@
       .form-container {
         display: none;
       }
+      .form-container h2 {
+        display: flex;
+        justify-content: center;
+      }
 
       .form-container.active {
         display: block;
@@ -76,7 +80,38 @@
         border-color: #135a32; /* Verde mais escuro */
         box-shadow: 0 0 5px rgba(2, 253, 57, 0.8);
       }
+      .form-container button {
+        width: 100%;
+        align-items: center;
+      }
+      .form-container button:hover {
+        background-color: #198754;
+      }
+      .form-container p {
+        display: flex;
+        justify-content: center;
+        margin-top: 6px;
+      }
+      .cadastre-se {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4px;
+        button{
+          border: none;
+          color: black;
+          display: flex;
+          align-items: center;
+          font-size: medium;
+          background-color: #f8f9fa;
 
+        }
+        button:hover {
+          background-color: #f8f9fa;
+          color: #198754;
+    
+        }
+      }
       #formSwitcher button {
         margin-right: 5px;
         color: white; /* Branco */
@@ -124,17 +159,17 @@
 
       <div class="container mt-5">
         <div id="formSwitcher" class="mb-4 text-center">
-          <button class="btn btn-primary" onclick="showForm('loginForm')">
+          <!--<button class="btn btn-primary" onclick="showForm('loginForm')">
             Login
           </button>
           <button class="btn btn-secondary" onclick="showForm('registerForm')">
             Registro
-          </button>
+          </button>-->
         </div>
 
         <!-- Formulário de Login -->
         <div id="loginForm" class="form-container active">
-          <h2>Login</h2>
+          <h2>Bem Vindo(a)!!</h2>
           <form id="loginForm">
             <div class="mb-3">
               <label for="login" class="form-label">Login</label>
@@ -151,6 +186,12 @@
             </div>
             <button type="submit" class="btn btn-primary">Login</button>
           </form>
+          <div class="cadastre-se">
+            <p>Ainda não possui uma conta?</p>
+            <p>
+              <b><button onclick="showForm('registerForm')">Cadastre-se</b>
+            </p>
+          </div>
         </div>
 
         <!-- Formulário de Registro de Usuário -->
@@ -162,7 +203,7 @@
               <input type="text" class="form-control" id="username" required />
             </div>
             <div class="mb-3">
-              <label for="userLogin" class="form-label">Login</label>
+              <label for="userLogin" class="form-label">E-mail</label>
               <input type="text" class="form-control" id="userLogin" required />
             </div>
             <div class="mb-3">

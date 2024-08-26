@@ -160,6 +160,12 @@
               itemsToAdd +=
                 '<li data-generated="true"><a href="minha_equipe.html">Minha equipe</a></li>';
             }
+            if (!menuNav.querySelector('a[href="minha_equipe.html"]')) {
+              itemsToAdd +=
+                '<li data-generated="true"><a href="index.html">Sair</a></li>';
+              $(".closed").removeClass("active");
+              $(".closed").addClass("off");
+            }
             /*
             if (!menuNav.querySelector('a[href="cadastro_membro.html"]')) {
               itemsToAdd +=
@@ -173,6 +179,12 @@
             if (!menuNav.querySelector('a[href="cadastrar_equipe.html"]')) {
               itemsToAdd +=
                 '<li data-generated="true"><a href="cadastrar_equipe.html">Cadastrar Equipe</a></li>';
+            }
+            if (!menuNav.querySelector('a[href="cadastrar_equipe.html"]')) {
+              itemsToAdd +=
+                '<li data-generated="true"><a href="index.html">Sair</a></li>';
+              $(".closed").removeClass("active");
+              $(".closed").addClass("off");
             }
           }
 
