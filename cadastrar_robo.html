@@ -47,10 +47,27 @@
         background-color: #135a32; /* Verde */
         border-color: #135a32; /* Verde */
       }
-
+      .cabecalho-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          color: #fff;
+          background-color: #135a32;
+          padding: 2px 12px;
+          border-color: #fff;
+          display: flex;
+          align-items: center;
+        }
+        a:hover {
+          background-color: #198754;
+          border-color: #fff;
+        }
+      }
       .btn-primary:hover {
-        background-color: #218838; /* Verde mais escuro */
-        border-color: #1e7e34; /* Verde mais escuro */
+        background-color: #198754;
+        border-color: #fff;
       }
 
       .btn-primary:disabled {
@@ -97,7 +114,17 @@
       </header>
 
       <div class="container mt-5">
-        <h2>Cadastrar Robô</h2>
+        <div class="cabecalho-form">
+          <h2>Cadastrar Robô</h2>
+          <a
+            type="button"
+            class="btn btn-outline-primary shadow-lg"
+            style="border-radius: 8px"
+            href="minha_equipe.html"
+            >Voltar</a
+          >
+        </div>
+
         <form id="registerRoboForm">
           <div class="mb-3">
             <label for="roboName" class="form-label">Nome do Robô</label>

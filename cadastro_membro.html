@@ -86,6 +86,24 @@
       #memberList {
         margin-top: 30px;
       }
+      .cabecalho-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          color: #fff;
+          background-color: #135a32;
+          padding: 2px 12px;
+          border-color: #fff;
+          display: flex;
+          align-items: center;
+        }
+        a:hover {
+          background-color: #198754;
+          border-color: #fff;
+        }
+      }
     </style>
   </head>
   <body>
@@ -95,7 +113,16 @@
       </header>
 
       <div class="container mt-5">
-        <h2>Cadastrar Membro</h2>
+        <div class="cabecalho-form">
+          <h2>Cadastrar Membro</h2>
+          <a
+            type="button"
+            class="btn btn-outline-primary shadow-lg"
+            style="border-radius: 8px"
+            href="minha_equipe.html"
+            >Voltar</a
+          >
+        </div>
         <form id="registerMemberForm">
           <div class="mb-3">
             <label for="memberEmail" class="form-label">Email do Membro</label>
