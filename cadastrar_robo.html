@@ -1,131 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <title>Cadastrar Robô</title>
     <style>
-        /* Estilização personalizada */
-        html, body {
-            height: 100%;
-            margin: 0;
-            background-color: #f8f9fa; /* Branco claro */
-        }
+      /* Estilização personalizada */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background-color: #f8f9fa; /* Branco claro */
+      }
 
-        .wrapper {
-            min-height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+      .wrapper {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
 
-        .container {
-            max-width: 600px;
-            position: relative;
-            background-color: white;
-            border: 2px solid #28a745; /* Verde */
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            top: 130px;
-            margin-bottom: 200px;
-        }
+      .container {
+        max-width: 600px;
+        position: relative;
+        background-color: white;
+        border: 2px solid #135a32; /* Verde */
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        top: 130px;
+        margin-bottom: 200px;
+      }
 
-        h2 {
-            color: #28a745; /* Verde */
-        }
-        h3 {
-            color: #28a745;
-        }
+      h2 {
+        color: #135a32; /* Verde */
+      }
+      h3 {
+        color: #135a32;
+      }
 
-        .btn-primary {
-            background-color: #28a745; /* Verde */
-            border-color: #28a745; /* Verde */
-        }
+      .btn-primary {
+        background-color: #135a32; /* Verde */
+        border-color: #135a32; /* Verde */
+      }
 
-        .btn-primary:hover {
-            background-color: #218838; /* Verde mais escuro */
-            border-color: #1e7e34; /* Verde mais escuro */
-        }
+      .btn-primary:hover {
+        background-color: #218838; /* Verde mais escuro */
+        border-color: #1e7e34; /* Verde mais escuro */
+      }
 
-        .btn-primary:disabled {
-            background-color: #99b39f; /* Verde */
-            border-color: #28a745; /* Verde */
-            color: #fff; /* Branco para o texto */
-            opacity: 0.65; /* Torna o botão ligeiramente transparente */
-            cursor: not-allowed; /* Indica que o botão não pode ser clicado */
-        }
+      .btn-primary:disabled {
+        background-color: #99b39f; /* Verde */
+        border-color: #135a32; /* Verde */
+        color: #fff; /* Branco para o texto */
+        opacity: 0.65; /* Torna o botão ligeiramente transparente */
+        cursor: not-allowed; /* Indica que o botão não pode ser clicado */
+      }
 
-        .mb-3 label {
-            color: #28a745; /* Verde */
-        }
+      .mb-3 label {
+        color: #135a32; /* Verde */
+      }
 
-        .mb-3 input, .mb-3 select {
-            border-color: #28a745; /* Verde */
-        }
+      .mb-3 input,
+      .mb-3 select {
+        border-color: #135a32; /* Verde */
+      }
 
-        .mb-3 input:focus, .mb-3 select:focus {
-            border-color: #218838; /* Verde mais escuro */
-            box-shadow: 0 0 5px rgba(33, 136, 56, 0.5);
-        }
+      .mb-3 input:focus,
+      .mb-3 select:focus {
+        border-color: #218838; /* Verde mais escuro */
+        box-shadow: 0 0 5px rgba(33, 136, 56, 0.9);
+      }
 
-        #mensagem {
-            color: #28a745; /* Verde */
-        }
+      #mensagem {
+        color: #135a32; /* Verde */
+      }
 
-        footer {
-            margin-top: auto;
-            width: 100%;
-        }
+      footer {
+        margin-top: auto;
+        width: 100%;
+      }
 
-        #roboList {
-            margin-top: 30px;
-        }
-        
+      #roboList {
+        margin-top: 30px;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="wrapper">
-        <header>
-            <div id="nav-placeholder"></div>
-        </header>
+      <header>
+        <div id="nav-placeholder"></div>
+      </header>
 
-        <div class="container mt-5">
-            <h2>Cadastrar Robô</h2>
-            <form id="registerRoboForm">
-                <div class="mb-3">
-                    <label for="roboName" class="form-label">Nome do Robô</label>
-                    <input type="text" class="form-control" id="roboName" required>
-                </div>
-                <div class="mb-3">
-                    <label for="category" class="form-label">Categoria</label>
-                    <select class="form-select" id="category" required>
-                        <option value="Cupim">Cupim</option>
-                        <option value="Seguidor de linha">Seguidor de linha</option>
-                        <option value="Sumo mini auto">Sumo mini auto</option>
-                        <option value="Fairyweight">Fairyweight</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="weight" class="form-label">Peso (kg)</label>
-                    <input type="number" step="0.01" class="form-control" id="weight" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
-            </form>
+      <div class="container mt-5">
+        <h2>Cadastrar Robô</h2>
+        <form id="registerRoboForm">
+          <div class="mb-3">
+            <label for="roboName" class="form-label">Nome do Robô</label>
+            <input type="text" class="form-control" id="roboName" required />
+          </div>
+          <div class="mb-3">
+            <label for="category" class="form-label">Categoria</label>
+            <select class="form-select" id="category" required>
+              <option value="Cupim">Cupim</option>
+              <option value="Seguidor de linha">Seguidor de linha</option>
+              <option value="Sumo mini auto">Sumo mini auto</option>
+              <option value="Fairyweight">Fairyweight</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="weight" class="form-label">Peso (kg)</label>
+            <input
+              type="number"
+              step="0.01"
+              class="form-control"
+              id="weight"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
 
-            <div id="mensagem" class="mt-3 text-center"></div>
+        <div id="mensagem" class="mt-3 text-center"></div>
 
-            <div id="roboList">
-                <h3>Robôs Cadastrados:</h3>
-                <ul id="roboListContainer" class="list-group"></ul>
-            </div>
+        <div id="roboList">
+          <h3>Robôs Cadastrados:</h3>
+          <ul id="roboListContainer" class="list-group"></ul>
         </div>
+      </div>
 
-        <footer id="footer-placeholder">
-            <!-- Conteúdo do footer -->
-        </footer>
+      <footer id="footer-placeholder">
+        <!-- Conteúdo do footer -->
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -133,70 +143,78 @@
     <script src="js/cadastros.js"></script>
     <script src="js/navfooter.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Função para carregar a lista de robôs
-            function loadRoboList() {
-                fetch('https://site-backend-ayjt.onrender.com/robo', {
-                    method: 'GET',
-                    headers: {
-                        'Authorization': `Bearer ${localStorage.getItem('token')}`
-                    }
-                })
-                .then(response => response.json())
-                .then(data => {
-                    const roboListContainer = document.getElementById('roboListContainer');
-                    roboListContainer.innerHTML = '';
-                    data.forEach(robo => {
-                        const listItem = document.createElement('li');
-                        listItem.className = 'list-group-item';
-                        listItem.textContent = `${robo.nome} - Categoria: ${robo.email}`;
-                        roboListContainer.appendChild(listItem);
-                    });
-                })
-                .catch(error => {
-                    console.error('Erro ao carregar a lista de robôs:', error);
-                });
-            }
-
-            document.getElementById('registerRoboForm').addEventListener('submit', function(event) {
-                event.preventDefault();
-
-                const submitButton = event.target.querySelector('button[type="submit"]');
-                submitButton.disabled = true; // Desabilita o botão de cadastro
-
-                const roboData = {
-                    nome: document.getElementById('roboName').value,
-                    categoria: document.getElementById('category').value,
-                    peso: parseFloat(document.getElementById('weight').value)
-                };
-
-                fetch('https://site-backend-ayjt.onrender.com/robo', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${localStorage.getItem('token')}`
-                    },
-                    body: JSON.stringify(roboData)
-                })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.id) {
-                        document.getElementById('mensagem').innerHTML = '<div class="alert alert-success">Robô cadastrado com sucesso!</div>';
-                        loadRoboList();  // Recarrega a lista de robôs após o cadastro
-                    } else {
-                        document.getElementById('mensagem').innerHTML = '<div class="alert alert-danger">Falha no cadastro do robô.</div>';
-                    }
-                })
-                .catch(error => {
-                    document.getElementById('mensagem').innerHTML = '<div class="alert alert-danger">Ocorreu um erro de formatação nos seus dados digitados ou o limite de cadastro excedeu.</div>';
-                })
-                .finally(() => {
-                    submitButton.disabled = false; // Reabilita o botão de cadastro
-                });
+      document.addEventListener("DOMContentLoaded", function () {
+        // Função para carregar a lista de robôs
+        function loadRoboList() {
+          fetch("https://site-backend-ayjt.onrender.com/robo", {
+            method: "GET",
+            headers: {
+              Authorization: `Bearer ${localStorage.getItem("token")}`,
+            },
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              const roboListContainer =
+                document.getElementById("roboListContainer");
+              roboListContainer.innerHTML = "";
+              data.forEach((robo) => {
+                const listItem = document.createElement("li");
+                listItem.className = "list-group-item";
+                listItem.textContent = `${robo.nome} - Categoria: ${robo.email}`;
+                roboListContainer.appendChild(listItem);
+              });
+            })
+            .catch((error) => {
+              console.error("Erro ao carregar a lista de robôs:", error);
             });
+        }
 
-            loadRoboList(); // Carrega a lista de robôs ao carregar a página
-        });
+        document
+          .getElementById("registerRoboForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const submitButton = event.target.querySelector(
+              'button[type="submit"]'
+            );
+            submitButton.disabled = true; // Desabilita o botão de cadastro
+
+            const roboData = {
+              nome: document.getElementById("roboName").value,
+              categoria: document.getElementById("category").value,
+              peso: parseFloat(document.getElementById("weight").value),
+            };
+
+            fetch("https://site-backend-ayjt.onrender.com/robo", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${localStorage.getItem("token")}`,
+              },
+              body: JSON.stringify(roboData),
+            })
+              .then((response) => response.json())
+              .then((data) => {
+                if (data.id) {
+                  document.getElementById("mensagem").innerHTML =
+                    '<div class="alert alert-success">Robô cadastrado com sucesso!</div>';
+                  loadRoboList(); // Recarrega a lista de robôs após o cadastro
+                } else {
+                  document.getElementById("mensagem").innerHTML =
+                    '<div class="alert alert-danger">Falha no cadastro do robô.</div>';
+                }
+              })
+              .catch((error) => {
+                document.getElementById("mensagem").innerHTML =
+                  '<div class="alert alert-danger">Ocorreu um erro de formatação nos seus dados digitados ou o limite de cadastro excedeu.</div>';
+              })
+              .finally(() => {
+                submitButton.disabled = false; // Reabilita o botão de cadastro
+              });
+          });
+
+        loadRoboList(); // Carrega a lista de robôs ao carregar a página
+      });
     </script>
-</body>
+  </body>
 </html>
