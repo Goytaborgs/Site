@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         if (!menuNav.querySelector('a[href="cadastrar_equipe.html"]')) {
           itemsToAdd +=
-            '<li data-generated="true"><a href="index.html">Sair</a></li>';
+            '<li data-generated="true" id="teste"><a  href="index.html">Sair</a></li>';
           $(".closed").removeClass("active");
           $(".closed").addClass("off");
         }
