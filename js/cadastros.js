@@ -112,23 +112,16 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!menuNav.querySelector('a[href="minha_equipe.html"]')) {
           itemsToAdd +=
             '<li data-generated="true"><a href="minha_equipe.html">Minha equipe</a></li>';
-        } /*
-        if (!menuNav.querySelector('a[href="cadastro_membro.html"]')) {
-          itemsToAdd +=
-            '<li data-generated="true"><a href="cadastro_membro.html">Cadastrar Membro</a></li>';
         }
-        if (!menuNav.querySelector('a[href="cadastrar_robo.html"]')) {
-          itemsToAdd +=
-            '<li data-generated="true"><a href="cadastrar_robo.html">Cadastrar Robô</a></li>';
-        }*/
       } else {
         if (!menuNav.querySelector('a[href="cadastrar_equipe.html"]')) {
           itemsToAdd +=
             '<li data-generated="true"><a href="cadastrar_equipe.html">Cadastrar Equipe</a></li>';
         }
-        if (!menuNav.querySelector('a[href="cadastrar_equipe.html"]')) {
+        // Usar um link estilizado como botão de logout
+        if (!menuNav.querySelector('#sairbutton')) {
           itemsToAdd +=
-            '<li data-generated="true" id="teste"><a  href="index.html">Sair</a></li>';
+            '<li data-generated="true" id="sairbutton"><a href="#" class="logout-link">Sair</a></li>';
           $(".closed").removeClass("active");
           $(".closed").addClass("off");
         }
@@ -137,12 +130,29 @@ document.addEventListener("DOMContentLoaded", () => {
       if (itemsToAdd) {
         menuNav.insertAdjacentHTML("beforeend", itemsToAdd);
       }
-
+      const loginItem = menuNav.querySelector('li a[href="cadastro.html"]');
+      if (loginItem) {
+          loginItem.parentElement.remove(); // Remove o item de login
+      }
       // Salva a estrutura inteira da div.menu_home no localStorage
       const savedMenuItems = menuNav.outerHTML;
       localStorage.setItem("savedMenuItems", savedMenuItems);
     }
   }
+
+  // Função para limpar o localStorage e redirecionar para a página de login
+  function logout() {
+    localStorage.clear(); // Limpa o localStorage inteiro
+    window.location.href = "index.html"; // Redireciona para a página inicial ou de login
+  }
+
+  // Delegação de eventos para capturar o clique no link "Sair"
+  document.body.addEventListener("click", (event) => {
+    if (event.target && event.target.classList.contains("logout-link")) {
+      event.preventDefault(); // Evita comportamento padrão do link
+      logout(); // Chama a função de logout
+    }
+  });
 
   // Verifica se o usuário já está logado e atualiza o menu
   if (localStorage.getItem("token")) {
@@ -157,5 +167,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (savedMenuItems) {
     const menuContainer = document.querySelector(".menu_home").parentElement;
     menuContainer.innerHTML = savedMenuItems;
+
+    // Reassocia o evento de clique após carregar os itens salvos
+    document.body.addEventListener("click", (event) => {
+      if (event.target && event.target.classList.contains("logout-link")) {
+        event.preventDefault(); // Evita comportamento padrão
+        logout(); // Chama a função de logout
+      }
+    });
   }
 });
