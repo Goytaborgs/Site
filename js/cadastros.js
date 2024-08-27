@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
           updateMenu(data.isCapitao);
           document.getElementById("mensagem").innerHTML =
             '<div class="alert alert-success">Login realizado com sucesso!</div>';
+          window.location.href = "index.html"; // Redireciona para a página inicial ou de login
         } else {
           document.getElementById("mensagem").innerHTML =
             '<div class="alert alert-danger">Falha no login.</div>';
@@ -113,15 +114,21 @@ document.addEventListener("DOMContentLoaded", () => {
           itemsToAdd +=
             '<li data-generated="true"><a href="minha_equipe.html">Minha equipe</a></li>';
         }
+        if (!menuNav.querySelector("#sairbutton")) {
+          itemsToAdd +=
+            '<li data-generated="true" id="sairbutton"><a href="index.html" class="logout-link" onclick="localStorage.clear();">Sair</a></li>';
+          $(".closed").removeClass("active");
+          $(".closed").addClass("off");
+        }
       } else {
         if (!menuNav.querySelector('a[href="cadastrar_equipe.html"]')) {
           itemsToAdd +=
             '<li data-generated="true"><a href="cadastrar_equipe.html">Cadastrar Equipe</a></li>';
         }
         // Usar um link estilizado como botão de logout
-        if (!menuNav.querySelector('#sairbutton')) {
+        if (!menuNav.querySelector("#sairbutton")) {
           itemsToAdd +=
-            '<li data-generated="true" id="sairbutton"><a href="#" class="logout-link">Sair</a></li>';
+            '<li data-generated="true" id="sairbutton"><a href="index.html" class="logout-link" onclick="localStorage.clear();">Sair</a></li>';
           $(".closed").removeClass("active");
           $(".closed").addClass("off");
         }
@@ -132,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       const loginItem = menuNav.querySelector('li a[href="cadastro.html"]');
       if (loginItem) {
-          loginItem.parentElement.remove(); // Remove o item de login
+        loginItem.parentElement.remove(); // Remove o item de login
       }
       // Salva a estrutura inteira da div.menu_home no localStorage
       const savedMenuItems = menuNav.outerHTML;

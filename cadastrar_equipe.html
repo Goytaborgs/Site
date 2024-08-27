@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -160,12 +160,18 @@
               itemsToAdd +=
                 '<li data-generated="true"><a href="minha_equipe.html">Minha equipe</a></li>';
             }
-            if (!menuNav.querySelector('a[href="minha_equipe.html"]')) {
+            if (!menuNav.querySelector("#sairbutton")) {
+              itemsToAdd +=
+                '<li data-generated="true" id="sairbutton"><a href="index.html" class="logout-link"onclick="localStorage.clear();">Sair</a></li>';
+              $(".closed").removeClass("active");
+              $(".closed").addClass("off");
+            }
+            /*if (!menuNav.querySelector('a[href="minha_equipe.html"]')) {
               itemsToAdd +=
                 '<li data-generated="true"><a href="index.html">Sair</a></li>';
               $(".closed").removeClass("active");
               $(".closed").addClass("off");
-            }
+            }*/
             /*
             if (!menuNav.querySelector('a[href="cadastro_membro.html"]')) {
               itemsToAdd +=
@@ -180,12 +186,18 @@
               itemsToAdd +=
                 '<li data-generated="true"><a href="cadastrar_equipe.html">Cadastrar Equipe</a></li>';
             }
-            if (!menuNav.querySelector('a[href="cadastrar_equipe.html"]')) {
+            if (!menuNav.querySelector("#sairbutton")) {
+              itemsToAdd +=
+                '<li data-generated="true" id="sairbutton"><a href="index.html" class="logout-link"onclick="localStorage.clear();">Sair</a></li>';
+              $(".closed").removeClass("active");
+              $(".closed").addClass("off");
+            }
+            /*if (!menuNav.querySelector('a[href="cadastrar_equipe.html"]')) {
               itemsToAdd +=
                 '<li data-generated="true"><a href="index.html">Sair</a></li>';
               $(".closed").removeClass("active");
               $(".closed").addClass("off");
-            }
+            }*/
           }
 
           if (itemsToAdd) {
