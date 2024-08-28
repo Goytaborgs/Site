@@ -183,4 +183,20 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+  // Obtém o elemento do pop-up
+  var popup = document.getElementById("popup");
+
+  // Obtém o botão que abre o pop-up
+  var btn = document.getElementById("openPopup");
+  // Quando o usuário clicar no botão, abre o pop-up
+  btn.onclick = function () {
+    popup.style.display = "block";
+  };
+
+  // Quando o usuário clicar fora do pop-up, fecha o pop-up
+  window.onclick = function (event) {
+    if (event.target == popup) {
+      popup.style.display = "none";
+    }
+  };
 });
