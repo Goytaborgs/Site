@@ -161,6 +161,8 @@
                 '<li data-generated="true" id="sairbutton"><a href="index.html" class="logout-link"onclick="localStorage.clear();">Sair</a></li>';
               $(".closed").removeClass("active");
               $(".closed").addClass("off");
+              $(".inscreva-se").removeClass("onn");
+              $(".inscreva-se").addClass("offf");
             }
           } else {
             if (!menuNav.querySelector('a[href="cadastrar_equipe.html"]')) {
@@ -172,6 +174,8 @@
                 '<li data-generated="true" id="sairbutton"><a href="index.html" class="logout-link"onclick="localStorage.clear();">Sair</a></li>';
               $(".closed").removeClass("active");
               $(".closed").addClass("off");
+              $(".inscreva-se").removeClass("onn");
+              $(".inscreva-se").addClass("offf");
             }
           }
 
@@ -219,11 +223,13 @@
                   // Atualiza o menu após o cadastro da equipe
                   updateMenu(true);
                 } else {
+                  popup.style.display = "none";
                   document.getElementById("mensagem").innerHTML =
                     '<div class="alert alert-danger">Falha no cadastro da equipe.</div>';
                 }
               })
               .catch((error) => {
+                popup.style.display = "none";
                 document.getElementById("mensagem").innerHTML =
                   '<div class="alert alert-danger">Erro ao cadastrar equipe ou Equipe já foi cadastrada, tente se autenticar novamente.</div>';
               })

@@ -35,11 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
             '<div class="alert alert-success">Login realizado com sucesso!</div>';
           window.location.href = "index.html"; // Redireciona para a página inicial ou de login
         } else {
+          popup.style.display = "none";
           document.getElementById("mensagem").innerHTML =
             '<div class="alert alert-danger">Falha no login.</div>';
         }
       })
       .catch((error) => {
+        popup.style.display = "none";
         document.getElementById("mensagem").innerHTML =
           '<div class="alert alert-danger">Erro ao conectar com o servidor.</div>';
       })
