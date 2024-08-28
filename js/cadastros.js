@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
           updateMenu(data.isCapitao);
           document.getElementById("mensagem").innerHTML =
             '<div class="alert alert-success">Login realizado com sucesso!</div>';
-          window.location.href = "index.html"; // Redireciona para a página inicial ou de login
         } else {
           popup.style.display = "none";
           document.getElementById("mensagem").innerHTML =
@@ -115,6 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!menuNav.querySelector('a[href="minha_equipe.html"]')) {
           itemsToAdd +=
             '<li data-generated="true"><a href="minha_equipe.html">Minha equipe</a></li>';
+          window.location.href = "minha_equipe.html"; // Redireciona para a página inicial ou de login
         }
         if (!menuNav.querySelector("#sairbutton")) {
           itemsToAdd +=
