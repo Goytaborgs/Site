@@ -17,19 +17,19 @@ $(function () {
       dados[1] = dados[1].replace(/\s/g, "");
 
       /* Diferenciar cada área */
-      if (dados[1] == "Gestao") {
+      if (dados[1] == "Gestão") {
         areaicon = `<i style='color:#135A32' class="bi bi-person-lines-fill"></i>`;
         //areaiconcolor = "text-primary";
       } else if (dados[1] == "Software") {
         areaicon = `<i style='color:red;' class="bi bi-code-slash"></i>`;
         //areaiconcolor = "text-danger";
-      } else if (dados[1] == "Mecanica") {
+      } else if (dados[1] == "Mecânica") {
         areaicon = `<i style='color:#054F77'class="bi bi-gear"></i>`;
         //areaiconcolor = "text-warning";
       } else if (dados[1] == "Eletrônica") {
         areaicon = `<i style='color:#F7D917;' class="bi bi-cpu"></i>`;
         //areaiconcolor = "text-success";
-      } else if (dados[1] == "Comunicacao") {
+      } else if (dados[1] == "Comunicação") {
         areaicon = `<i style='color:#9400D3'class="bi bi-chat-right-dots"></i>`;
         //areaiconcolor = "text-info";
       }
@@ -86,6 +86,13 @@ $(function () {
                 "<a href='mailto:" +
                 redes[i].slice(2) +
                 "' target='_blank' rel='noopener noreferrer' class='btn btn-sm has-icon ml-2' style='color:#fff;' type='button'><i class='bi bi-envelope'></i></a>\n";
+              break;
+            case "B":
+              redeswrite =
+                redeswrite +
+                "<a href='https://www.behance.net/" +
+                redes[i].slice(2) +
+                "' target='_blank' rel='noopener noreferrer' class='btn btn-sm has-icon ml-2' style='color:#fff;' type='button'><i class='bi bi-behance'></i></a>\n";
               break;
             default:
               break;
