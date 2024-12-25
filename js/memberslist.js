@@ -26,19 +26,19 @@ Gabriel Rolim | Eletrônica | | Engenharia de Controle e Automação | 2020 | - 
 Gabriel Souza | Eletrônica | | Engenharia Elétrica  | 2023 | - | images/membros/Gabriel_Souza.jpg |
 Gabrielly Torres | Eletrônica | | Engenharia de Computação | 2024 | - | images/membros/Gabrielly_Torres.jpg |
 Gustavo Rimes | Gestão | | Engenharia Mecânica | 2024 | - | images/membros/default.jpg |
-Iarley Santos | Gestão | Ex Vice Capitão Geral 2022 - 2023 | Engenharia de Controle e Automação | 2021 | - | images/membros/Iarley.jpg| L:iarley-santos-678345168 / E:iarleyconceicaodossantos@gmail.com
+Iarley Santos | Software | Ex Vice Capitão Geral 2022 - 2023 | Engenharia de Controle e Automação | 2021 | - | images/membros/Iarley.jpg| L:iarley-santos-678345168 / E:iarleyconceicaodossantos@gmail.com
 Ivan Henrique | Eletrônica | | Engenharia Elétrica | 2024 | - | images/membros/Ivan_Henrique_Thomaz.jpg | I:ivan_hmuniz
 Ingrid Coutinho | Eletrônica | | Engenharia de Controle e Automação | 2023 | - | images/membros/Ingrid_Souza.jpg | L:ingrid-c-163475105 / E:ingrid.ssc1@gmail.com
 Jade Bretas | Gestão | Ex Vice Capitã Geral 2023 - 2024| Engenharia de Controle e Automação | 2023 | - | images/membros/Jade_Bretas.jpeg | L:jade-bretas-3844431ab / E:jade.bretas@gsuite.iff.edu.br
 Jander de Sá | Eletrônica | | Engenharia de Controle e Automação | 2023 | - | images/membros/Jander_de_Sá.jpeg | I:jander_sa / E:desajander@gmail.com
 João Pedro Azeredo | Eletrônica | | Engenharia de Controle e Automação | 2024 | - | images/membros/João_Pedro_Azeredo.jpg |
 Jônatas Pedro Cardoso Siqueira  | Mecânica | | Engenharia Mecânica | 2024 | - | images/membros/Jônatas.jpg | I:jonatas_3ds / L:jônatas-pedro-cardoso-siqueira-692660320
-Julia Ribeiro Baptista | Gestão | Ex Capitã Geral 2023 - 2024 / Ex Capitã de Software - 2023.2 | Engenharia de Computação | 2022 | - | images/membros/Julia_Baptista.jpg | I:juliabapptista / G:JuhRBaptista / L:júlia-baptista-84b65a232 / E:juliabapptista@gmail.com /
+Julia Ribeiro Baptista | Software | Ex Capitã Geral 2023 - 2024 / Ex Capitã de Software - 2023.2 | Engenharia de Computação | 2022 | - | images/membros/Julia_Baptista.jpg | I:juliabapptista / G:JuhRBaptista / L:júlia-baptista-84b65a232 / E:juliabapptista@gmail.com /
 Krishna Lotério | Mecânica | | Engenharia de Controle e Automação | 2024 | - | images/membros/default.jpg |
 Larisa Barreto | Gestão | | Engenharia de Controle e Automação | 2024 | - | images/membros/Larisa_Barreto_Clemente.jpeg |
 Layla Cristine | Comunicação | | Engenharia Elétrica | 2024 | - | images/membros/default.jpg |
 Lucas de Oliveira | Eletrônica | | Engenharia de Controle e Automação | - | - | images/membros/default.jpg |
-Luís Fernando | Software | Ex Capitão de Software 2020 - 2023 | Engenharia de Computação | 2020 | - | images/membros/default.jpg | I:luisf.gl / G:ClaptrapK
+Luís Fernando | Eletrônica | Ex Capitão de Software 2020 - 2023 | Engenharia de Computação | 2020 | - | images/membros/default.jpg | I:luisf.gl / G:ClaptrapK
 Luísa Rabello | Software | | Engenharia de Controle e Automação | 2023 | - | images/membros/default.jpg |
 Maria Clara Manhães | Comunicação | | Design Gráfico | 2024 | - | images/membros/Maria_Clara_Manhães.PNG |
 Maria Luisa | Eletrônica | | Engenharia de Controle e Automação | 2023 | - | images/membros/Maria_Luisa.jpg | I:luisatheworld / G:luisatheworld / L:marialuisapaes / E:mariluisapaes@gmail.com
@@ -52,7 +52,7 @@ Rogerio Gomes | Eletrônica | | Engenharia de Controle e Automação | 2019 | - 
 Sarah | Eletrônica | | Engenharia de Controle e Automação | 2023 | - | images/membros/default.jpg |
 Vinícius Zanella da Fonseca | Software | | Licenciatura em Matemática | 2023 | - | images/membros/Vinícius_Fonseca.png |
 Vitor Monteiro | Software | | Engenharia de Computação | 2023 | - | images/membros/Vitor_Sepulveda.jpg | I:vitor.eu.mesmo
-Wesley Velasco | Mecânica | | Engenharia de Controle e Automação | 2020 | - | images/membros/Wesley_Velasco.jpg | I:wesley_velasc0 / E:wesley01velasco@gmail.com
+Wesley Velasco | Eletrônica | | Engenharia de Controle e Automação | 2020 | - | images/membros/Wesley_Velasco.jpg | I:wesley_velasc0 / E:wesley01velasco@gmail.com
 Willian Bernardes | Eletrônica | | Engenharia Elétrica | 2024 | - | images/membros/default.jpg |
 `,
 ];
