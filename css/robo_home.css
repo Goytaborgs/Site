@@ -1,3 +1,5 @@
+@import url(variables.css);
+
 .introduction {
   display: flex;
   flex-direction: column;
@@ -5,7 +7,7 @@
   text-align: center;
   justify-content: center;
 
-  color: #198754;
+  color: var(--secundary-bg);
 }
 .Software,
 .sensors {
@@ -31,8 +33,8 @@
   margin-top: 20px;
   padding-top: 15px;
 
-  color: #fff;
-  background-color: #198754;
+  color: var(--text-color);
+  background-color: var(--secundary-bg);
   p {
     width: 80%;
     font-size: 150%;

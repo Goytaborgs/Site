@@ -1,3 +1,5 @@
+@import url(variables.css);
+
 @media screen and (max-width: 1172px) {
   .metric-container {
     display: flex;
@@ -56,7 +58,7 @@
     align-items: left;
     width: 100%;
     height: 100vh;
-    background-color: #135a32;
+    background-color: var(--primary-bg);
   }
   .menu_home {
     display: flex;
@@ -72,7 +74,7 @@
     cursor: pointer;
   }
   #open-menu {
-    color: #135a32;
+    color: var(--primary-bg);
   }
   #logo_e_cardapio {
     display: flex;
@@ -193,7 +195,7 @@
     align-items: center;
   }
   footer #email {
-    background-color: #ffffff;
+    background-color: var(--text-color);
     border: 0.0625rem solid #d0d5dd;
     margin-right: 1rem;
     box-shadow: 0rem 0.0625rem 0.125rem rgba(16, 24, 40, 0.05);
@@ -204,10 +206,10 @@
   }
 }
 a:hover {
-  color: #198754;
+  color: var(--secundary-bg);
 }
 a {
-  color: #ffffff;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 150%;
 }

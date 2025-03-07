@@ -1,12 +1,12 @@
 //    NOME     |               CARGO                  |               Curso               | Entrou | Saiu | caminho da imagem | instagram
 gbl_text = [
   `
-Raphael Castelar Saraiva de Almeida| Gestão | Capitão Geral / Ex Capitão de Gestão 2023 - 2024| Sistemas de Informação | 2023 | - | images/membros/Raphael_Castelar.jpg | L:raphael-castelar
-Jorge de Lacerda | Software | Vice Capitão Geral | Engenharia de Controle e Automação | 2023 | - | images/membros/Jorge_Henrique.jpeg | I:jorge_de_lacerda / E:ilacerda.jorge@gsuite.iff.edu.br
+Jorge de Lacerda | Software | Capitão Geral | Engenharia de Controle e Automação | 2023 | - | images/membros/Jorge_Henrique.jpeg | I:jorge_de_lacerda / E:ilacerda.jorge@gsuite.iff.edu.br
+Laura Rangel | Comunicação | Vice Capitã Geral / Ex Capitã de Comunicação 2024.2 | Engenharia de Computação | 2023 | - | images/membros/Laura_Maria.jpg | I:laura_rangel252 / E:laura.maria.lf.rangel@gmail.com
 Heverton Souza| Software | Capitão de Software | Engenharia de Computação | 2023 | - | images/membros/Heverton_Souza.jpg | I:heverton.souza.01 / G:Heverton-Souza / L:heverton-souza-b29b90208 / E:hevertonsilvadesouza@gmail.com
-Laura Rangel | Comunicação | Capitã de Comunicação | Engenharia de Computação | 2023 | - | images/membros/Laura_Maria.jpg | I:laura_rangel252 / E:laura.maria.lf.rangel@gmail.com
 Luana Chalita Falquer | Gestão | Capitã de Gestão | Engenharia de Controle e Automação | 2024 | - | images/membros/Luana_Chalita_Falquer.jpg |
 Marllon Batista | Eletrônica | Capitão de Eletrônica | Engenharia de Controle e Automação | 2023 | - | images/membros/Marllon_Batista.jpeg | I:marllonbatista_ / G:marllonbatista / L:marllon-batista-99ba76278
+Myllena Alves | Comunicação | Capitã de Comunicação | Design Gráfico | 2024 | - | images/membros/Myllena_Alves.jpg | L: myllena-alves-design / B: myllenaalves2
 Victor Hugo Mury Jorge | Mecânica | Capitão de Mecânica | Engenharia de Controle e Automação | 2023 | - | images/membros/default.jpg | I:Victorhmj
 `,
   `
@@ -43,7 +43,6 @@ Luísa Rabello | Software | | Engenharia de Controle e Automação | 2023 | - | 
 Maria Clara Manhães | Comunicação | | Design Gráfico | 2024 | - | images/membros/Maria_Clara_Manhães.PNG |
 Maria Luisa | Eletrônica | | Engenharia de Controle e Automação | 2023 | - | images/membros/Maria_Luisa.jpg | I:luisatheworld / G:luisatheworld / L:marialuisapaes / E:mariluisapaes@gmail.com
 Matheus Wagner | Mecânica | | Engenharia Mecânica | 2024 | - | images/membros/Matheus_Wagner.jpg |
-Myllena Alves | Comunicação | | Design Gráfico | 2024 | - | images/membros/Myllena_Alves.jpg | L: myllena-alves-design / B: myllenaalves2
 Nauhan Alves | Software | | Engenharia de Computação | 2024 | - | images/membros/Nauhan_Alves.png | G:Nauzoo / L:nauhanalves
 Patrick Rangel Pereira | Mecânica | | Engenharia de Controle e Automação | 2024 | - | images/membros/Patrick_Rangel.jpg | L:patrick-rangel-2b262b1aa
 Paulo Marques | Eletrônica | | Engenharia Elétrica | 2024 | - | images/membros/Paulo_Marques.png | E: Paulo.marques@gsuite.iff.edu.br
@@ -56,7 +55,8 @@ Wesley Velasco | Eletrônica | | Engenharia de Controle e Automação | 2020 | -
 Willian Bernardes | Eletrônica | | Engenharia Elétrica | 2024 | - | images/membros/default.jpg |
 `,
 ];
-// Giulia Mota | Comunicacao | Capitã de Comunicação | Engenharia de Controle e Automação | 2023 | - | images/membros/Giulia_Mota.jpeg |
-// Vitor Dutra | Gestão | | Engenharia de Controle e Automação | 2023 | - | images/membros/default.jpg |
-// Manoel Ribeiro | Eletrônica | Ex Capitão Geral 2022 - 2023 / Ex Capitão de Eletrônica 2021 - 2022 | Engenharia de Controle e Automação | 2020 | - | images/membros/Manoel_Victor.jpeg | I:manoel.vrp / G:manoel99 / L:manoel-victor-ribeiro / E:manoelvictorpinto3@gmail.com
-// Victor Hugo Nogueira Salvador | Mecânica | Ex Capitão Geral 2021 - 2022 / Ex - Capitão de Mecânica 2020 - 2021 | Engenharia de Controle e Automação | 2019 | - | images/membros/Victor_Salvador.jpg | I:vhnsalvador / E:victor.hugo.salvador99@gmail.com
+// SAIU EM: 2024 - Giulia Mota | Comunicacao | Capitã de Comunicação | Engenharia de Controle e Automação | 2023 | - | images/membros/Giulia_Mota.jpeg |
+// SAIU EM: 2025 - Vitor Dutra | Gestão | | Engenharia de Controle e Automação | 2023 | - | images/membros/default.jpg |
+// SAIU EM: 2024 - Manoel Ribeiro | Eletrônica | Ex Capitão Geral 2022 - 2023 / Ex Capitão de Eletrônica 2021 - 2022 | Engenharia de Controle e Automação | 2020 | - | images/membros/Manoel_Victor.jpeg | I:manoel.vrp / G:manoel99 / L:manoel-victor-ribeiro / E:manoelvictorpinto3@gmail.com
+// SAIU EM: 2024 - Victor Hugo Nogueira Salvador | Mecânica | Ex Capitão Geral 2021 - 2022 / Ex - Capitão de Mecânica 2020 - 2021 | Engenharia de Controle e Automação | 2019 | - | images/membros/Victor_Salvador.jpg | I:vhnsalvador / E:victor.hugo.salvador99@gmail.com
+// SAIU EM: 2025 - Raphael Castelar Saraiva de Almeida| Gestão | Ex Capitão Geral / Ex Capitão de Gestão 2023 - 2024| Sistemas de Informação | 2023 | - | images/membros/Raphael_Castelar.jpg | L:raphael-castelar

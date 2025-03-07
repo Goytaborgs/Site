@@ -105,7 +105,7 @@ $(function () {
       document.getElementById(
         "ActiveMembers"
       ).innerHTML += `<div class="col mb-3">
-                   <div class="card mb-3  h-100" style="border: 2px solid #135a32;">
+                   <div class="card mb-3  h-100" style="border: 2px solid var(--primary-bg);">
                      <div class="row d-flex justify-content-evenly px-3 pt-1" style="font-size: 30px;">
                        <div class="col text-start ${areaiconcolor}">
                           ${areaicon}
@@ -132,7 +132,7 @@ $(function () {
                         ${poswrite}
                         <p class="font-size-sm lh-1">${dados[3]}</p>
                      </div>
-                     <div class="card-footer text-center" style=" background-color:#135A32;">
+                     <div class="card-footer text-center" style=" background-color:var(--primary-bg);">
                        ${redeswrite}
                      </div>
                    </div>

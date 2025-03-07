@@ -1,3 +1,5 @@
+@import url(variables.css);
+
 main {
   width: 100%;
   margin-top: 5.3125rem;
@@ -7,12 +9,12 @@ main {
   margin-top: 3.75rem;
   a {
     width: 20%;
-    background-color: #198754;
+    background-color: var(--secundary-bg);
     padding: 1.75rem 1.25rem;
     border-radius: 0rem 1.25rem 1.25rem 0rem;
   }
   a:hover {
-    color: #fff;
+    color: var(--text-color);
   }
 }
 .texto-processo-seletivo,
@@ -30,7 +32,7 @@ main {
     font-size: 150%;
   }
   a {
-    color: #198754;
+    color: var(--secundary-bg);
     font-size: 90%;
   }
 }
@@ -43,8 +45,8 @@ main {
   margin-top: 1.25rem;
   h2 {
     width: 80%;
-    background-color: #198754;
-    color: #fff;
+    background-color: var(--secundary-bg);
+    color: var(--text-color);
     padding: 10px;
     text-align: center;
     border-radius: 1.25rem;
@@ -65,7 +67,7 @@ main {
     text-align: center;
     font-size: 150%;
     a {
-      color: #198754;
+      color: var(--secundary-bg);
       font-size: 90%;
     }
   }
@@ -79,13 +81,13 @@ main {
     margin-top: 1rem;
     a {
       width: 20%;
-      background-color: #198754;
+      background-color: var(--secundary-bg);
       padding: 1.75rem 1.25rem;
       border-radius: 0rem 1.25rem 1.25rem 0rem;
       font-size: 98%;
     }
     a:hover {
-      color: #fff;
+      color: var(--text-color);
     }
   }
   .texto-processo-seletivo,
@@ -110,7 +112,7 @@ main {
       text-align: justify;
       font-size: 120%;
       a {
-        color: #198754;
+        color: var(--secundary-bg);
         font-size: 90%;
       }
     }
@@ -122,13 +124,13 @@ main {
     margin-top: 1rem;
     a {
       width: 20%;
-      background-color: #198754;
+      background-color: var(--secundary-bg);
       padding: 0.8rem 0.8rem;
       border-radius: 0rem 1.25rem 1.25rem 0rem;
       font-size: 78%;
     }
     a:hover {
-      color: #fff;
+      color: var(--text-color);
     }
   }
   .texto-processo-seletivo,
@@ -154,7 +156,7 @@ main {
       text-align: justify;
       font-size: 120%;
       a {
-        color: #198754;
+        color: var(--secundary-bg);
         font-size: 90%;
       }
     }

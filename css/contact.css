@@ -1,3 +1,5 @@
+@import url(variables.css);
+
 main {
   width: 100%;
   display: flex;
@@ -18,14 +20,14 @@ main {
   height: 573.2px;
 }
 .form {
-  border: 2px solid #135a32;
+  border: 2px solid var(--primary-bg);
   border-radius: 8px;
   min-width: 600px;
 }
 .form h2 {
   text-align: center;
-  color: #fff;
-  background-color: #135a32;
+  color: var(--text-color);
+  background-color: var(--primary-bg);
   padding: 8px;
 }
 #contactForm {
@@ -55,8 +57,8 @@ main {
 }
 #contactForm button {
   width: 100%;
-  background-color: #135a32;
-  color: #fff;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
   border-radius: 8px;
   padding: 8px;
   border: none;
@@ -64,7 +66,7 @@ main {
   cursor: pointer;
 }
 #contactForm button:hover {
-  background-color: #198754;
+  background-color: var(--secundary-bg);
 }
 .form-cont.error small {
   visibility: visible;

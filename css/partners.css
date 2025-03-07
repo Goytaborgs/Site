@@ -1,12 +1,12 @@
-.rede-social{
-    display: flex;
-    gap: 0.5625rem;
-    a{
-        color: black;
-        
-    }
+@import url(variables.css);
 
-}
-.card-title{
+.rede-social {
+  display: flex;
+  gap: 0.5625rem;
+  a {
     color: black;
+  }
+}
+.card-title {
+  color: black;
 }

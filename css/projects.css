@@ -1,9 +1,11 @@
+@import url(variables.css);
+
 #filter-btn-box {
   margin-top: 7.5rem;
   gap: 1.875rem;
   a {
-    color: #fff;
-    background-color: #135a33;
+    color: var(--text-color);
+    background-color: var(--primary-bg);
     border-radius: 1.875rem;
     padding: 1.25rem;
     width: 12%;
@@ -11,7 +13,7 @@
     font-size: 80%;
   }
   a:hover {
-    background-color: #198754;
+    background-color: var(--secundary-bg);
   }
 }
 @media screen and (max-width: 1398px) {
@@ -25,8 +27,8 @@
   }
   #filter-btn-box {
     a {
-      color: #fff;
-      background-color: #135a33;
+      color: var(--text-color);
+      background-color: var(--primary-bg);
       border-radius: 1.875rem;
       padding: 1.25rem;
       width: 30%;
@@ -39,8 +41,8 @@
   #filter-btn-box {
     gap: 0.5rem;
     a {
-      color: #fff;
-      background-color: #135a33;
+      color: var(--text-color);
+      background-color: var(--primary-bg);
       border-radius: 1.875rem;
       padding: 1.25rem;
       width: 52%;
