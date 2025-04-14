@@ -1,54 +1,56 @@
 @import url("variables.css");
 main {
-  margin-top: 100px;
+  margin-top: 152px;
+  margin-bottom: 152px;
 }
 .caixa {
   display: flex;
   align-items: center;
   gap: 91px;
   justify-content: center;
+  font-family: Roboto;
 }
-.section-img {
+.section-qr-code {
   display: flex;
   flex-direction: column;
   width: 500px;
   padding: 63px 68px 63px 72px;
   align-items: center;
-  gap: 10px;
+  gap: 32px;
   border-radius: 20px;
   background: #135a32;
+  color: var(--text-color);
   a {
-    padding: 1.25rem;
-    width: 70%;
+    pointer-events: none; /* Impede o clique */
+    cursor: default;
+    list-style: none;
+
+    padding: 15px 28px;
+    color: #135a32;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 30px; /* 125% */
+    border-radius: 20px;
+    border: 1px solid #135a32;
     background: #9fdea1;
-    border-color: var(--text-color);
-    color: #135a32;
-  }
-  a:hover {
-    background-color: #fff;
-    border-color: var(--text-color);
-    color: #135a32;
+    gap: 2px;
   }
 }
 .text-1 {
-  color: var(--text-color);
   width: 100%;
-  font-family: Roboto;
   font-size: 30px;
   font-style: normal;
   font-weight: 300;
   line-height: 40px; /* 100% */
-  margin-top: 44px;
-  text-align: center;
+  text-align: start;
 }
 .text-2 {
-  color: var(--text-color);
-  font-family: Roboto;
+  width: 100%;
   font-size: 30px;
   font-style: normal;
-  font-weight: 800;
-  line-height: 40px;
-  text-align: center;
+  font-weight: 1000;
+  text-align: start;
 }
 .sectio-tex {
   display: flex;
@@ -56,11 +58,11 @@ main {
   color: #135a32;
   h1 {
     margin-bottom: 35px;
+    font-weight: 600;
   }
   p {
     margin-bottom: 27px;
-    font-family: Roboto;
-    font-size: 29px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 300;
     line-height: 40px; /* 100% */
@@ -70,16 +72,14 @@ main {
     margin-bottom: 45px;
   }
   span {
-    font-family: Roboto;
-    font-size: 15px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 300;
     line-height: 30px; /* 150% */
   }
 
   ul {
-    font-family: Roboto;
-    font-size: 14px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 300;
     line-height: 30px; /* 150% */
@@ -94,7 +94,7 @@ main {
     border: 1px solid #135a32;
     background: #d9d9d9;
     .progress-bar {
-      width: 20px;
+      width: 0px; /* width=490 x valor doado/2000*/
       height: 49px;
       position: absolute;
       border-radius: 8px;
@@ -107,11 +107,33 @@ main {
     justify-content: space-between;
     p {
       color: #000;
-      font-family: Roboto;
       font-size: 20px;
       font-style: normal;
       font-weight: 200;
       line-height: 29.25px; /* 146.25% */
+    }
+  }
+}
+@media screen and (max-width: 620px) {
+  main {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+  .text-1,
+  .text-2 {
+    text-align: center;
+  }
+  .sectio-tex {
+    max-width: 95%;
+    h1 {
+      font-weight: 200;
     }
   }
 }
