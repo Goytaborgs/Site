@@ -1,0 +1,78 @@
+.tmul{
+  display: flex;
+}
+.tmli{
+}
+.dont{
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-right: 0;
+}
+.cardt{
+  width: 100%;
+  margin: 0;
+}
+.items2{
+  border-top: 3px solid #000000;
+  margin-top: 10px;
+  width: 100%;
+}
+.items-list2{
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-right: 0;
+  width: 100%;
+}
+.items-list2.items-list2:before{
+  content: "";
+  position: absolute;
+  height: 36px;
+  border-right: 2px dashed #dee2e6;
+  top: 0;
+}
+.text-card2{
+  position: relative;
+  top: 5px;
+  width: 100%;
+  margin-top: 30px;
+}
+.imgt2{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.event-date{
+  width: 75px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+.linebreak{
+  white-space: pre-line;
+}
+
+.timelineball{
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  background-color: #ffffff;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  top: -10px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px){
+  .tmul{
+    display: block;
+  }
+  .tmli{
+    width: 100% !important;
+    margin: 0;
+  }
+}
