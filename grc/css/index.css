@@ -1,0 +1,219 @@
+@import url("variables.css");
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('fonts/Raleway-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway.ttf') format('truetype');
+}
+main {
+  height: 100%;
+  font-family: 'Raleway';
+}
+.section-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  a {
+    width: 18rem;
+    color: var(--text-color);
+    background-color: var(--primary-bg);
+    padding: 1.125rem;
+    border-color: var(--text-color);
+  }
+  a:hover {
+    background-color: var(--secundary-bg);
+    border-color: var(--text-color);
+  }
+  p {
+    width: 80%;
+    text-align: justify;
+    font-size: 130%;
+    margin-bottom: none;
+  }
+}
+.section-instagram {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.25rem;
+  gap: 1.25rem;
+  a {
+    width: 18rem;
+    color: var(--text-color);
+    background-color: var(--primary-bg);
+    padding: 1.125rem;
+  }
+  a:hover {
+    background-color: var(--secundary-bg);
+    border-color: var(--text-color);
+    color: var(--text-color);
+  }
+}
+
+#carouselhome .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+#carouselhome .carousel-item:before {
+  content: "";
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#carousel-title{
+  position: absolute;
+  right: 40%;
+  bottom: 30%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+#inscbutton{
+  z-index: 1000;
+  font-size: 3vh;
+  background: #374bba;
+  font-weight: bold;
+}
+#countdown{
+  /*background-image: linear-gradient(to right, #374bba,#18005e,#1b4c2a,#3da13b,#2c2c2c, #000000);*/
+  /*background-image: url("../images/index/1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  background-position: center center;*/
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+#countdown-blur{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+}
+#panel1{
+  background-color: #1b4c2a;
+}
+@media screen and (max-width: 1172px) {
+  .section-projects {
+    a {
+      padding: 0.625rem;
+      width: 15.625rem;
+    }
+    p {
+      width: 90%;
+      text-align: justify;
+      font-size: 100%;
+    }
+  }
+  .section-instagram {
+    a {
+      padding: 0.625rem;
+      width: 15.625rem;
+    }
+  }
+}
+@media screen and (max-width: 765px) {
+  .section-projects {
+    height: 53vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    a {
+      padding: 0.625rem;
+      width: 15.625rem;
+    }
+    p {
+      width: 90%;
+      text-align: justify;
+      font-size: 100%;
+    }
+  }
+}
+@media screen and (max-width: 620px) {
+  .section-instagram {
+    a {
+      padding: 0.625rem;
+      width: 15.625rem;
+    }
+  }
+}
+
+
+
+
+#CardsCarousel .carousel-inner {
+  padding: 1em;
+}
+.car_card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+}
+.c-link{
+  color: #0099ff;
+  font-size: 1.2rem;
+}
+.c-link:hover{
+
+}
+
+#CardsCarousel .carousel-control-prev,
+#CardsCarousel .carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  #CardsCarousel .carousel-inner .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33%;
+    display: block;
+  }
+  #CardsCarousel .carousel-inner {
+    display: flex;
+  }
+}
+@media (min-width: 960px) {
+  #CardsCarousel .carousel-inner .carousel-item {
+    flex: 0 0 25%;
+  }
+}
+@media (min-width: 1250px) {
+  #CardsCarousel .carousel-inner .carousel-item {
+    flex: 0 0 20%;
+  }
+}
+.car_card .img-wrapper {
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.car_card img {
+    max-height: 100%;
+}
+@media (max-width: 767px) {
+  .car_card .img-wrapper {
+    height: 17em;
+  }
+}
