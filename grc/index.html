@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/nav.css" />
     <link rel="icon" href="images/svg/logo 1.svg" />
     <link rel="stylesheet" href="css/bootstrap-icons.css" />
     <link href="css/all.min.css" rel="stylesheet" />
@@ -14,7 +15,37 @@
   </head>
   <body id="body">
     <header>
-      <div id="nav-placeholder" style="position: absolute;"></div>
+      <nav>
+          <ul id="menu">
+            <div>
+              <li>
+                <a href="index.html">
+                  <img id="logo" src="images/svg/grc.svg" alt="" style="width:60.68px;height: 67.19px;">
+                </a>
+              </li>
+            </div>
+            <div class="menu_navegacao  menu_home">
+              <!--li><a href="index">GRC</a></li-->
+              <!--li><a href="index">Inicio</a></li>
+              <li><a href="projetos">Projetos</a></li>
+              <li><a href="membros">Membros</a></li-->
+              <!--li><a href="processo_seletivo_2025">Processo Seletivo</a></li-->
+              <!--li><a href="premiacoes">Premiações</a></li>
+              <li><a href="patrocinadores">Patrocinadores</a></li>
+              <li><a href="sobre">Sobre</a></li>
+              <li><a href="contato">Contato</a></li-->
+              <!--li><a href="doacoes">Doações</a></li-->
+              <!--<li class="closed active"> <a href="cadastro.html">Login</a></li>-->
+            </div>
+            <div class="menu_contato menu_home" >
+              <li>
+                <a target="_blank" href="https://www.instagram.com/goytaborgs/">
+                  <i class="bi-instagram"></i>
+                </a>
+              </li>
+            </div>
+          </ul>
+      </nav>
     </header>
     <main>
       <!-- primeira seção --->
@@ -125,8 +156,21 @@
               <span class="visually-hidden">Next</span>
             </button>
 
-              <div id="carousel-title">
-                  <img src="images/svg/grc.svg" class="fw-bolder fs-1" alt="" style="width:50%;">
+              <div id="carousel-title" class="d-flex justify-content-evenly">
+                  <div class="row d-flex justify-content-evenly align-self-center" id="carousel-title-row" style="width:70%;">
+                    <div class="col align-self-center"><img src="images/svg/grc.svg" class="fw-bolder fs-1" alt="" style="width:70%;"></div>
+                      <div class="col align-self-center">
+                        <img src="images/index/titletext.png" class="fw-bolder fs-1" alt="" style="width:70%;">
+                      </div>
+                    <!--div class="col align-self-end fs-2 text-end" >
+                      <h1 class="title-font" style="font-size: 150%;">10, 11 e 12</h1>
+                      <h1 class="title-font" style="font-size: 150%;"> de Outubro</h1>
+                      <p>A <b class="">maior competição de robótica</b> do interior do RJ</p>
+                      <a href="https://forms.gle/VeUBKD3w56y2pFeQ7" class="btn btn-primary btn-lg" id="insctitle">
+                        Se Inscreva!
+                      </a>
+                    </div>
+                  </div-->
                   <!--h1 class="fw-bolder fs-1">Conheça a GRC</h1-->
               </div>
           </div>
@@ -135,7 +179,7 @@
       </section>
       <!-- seção countdown--->
       <section>
-        <div class="d-flex justify-content-center align-items-center h-100 w-100 text-white" id="countdown">
+        <div class="d-flex justify-content-center align-items-center h-100 w-100" id="countdown">
           <!--div class="" id="countdown-blur">
 
           </div-->
@@ -145,31 +189,31 @@
             style="width: 100%; position: absolute; filter: blur(2px);"
             alt="..."
           /-->
-            <div class="col-md-5" style="z-index: 3">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row text-center">
-                            <div class="col-3">
-                                <h3 id="days" class="display-4">00</h3>
-                                <p>Dias</p>
-                            </div>
-                            <div class="col-3">
-                                <h3 id="hours" class="display-4">00</h3>
-                                <p>Horas</p>
-                            </div>
-                            <div class="col-3">
-                                <h3 id="minutes" class="display-4">00</h3>
-                                <p>Minutos</p>
-                            </div>
-                            <div class="col-3">
-                                <h3 id="seconds" class="display-4">00</h3>
-                                <p>Segundos</p>
-                            </div>
+            <div class="col-md-4" style="z-index: 3">
+              <div class="text-center text-white">
+                <h3 class="title-font" style="font-size: 2rem;">CONTAGEM REGRESSIVA:</h3>
+              </div>
+              <div class="card" style="margin-top:32px; border-radius: 20px;">
+                <div class="card-body">
+                    <div class="row text-center">
+                        <div class="col">
+                            <h3 id="days" class="display-4">00</h3>
+                            <p>Dias</p>
+                        </div>
+                        <div class="col">
+                            <h3 id="hours" class="display-4">00</h3>
+                            <p>Horas</p>
+                        </div>
+                        <div class="col">
+                            <h3 id="minutes" class="display-4">00</h3>
+                            <p>Minutos</p>
+                        </div>
+                        <div class="col">
+                            <h3 id="seconds" class="display-4">00</h3>
+                            <p>Segundos</p>
                         </div>
                     </div>
-                </div>
-                <div class="text-center" style="margin-top:32px;">
-                  <h3 style="font-weight: bold;">10, 11 e 12 de Outubro</h3>
+                  </div>
                 </div>
                 <div class="text-center" style="margin-top:32px;">
                   <a href="https://forms.gle/VeUBKD3w56y2pFeQ7" class="btn btn-primary btn-lg" id="inscbutton">
@@ -181,13 +225,10 @@
       </section>
       <section style="margin-top: 32px;">
           <div class="d-flex justify-content-center align-items-center w-100">
-            <h2>Categorias</h2>
+            <h2 class="title-font">Categorias</h2>
           </div>
-          <div class="d-flex justify-content-center align-items-center w-100">
-            <p>*Regras da robocore</p>
-          </div>
-          <div id="CardsCarousel" class="carousel">
-              <div class="carousel-inner">
+          <div id="CardsCarousel" class="carousel" data-bs-ride="carousel">
+              <div class="carousel-inner" id="ccarou-inner">
                   <div class="carousel-item active wcard">
                       <div class="card car_card">
                           <div class="img-wrapper"><img src="images/index/cupim.jpg" class="d-block w-100" alt="..."> </div>
@@ -288,17 +329,17 @@
                       </div>
                   </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#CardsCarousel" data-bs-slide="prev">
+              <button class="carousel-control-prev" id="prev-ccarou" type="button" data-bs-target="#CardsCarousel" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#CardsCarousel" data-bs-slide="next">
+              <button class="carousel-control-next" id="next-ccarou" type="button" data-bs-target="#CardsCarousel" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
               </button>
           </div>
       </section>
-      <section class="container-fluid">
+      <section class="container-fluid" style="margin-top: 62px;">
         <div class="row d-flex justify-content-evenly" id="row1">
           <div id="panel1" class="col m-0 p-0 text-white">
             <div class="d-flex justify-content-center align-items-center h-100">
@@ -469,6 +510,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/navfooter.js"></script>
+    <script src="js/cardcarousel.js"></script>
     <!--script src="js/countdown.js"></script-->
     <script src="js/index.js"></script>
   </body>

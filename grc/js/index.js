@@ -32,40 +32,6 @@ document.getElementById("seconds").innerHTML = "00";
 }
 }, 1000);
 
-
-//Carrosel de categorias
-var multipleCardCarousel = document.querySelector(
-"#CardsCarousel"
-);
-if (window.matchMedia("(min-width: 768px)").matches) {
-var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-  interval: false,
-});
-var carouselWidth = $(".carousel-inner")[0].scrollWidth;
-var cardWidth = $(".carousel-item").width();
-var scrollPosition = 0;
-$("#CardsCarousel .carousel-control-next").on("click", function () {
-  if (scrollPosition < carouselWidth - cardWidth * 4) {
-    scrollPosition += cardWidth;
-    $("#CardsCarousel .carousel-inner").animate(
-      { scrollLeft: scrollPosition },
-      600
-    );
-  }
-});
-$("#CardsCarousel .carousel-control-prev").on("click", function () {
-  if (scrollPosition > 0) {
-    scrollPosition -= cardWidth;
-    $("#CardsCarousel .carousel-inner").animate(
-      { scrollLeft: scrollPosition },
-      600
-    );
-  }
-});
-} else {
-$(multipleCardCarousel).addClass("slide");
-}
-
 //Sticky button
 
 /*window.onscroll = function() {myFunction()};
