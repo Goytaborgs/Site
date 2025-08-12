@@ -143,7 +143,6 @@ function getSizeSlide() {
 function initCarousel() {
 
   var carousel = new bootstrap.Carousel("#CardsCarousel", {
-    interval: 2500,
     wrap: false,
   });
    let sizeSlide = getSizeSlide();
