@@ -1,7 +1,7 @@
 @import url("variables.css");
 
 #row1 {
-  clip-path: polygon(
+  /*clip-path: polygon(
     0 0,
     79% 8%,
     100% 0%,
@@ -12,7 +12,8 @@
     35% 100%,
     15% 99%,
     0 95%
-  );
+  );*/
+  clip-path: polygon(0 0, 0 95%, 30% 100%, 50% 85%, 70% 100%, 100% 95%, 100% 0);
 }
 
 main {
@@ -590,5 +591,82 @@ main {
       padding: 0.625rem;
       width: 15.625rem;
     }
+  }
+}
+
+/* Seção GRC */
+#carousel-title{
+  background-color: black;
+  height: 45vh;
+  color: #fff;
+  text-align: center;
+}
+#carousel-title-row{
+  width:80%;
+}
+#imglogoti{
+  width:60%;
+}
+#tibtndiv{
+  margin-top:32px;
+}
+#insctitle{
+  background-color: transparent;
+  border-color: white;
+  border-radius: 25px;
+  /*font-size: 2.5vh;*/
+  width: 220px;
+  height: 50px;
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (max-width: 1400px) {
+  #carousel-title{
+      height: 40vh;
+  }
+}
+@media screen and (max-width: 1030px) {
+  #carousel-title{
+      height: 30vh;
+  }
+}
+@media screen and (max-width: 765px) {
+  #carousel-title{
+      height: 25vh;
+  }
+}
+@media screen and (max-width: 620px) {
+  #carousel-title{
+      height: 20vh;
+  }
+}
+@media screen and (max-width: 1030px) {
+  #carousel-title{
+    {
+
+    }
+  #imglogoti{
+    width:110%;
+  }
+  #tibtndiv{
+    margin-top:24px;
+  }
+  #insctitle{
+    width: 150px;
+    height: 40px;
+    font-size: 1.7vh;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  #imglogoti{
+    width:120%;
+  }
+  #tibtndiv{
+    margin-top:18px;
+  }
+  #insctitle{
+    width: 110px;
+    height: 35px;
+    font-size: 1.3vh;
   }
 }
