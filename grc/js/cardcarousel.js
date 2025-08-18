@@ -146,7 +146,7 @@ function initCarousel() {
     wrap: false,
   });
    let sizeSlide = getSizeSlide();
-   let numcards = 11;
+   let numcards = 12;
 
    let carouselWidth = $("#ccarou-inner")[0].scrollWidth,
       cardWidth = $(".wcard").width(),
