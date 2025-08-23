@@ -137,6 +137,14 @@ main {
 #panel1{
   background-color: #1b4c2a;
 }
+
+#ender-div{
+  height: 500px;
+}
+#ender-logo{
+  width: 40%;
+  margin-bottom: 32px;
+}
 @media screen and (max-width: 1420px) {
   .section-text {
     height: 68vh;
@@ -212,6 +220,9 @@ main {
     width: 110px;
     height: 35px;
     font-size: 1.3vh;
+  }
+  #ender-div{
+    height: 400px;
   }
 }
 
