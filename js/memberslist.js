@@ -32,7 +32,7 @@ Ingrid Coutinho | Eletrônica | | Engenharia de Controle e Automação | 2023 | 
 Jade Bretas | Gestão | Ex Vice Capitã Geral 2023 - 2024| Engenharia de Controle e Automação | 2023 | - | images/membros/Jade_Bretas.jpeg | L:jade-bretas-3844431ab / E:jade.bretas@gsuite.iff.edu.br
 Jander de Sá | Eletrônica | | Engenharia de Controle e Automação | 2023 | - | images/membros/Jander_de_Sá.jpeg | I:jander_sa / E:desajander@gmail.com
 João Pedro Azeredo | Eletrônica | | Engenharia de Controle e Automação | 2024 | - | images/membros/João_Pedro_Azeredo.jpg |
-Jônatas Pedro Cardoso Siqueira  | Mecânica | | Engenharia Mecânica | 2024 | - | images/membros/Jônatas.jpg | I:jonatas_3ds / L:jônatas-pedro-cardoso-siqueira-692660320
+Jônatas Pedro Cardoso Siqueira  | Mecânica | Vice Capitão Geral  | Engenharia Mecânica | 2024 | - | images/membros/Jônatas.jpg | I:jonatas_3ds / L:jônatas-pedro-cardoso-siqueira-692660320
 Julia Ribeiro Baptista | Software | Ex Capitã Geral 2023 - 2024 / Ex Capitã de Software - 2023.2 | Engenharia de Computação | 2022 | - | images/membros/Julia_Baptista.jpg | I:juliabapptista / G:JuhRBaptista / L:júlia-baptista-84b65a232 / E:juliabapptista@gmail.com /
 Krishna Lotério | Mecânica | | Engenharia de Controle e Automação | 2024 | - | images/membros/default.jpg |
 Larisa Barreto | Gestão | | Engenharia de Controle e Automação | 2024 | - | images/membros/Larisa_Barreto_Clemente.jpeg |
@@ -53,6 +53,14 @@ Vinícius Zanella da Fonseca | Software | | Licenciatura em Matemática | 2023 |
 Vitor Monteiro | Software | | Engenharia de Computação | 2023 | - | images/membros/Vitor_Sepulveda.jpg | I:vitor.eu.mesmo
 Wesley Velasco | Eletrônica | | Engenharia de Controle e Automação | 2020 | - | images/membros/Wesley_Velasco.jpg | I:wesley_velasc0 / E:wesley01velasco@gmail.com
 Willian Bernardes | Eletrônica | | Engenharia Elétrica | 2024 | - | images/membros/default.jpg |
+Yasmin Vithória Fernandes Pessanha | | Gestão | Licenciatura em Educação Física | 2025 | - | images/membros/Yasmin_Victória.jpg | I:yasmin_crf28 / E:vithoriayasmin2@gmail.com |
+Pedro Thalles | Eletrônica | Rádios Controlados | Engenharia de Controle | 2025 | - | images/membros/Pedro_Thalles.jpg | - |
+Carlos Henrique Júnior | Capitão da Comunicação | Comunicação | Bacharelado em Design | 2025 | - | images/membros/Carlos_Henrique_de_Souza_Júnior.jpg | I:c.hjunior / E:henrique.junior.sf@gmail.com / L:carlos-henrique-de-souza-j%C3%BAnior-1673a2163 |
+Yasmin Barcelos Rangel | | Software | Engenharia da Computação | 2025 | - | images/membros/default.jpg  | - |
+Júlia Ferreira | Eletrônica | | Engenharia Elétrica | 2025 | - | images/membros/default.jpg | - |
+Phablo Abreu da Cruz | Software | | Engenharia de Controle e Automação | 2025 | - | images/membros/default.jpg | I:phablo.abreu L:phablo-abreu-da-cruz-891691303 E:phablo.eng@hotmail.com |
+Giovanna Lima Barrada | Eletrônica | | Engenharia Elétrica | 2025 | - | images/membros/default.jpg | L:giovanna-barrada E:barradagiovanna@gmail.com | 
+Breno Tavares Inacio | Eletrônica | Capitania de Eletrônica | Engenharia Elétrica | 2025 | - | images/membros/Breno_Tavares.jpg | L:brenotavaresinacio E:breno.i@gsuite.iff.edu.br |
 `,
 ];
 // SAIU EM: 2024 - Giulia Mota | Comunicacao | Capitã de Comunicação | Engenharia de Controle e Automação | 2023 | - | images/membros/Giulia_Mota.jpeg |
