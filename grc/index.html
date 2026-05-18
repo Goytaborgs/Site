@@ -1,591 +1,433 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <title>Goytaborgs</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="icon" href="images/svg/logo 1.svg" />
-    <link rel="stylesheet" href="css/bootstrap-icons.css" />
-    <link href="css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/mobile.css" />
-  </head>
-  <body id="body">
-    <header>
-      <nav>
-          <ul id="menu">
-            <div>
-              <li>
-                <a href="index.html">
-                  <img id="logo" src="images/svg/grc.svg" alt="" style="width:60.68px;height: 67.19px;">
-                </a>
-              </li>
-            </div>
-            <div class="menu_navegacao  menu_home">
-              <!--li><a href="index">GRC</a></li-->
-              <!--li><a href="index">Inicio</a></li>
-              <li><a href="projetos">Projetos</a></li>
-              <li><a href="membros">Membros</a></li-->
-              <!--li><a href="processo_seletivo_2025">Processo Seletivo</a></li-->
-              <!--li><a href="premiacoes">Premiações</a></li>
-              <li><a href="patrocinadores">Patrocinadores</a></li>
-              <li><a href="sobre">Sobre</a></li>
-              <li><a href="contato">Contato</a></li-->
-              <!--li><a href="doacoes">Doações</a></li-->
-              <!--<li class="closed active"> <a href="cadastro.html">Login</a></li>-->
-            </div>
-            <div class="menu_contato menu_home" >
-              <li>
-                <a target="_blank" href="https://www.instagram.com/goytaborgs/">
-                  <i class="bi-instagram"></i>
-                </a>
-              </li>
-            </div>
-          </ul>
-      </nav>
-    </header>
-    <main>
-      <!-- primeira seção --->
-      <section>
-        <div class="d-flex justify-content-center align-items-center h-100">
-          <!--div id="carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/index/1.png" class="d-block w-100" alt="..." >
-              </div>
-              <div class="carousel-item">
-                <img src="images/index/1.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="images/index/1.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Competição de Robótica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-          <div
-            id="carouselhome"
-            class="carousel slide carousel-fade"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselhome"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselhome"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselhome"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="images/index/cover.jpg"
-                  class="d-block"
-                  style="width: 100%"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="images/index/cover.jpg"
-                  class="d-block"
-                  style="width: 100%"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="images/index/cover.jpg"
-                  class="d-block"
-                  style="width: 100%"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselhome"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselhome"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+<style>
+  /* Esconde a setinha padrão da tag <details> no HTML */
+  details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+</style>
 
-              <div id="carousel-title" class="d-flex justify-content-evenly">
-                  <div class="row d-flex justify-content-evenly align-self-center" id="carousel-title-row" style="width:70%;">
-                    <div class="col align-self-center">
-                      <img src="images/svg/grc.svg" class="fw-bolder fs-1" alt="" id="imglogoti">
-                    </div>
-                      <div class="col align-self-center">
-                        <img src="images/index/titletext.png" class="fw-bolder fs-1" alt="" style="width:70%;">
-                        <div class="col align-self-end" id="tibtndiv">
-                          <a href="https://forms.gle/VeUBKD3w56y2pFeQ7" class="btn btn-primary btn-lg" id="insctitle">
-                            Se Inscreva!
-                          </a>
-                        </div>
-                      </div>
-                    <!--div class="col align-self-end fs-2 text-end" >
-                      <h1 class="title-font" style="font-size: 150%;">10, 11 e 12</h1>
-                      <h1 class="title-font" style="font-size: 150%;"> de Outubro</h1>
-                      <p>A <b class="">maior competição de robótica</b> do interior do RJ</p>
-                      <a href="https://forms.gle/VeUBKD3w56y2pFeQ7" class="btn btn-primary btn-lg" id="insctitle">
-                        Se Inscreva!
-                      </a>
-                    </div>
-                  </div-->
-                  <!--h1 class="fw-bolder fs-1">Conheça a GRC</h1-->
-              </div>
+<nav class="sticky top-0 z-50 bg-[#121212] border-b border-black shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    
+    <div class="flex-shrink-0 cursor-pointer hover:opacity-90 transition-opacity">
+      <a href="#">
+        <img src="images/LogoGRCnavbar.png" alt="GRC Goytarobo Challenge" class="h-10 w-auto">
+      </a>
+    </div>
+
+    <div class="hidden md:flex space-x-8 items-center">
+      <a href="#sobre" class="text-gray-300 hover:text-white text-sm font-medium transition-colors">Sobre</a>
+      <a href="#categorias" class="text-gray-300 hover:text-white text-sm font-medium transition-colors">Categorias</a>
+      <a href="#cronograma" class="text-gray-300 hover:text-white text-sm font-medium transition-colors">Cronograma</a>
+      <a href="#localizacao" class="text-gray-300 hover:text-white text-sm font-medium transition-colors">Localização</a>
+      <a href="#contato" class="text-gray-300 hover:text-white text-sm font-medium transition-colors">Contato</a>
+    </div>
+
+    </div>
+</nav>
+
+
+<!-- SEÇÃO 1 - Inicio -->
+
+  <body class="bg-gray-900"> 
+    <section id="sobre" class="relative py-16 px-8 flex justify-center items-center bg-cover bg-center min-h-screen" style="background-image: url('images/fundo_verde.png');">
+      <div class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+        <div class="flex justify-center md:justify-end">
+          <img src="images/Logo_GRC.png" alt="Logo da GRC" class="w-90 md:w-[600px] h-auto object-contain drop-shadow-xl hover:scale-125 transition-transform duration-300 mx-auto">
+        </div>
+
+        <div class="text-white text-center md:text-left flex flex-col items-center md:items-start space-y-4">
+          <h1 class="text-5xl md:text-6xl font-extrabold tracking-wide drop-shadow-md leading-tight">
+            10, 11 e 12<br>DE OUTUBRO
+          </h1>
+          
+          <p class="text-xl md:text-2xl mt-4 font-light">
+            A <span class="font-bold">maior competição de robótica<br>do interior do RJ</span>, está de volta!
+          </p>
+
+          <div class="mt-8 w-full max-w-xs">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAwO0T4Wh6HrwvXaxjxJBDBpmPeFzHnY2ujC2t_0zp5wHPGQ/viewform" target="_blank" class="block w-full text-center bg-[#1a1a1a] text-white text-2xl font-bold py-3 px-8 rounded-full border-4 border-white hover:bg-black hover:text-green-400 transition-colors duration-300 shadow-xl">
+              SE INSCREVA!
+            </a>
           </div>
+          
+          <p class="text-sm mt-2 text-center w-full max-w-xs drop-shadow-sm">
+            Inscrições abertas <span class="font-bold">de XX de maio<br>até XX de junho.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+<!-- SEÇÃO 2 - Sobre -->
+
+<section class="relative py-16 px-8 flex justify-center items-center bg-cover bg-center" style="background-image: url('images/Sobre_Fundo.png');">
+  <div class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+    <div class="text-white flex flex-col items-start">
+      <div class="bg-[#2a4522] text-white text-3xl md:text-4xl font-bold py-3 px-6 rounded-2xl mb-6 shadow-lg">
+        O que é a GRC?
+      </div>
+      
+      <p class="text-lg leading-relaxed text-justify drop-shadow-sm font-medium">
+        A Goyta Robô Challenge (GRC) é a competição sediada no Instituto Federal Fluminense (IFF), tendo o próprio instituto como um dos seus principais apoiadores, junto a FAPERJ. O evento reúne equipes para competirem em categorias populares do meio da robótica competitiva, além de promover uma mostra tecnológica.
+      </p>
+    </div>
+
+    <div class="relative flex flex-col items-center">
+      <div class="absolute top-0 right-0 -mt-4 mr-3 md:-mr-1 bg-[#2a4522] text-white text-sm font-bold py-1 px-4 rounded-full z-20 shadow-md">
+        Edição Anterior
+      </div>
+
+      <div class="relative w-full max-w-md rounded-xl overflow-hidden shadow-2xl bg-black/20">
+        
+        <img src="images/equipe.png" alt="Equipe na GRC" class="w-full aspect-square object-cover opacity-90 hover:opacity-100 transition-opacity">
 
         </div>
-      </section>
-      <!-- seção countdown--->
-      <section>
-        <div class="d-flex justify-content-center align-items-center h-100 w-100" id="countdown">
-          <!--div class="" id="countdown-blur">
 
-          </div-->
-          <!--img
-            src="images/index/cover.jpg"
-            class="d-block"
-            style="width: 100%; position: absolute; filter: blur(2px);"
-            alt="..."
-          /-->
-            <div class="col-md-4" style="z-index: 3">
-              <div class="text-center text-white">
-                <h3 class="title-font" style="font-size: 2rem;">CONTAGEM REGRESSIVA:</h3>
-              </div>
-              <div class="card" style="margin-top:32px; border-radius: 20px;">
-                <div class="card-body">
-                    <div class="row text-center">
-                        <div class="col">
-                            <h3 id="days" class="display-4">00</h3>
-                            <p>Dias</p>
-                        </div>
-                        <div class="col">
-                            <h3 id="hours" class="display-4">00</h3>
-                            <p>Horas</p>
-                        </div>
-                        <div class="col">
-                            <h3 id="minutes" class="display-4">00</h3>
-                            <p>Minutos</p>
-                        </div>
-                        <div class="col">
-                            <h3 id="seconds" class="display-4">00</h3>
-                            <p>Segundos</p>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="text-center" style="margin-top:32px;">
-                  <a href="https://forms.gle/VeUBKD3w56y2pFeQ7" class="btn btn-primary btn-lg" id="inscbutton">
-                    Se Inscreva!
-                  </a>
-                </div>
-            </div>
-        </div>
-      </section>
-      <section>
-        <div class="row d-flex justify-content-evenly text-white" style="background-color: #2c2c2c; margin: 0;">
-            <div class="d-flex justify-content-center align-items-center" style="margin-top: 32px; margin-bottom: 32px; width:80%;">
-              <h2 class="title-font" style="font-size: 2rem;">CRONOGRAMA</h2>
-            </div>
-            <div class="container" style="margin-bottom: 32px;">
-              <div class="row">
-                <div class="col-12 .col-xs-12 col-sm-12 col-lg-4">
-                  <h3 class="title-font text-center" style="font-size: 1.5rem; margin-bottom: 32px;">10/10/2025 (sexta-feira)</h3>
-                  <div class="col d-flex justify-content-center">
-                    <div class="text-cro">
-                      <p style="font-size: 1.4rem;">
-                        <b>08:00</b> - Abertura da GRC e Início Check-in<br>
-                        <b>09:00</b> - Abertura dos boxes<br>
-                        <b>10:00</b> - Início da Inspeção de Segurança*<br>
-                        <b>16:00</b> - Início das Competições (Seguidor de Linha, Trecking, Micromouse)<br>
-                        <b>20:00</b> - Término das Atividades do Dia<br>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 .col-xs-12 col-sm-12 col-lg-4">
-                  <h3 class="title-font text-center" style="font-size: 1.5rem; margin-bottom: 32px;">11/10/2025 (Sábado)</h3>
-                  <div class="col d-flex justify-content-center">
-                    <div class="text-cro">
-                      <p style="font-size: 1.4rem;">
-                        <b>08:00</b> - Abertura dos Boxes<br>
-                        <b>10:00</b> - Início das Competições<br>
-                        <b>13:00</b> - Intervalo<br>
-                        <b>14:00</b> - Reinício das Competições<br>
-                        <b>20:00</b> - Término das Atividades do Dia<br>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 .col-xs-12 col-sm-12 col-lg-4">
-                  <h3 class="title-font text-center" style="font-size: 1.5rem; margin-bottom: 32px;">12/10/2025 (Domingo)</h3>
-                  <div class="col d-flex justify-content-center">
-                    <div class="text-cro">
-                      <p style="font-size: 1.4rem;">
-                        <b>08:00</b> - Abertura dos Boxes<br>
-                        <b>10:00</b> - Início das Competições<br>
-                        <b>13:00</b> - Intervalo<br>
-                        <b>14:00</b> - Reinício das Competições<br>
-                        <b>16:00</b> - Término das Competições<br>
-                        <b>16:30</b> - Premiação<br>
-                        <b>17:30</b> - Encerramento<br>
-                        <b>19:30</b> - Fechamento do Local do Evento / Saída do Campus<br>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section style="margin-top: 32px;">
-          <div class="d-flex justify-content-center align-items-center w-100">
-            <h2 class="title-font">CATEGORIAS</h2>
-          </div>
-          <div id="CardsCarousel" class="carousel" data-bs-ride="carousel">
-              <div class="carousel-inner" id="ccarou-inner">
-                  <div class="carousel-item active wcard">
-                      <div class="card car_card">
-                          <div class="img-wrapper"><img src="images/index/cupim.jpg" class="d-block w-100" alt="..."> </div>
-                          <div class="card-body">
-                              <h5 class="card-title">Cupim - 454g</h5>
-                              <a href="rules/RegrasCupim.pdf" target="_blank" class="card-link c-link">Regras</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item wcard">
-                      <div class="card car_card">
-                          <div class="img-wrapper"><img src="images/index/fairy.jpg" class="d-block w-100" alt="..."> </div>
-                          <div class="card-body">
-                              <h5 class="card-title">Fairyweight - 150g</h5>
-                              <a href="rules/RegrasCombate.pdf" target="_blank" class="card-link c-link">Regras</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item wcard">
-                      <div class="card car_card">
-                          <div class="img-wrapper"><img src="images/index/ant.jpg" class="d-block w-100" alt="..."> </div>
-                          <div class="card-body">
-                              <h5 class="card-title">Antweight - 454g</h5>
-                              <a href="rules/RegrasCombate.pdf" target="_blank" class="card-link c-link">Regras</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item wcard">
-                      <div class="card car_card">
-                          <div class="img-wrapper"><img src="images/index/beetle.jpg" class="d-block w-100" alt="..."> </div>
-                          <div class="card-body">
-                              <h5 class="card-title">Beetleweight - 1.36Kg</h5>
-                              <a href="rules/RegrasCombate.pdf" target="_blank" class="card-link c-link">Regras</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item wcard">
-                      <div class="card car_card">
-                          <div class="img-wrapper"><img src="images/index/sumo.jpg" class="d-block w-100" alt="..."> </div>
-                          <div class="card-body">
-                              <h5 class="card-title">Mini Sumô Auto</h5>
-                              <a href="rules/RegrasSumo.pdf" target="_blank" class="card-link c-link">Regras</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item wcard">
-                      <div class="card car_card">
-                          <div class="img-wrapper"><img src="images/index/sumorc.jpg" class="d-block w-100" alt="..."> </div>
-                          <div class="card-body">
-                              <h5 class="card-title">Mini Sumô RC</h5>
-                              <a href="rules/RegrasSumo.pdf" target="_blank" class="card-link c-link">Regras</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item wcard">
-                      <div class="card car_card">
-                          <div class="img-wrapper"><img src="images/index/sumolego.png" class="d-block w-100" alt="..."> </div>
-                          <div class="card-body">
-                              <h5 class="card-title">Sumo Lego®</h5>
-                              <a href="rules/RegrasSumo.pdf" target="_blank" class="card-link c-link">Regras</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item wcard">
-                      <div class="card car_card">
-                          <div class="img-wrapper"><img src="images/index/seguidor.jpg" class="d-block w-100" alt="..."> </div>
-                          <div class="card-body">
-                              <h5 class="card-title">Seguidor de Linha</h5>
-                              <a href="rules/RegrasSeguidordeLinha.pdf" target="_blank" class="card-link c-link">Regras</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item wcard">
-                      <div class="card car_card">
-                          <div class="img-wrapper"><img src="images/index/perseguidor.jpeg" class="d-block w-100" alt="..."> </div>
-                          <div class="card-body">
-                              <h5 class="card-title">Perseguidor de Linha</h5>
-                              <a href="rules/RegrasPerseguidordeLinha.pdf" target="_blank" class="card-link c-link">Regras</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item wcard">
-                      <div class="card car_card">
-                          <div class="img-wrapper"><img src="images/index/hockey.jpg" class="d-block w-100" alt="..."> </div>
-                          <div class="card-body">
-                              <h5 class="card-title">Micro Hockey - 450g</h5>
-                              <a href="rules/RegrasHockey.pdf" target="_blank" class="card-link c-link">Regras</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item wcard">
-                      <div class="card car_card">
-                          <div class="img-wrapper"><img src="images/index/micromouse1.png" class="d-block w-100" alt="..."> </div>
-                          <div class="card-body">
-                              <h5 class="card-title">Micro Mouse</h5>
-                              <a href="rules/RegrasMicromouse.pdf" target="_blank" class="card-link c-link">Regras</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item wcard">
-                      <div class="card car_card">
-                          <div class="img-wrapper"><img src="images/index/trekking.jpg" class="d-block w-100" alt="..."> </div>
-                          <div class="card-body">
-                              <h5 class="card-title">Trekking</h5>
-                              <a href="rules/RegrasTrekking.pdf" target="_blank" class="card-link c-link">Regras</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <button class="carousel-control-prev" id="prev-ccarou" type="button" data-bs-target="#CardsCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" id="next-ccarou" type="button" data-bs-target="#CardsCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-              </button>
-          </div>
-      </section>
-      <section class="container-fluid" style="margin-top: 62px;">
-        <div class="row d-flex justify-content-evenly" id="row1">
-          <div id="panel1" class="col m-0 p-0 text-white">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="section-text">
-                <p style="margin-bottom: 0;">Prepare-se para a 2ª edição da GRC!</p>
-                <p style="margin-bottom: 0;">
-                  O Instituto Federal Fluminense - Campus Campos Centro será palco, de 10 a 12 de outubro de 2025, do maior evento de robótica do interior do Rio de Janeiro. Durante três dias, participantes poderão desfrutar de uma programação repleta de inovação, tecnologia e experiências enriquecedoras, independente do nível de conhecimento em robótica.
-                </p>
-                <p style="margin-bottom: 0;">
-                  Promovida pela equipe Goytaborgs, com o apoio institucional do IFF e da FAPERJ, a GRC convida equipes do país inteiro para competir, compartilhar conhecimentos e formar conexões entre entusiastas e profissionais da área.
-                </p>
-                <p style="margin-bottom: 0;">
-                  Garanta sua participação e faça parte deste grande evento!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 m-0 p-0">
-            <div
-              id="carouselhome"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselhome"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselhome"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselhome"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="images/index/slide1.jpg"
-                    class="d-block"
-                    style="width: 100%; height: 100%; object-fit: cover;"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/index/slide2.jpg"
-                    class="d-block"
-                    style="width: 100%; height: 100%; object-fit: cover;"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/index/slide4.jpg"
-                    class="d-block"
-                    style="width: 100%; height: 100%; object-fit: cover;"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselhome"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselhome"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="row d-flex justify-content-evenly text-white" style="background-color: #2c2c2c; margin: 0;" id="ender">
+      </div>
 
-            <div class="d-flex justify-content-center align-items-center" style="margin-top: 32px; margin-bottom: 32px; width:80%;">
-              <h2 class="title-font" style="font-size: 2rem;">COMO CHEGAR NO EVENTO:</h2>
-            </div>
-          <div class="col-md-6 m-0 p-0 d-flex align-items-center justify-content-center" id="map-div">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.4769651986558!2d-41.33936682549317!3d-21.761793797954535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdd43f2476c3ad%3A0xb32af6e0cbf8c2f8!2sIFF%20Campos%20Centro!5e0!3m2!1spt-BR!2sbr!4v1716239418561!5m2!1spt-BR!2sbr"
-              style="border: 0; width: 100%; height: 500px;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-          </div>
-          <div class="col-md-6 m-0 p-0 d-flex align-items-center" id="ender-div" style="font-size: 130%;">
-            <div class="justify-content-center align-items-center text-center">
-            <img src="images/svg/grc.svg" alt="" id="ender-logo"/>
-              <p>
-                Instituto Federal Fluminense- Campus Centro
-                <br />
-                R. Dr. Siqueira, 273 - Campos dos Goytacazes • Rio de Janeiro •
-                Brasil
-              </p>
-              <div class="socialmedia">
-                <div class="instagram">
-                  <a href="https://www.instagram.com/goytaborgs/">
-                    <i class="bi-instagram"></i>
-                  </a>
-                  <span>@goytaborgs</span>
-                </div>
-                <div class="gmail">
-                  <a href="contato.html">
-                    <i class="bi-envelope"></i>
-                  </a>
-                  <span>goytaborgs.centro@iff.edu.br</span>
-                </div>
-              </div>
-            </div>
-          </div>
+  </div>
+</section>
+
+<!-- SEÇÃO 3 - Categorias-->
+
+<section id="categorias" class="relative py-20 px-8 bg-cover bg-center bg-[#0d130d]" style="background-image: url('images/fundo_escuro_camuflado.png');">
+  
+  <div class="flex justify-center mb-20">
+    <h2 class="text-white text-3xl md:text-4xl font-bold py-3 px-10 rounded-2xl border-2 border-[#3eb142] bg-[#1a1a1a] shadow-lg">
+      Categorias
+    </h2>
+  </div>
+
+  <div class="max-w-6xl mx-auto flex flex-col space-y-24">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      
+      <div class="relative w-full max-w-md mx-auto md:ml-0 md:mr-auto">
+        <div class="absolute top-0 left-0 -mt-3 ml-4 bg-[#56c85e] text-white text-xs font-bold py-1 px-4 rounded-full z-20 shadow-md">
+          Beetleweight
         </div>
-      </section>
-      <!-- Seção Instagram-->
-      <section class="section-instagram">
-        <h2 class="title-font" style="font-size: 2rem;">NOS ACOMPANHE</h2>
-        <!-- LightWidget WIDGET -->
-        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-        <!-- LightWidget WIDGET -->
-        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-        <iframe
-          src="https://cdn.lightwidget.com/widgets/5135dc53f17e543ba664c85d99cf4723.html"
-          scrolling="no"
-          allowtransparency="true"
-          class="lightwidget-widget"
-          style="width: 100%; border: 0; overflow: hidden"
-        ></iframe>
-        <a
-          type="button"
-          class="btn btn-light shadow-lg"
-          style="border-radius: 30px"
-          target="_blank"
-          href="https://www.instagram.com/goytaborgs/"
-          >Instagram</a
-        >
-      </section>
-    </main>
+        
+        <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
+          <img src="images/combate_img.jpg" alt="Robô de Combate" class="w-full h-full object-cover">
+          
+          </div>
+        
+        </div>
 
-    <div id="footer-placeholder"></div>
+      <div class="text-white flex flex-col items-start md:pl-8">
+        <div class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
+          Combate
+        </div>
+        <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
+          Categoria em que robôs se enfrentam em arenas, utilizando armas e estratégias para imobilizar ou destruir o adversário. Exige resistência mecânica, eletrônica avançada e pilotagem precisa. A competição contará com as classes Fairyweight, Antweight, Beetleweight, como também Cupim.
+        </p>
+        <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+Combate.pdf" target="_blank" class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
+          Regras
+        </a>
+      </div>
+    </div>
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/navfooter.js"></script>
-    <script src="js/cardcarousel.js"></script>
-    <!--script src="js/countdown.js"></script-->
-    <script src="js/index.js"></script>
-  </body>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      
+      <div class="text-white flex flex-col items-start md:pr-8 order-2 md:order-1">
+        <div class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
+          Seguidores
+        </div>
+        <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
+          Os robôs devem percorrer uma pista seguindo uma linha no chão de forma totalmente autônoma. O desafio envolve velocidade, sensores e programação eficiente. A competição contará com as classes Seguidor e Perseguidor de Linha.
+        </p>
+        <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+Seguidor+de+Linha.pdf" target="_blank" class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
+          Regras
+        </a>
+      </div>
+
+      <div class="relative w-full max-w-md mx-auto md:mr-0 md:ml-auto order-1 md:order-2">
+        <div class="absolute top-0 right-0 -mt-3 mr-4 bg-[#56c85e] text-white text-xs font-bold py-1 px-4 rounded-full z-20 shadow-md">
+          Seguidor de Linha
+        </div>
+        
+        <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
+          <img src="images/seguidor_img.jpg" alt="Robô Seguidor" class="w-full h-full object-cover">
+          
+          </div>
+        
+        </div>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      
+      <div class="relative w-full max-w-md mx-auto md:ml-0 md:mr-auto">
+        <div class="absolute top-0 left-0 -mt-3 ml-4 bg-[#56c85e] text-white text-xs font-bold py-1 px-4 rounded-full z-20 shadow-md">
+          Mini Auto
+        </div>
+        
+        <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
+          <img src="images/sumo_img.jpg" alt="Robô Sumô" class="w-full h-full object-cover">
+          
+          </div>
+        
+        </div>
+
+      <div class="text-white flex flex-col items-start md:pl-8">
+        <div class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
+          Sumô
+        </div>
+        <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
+          Inspirada no esporte japonês, essa modalidade coloca dois robôs em disputa dentro de uma arena circular. O objetivo é empurrar o oponente para fora da área de combate. A competição contará com as classes de Sumô Lego, Mini Auto, e Mini RC.
+        </p>
+        <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+Sumo.pdf" target="_blank" class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
+          Regras
+        </a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      
+      <div class="text-white flex flex-col items-start md:pr-8 order-2 md:order-1">
+        <div class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
+          Hockey Micro
+        </div>
+        <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
+          Categoria em que uma equipe de robôs controlados remotamente disputam partidas semelhantes ao hóquei. As equipes precisam marcar gols utilizando estratégia, agilidade e trabalho em conjunto.
+        </p>
+        <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+Hockey.pdf" target="_blank" class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
+          Regras
+        </a>
+      </div>
+
+      <div class="relative w-full max-w-md mx-auto md:mr-0 md:ml-auto order-1 md:order-2">
+        <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
+          <img src="images/hockey_img.jpg" alt="Robôs de Hockey Micro" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      
+      <div class="relative w-full max-w-md mx-auto md:ml-0 md:mr-auto">
+        <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
+          <img src="images/trekking_img.jpg" alt="Robô de Trekking" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+      <div class="text-white flex flex-col items-start md:pl-8">
+        <div class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
+          Trekking
+        </div>
+        <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
+          Os robôs enfrentam percursos com obstáculos e desafios variados, simulando exploração em terrenos difíceis. A prova valoriza autonomia, sensores e navegação inteligente.
+        </p>
+        <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+Trekking.pdf" target="_blank" class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
+          Regras
+        </a>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      
+      <div class="text-white flex flex-col items-start md:pr-8 order-2 md:order-1">
+        <div class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
+          Artbot
+        </div>
+        <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
+          Categoria voltada à criação de robôs com foco artístico e interativo, capazes de produzir desenhos, pinturas, performances ou experiências visuais. Une criatividade, programação e engenharia para transformar tecnologia em expressão artística.
+        </p>
+        <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+ArtBot.pdf" target="_blank" class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
+          Regras
+        </a>
+      </div>
+
+      <div class="relative w-full max-w-md mx-auto md:mr-0 md:ml-auto order-1 md:order-2">
+        <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
+          <img src="images/artbot_img.jpg" alt="Robô Artbot" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      
+      <div class="relative w-full max-w-md mx-auto md:ml-0 md:mr-auto">
+        <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
+          <img src="images/micromouse.png" alt="Robô de Trekking" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+      <div class="text-white flex flex-col items-start md:pl-8">
+        <div class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
+          Micromouse
+        </div>
+        <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
+          Categoria em que pequenos robôs autônomos precisam encontrar a saída de um labirinto no menor tempo possível. O desafio exige algoritmos de navegação, mapeamento e tomada de decisão rápida.
+        </p>
+        <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/RoboCore_Micromouse_Regras.pdf" target="_blank" class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
+          Regras
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <br><br><br><br><br><br>
+
+<!-- SEÇÃO 4 - Cronograma -->
+
+
+  <div id="cronograma" class="max-w-7xl mx-auto bg-[#2d2d2d] rounded-[2.5rem] p-10 md:p-16 shadow-2xl relative py-20 px-8 scroll-mt-24">
+    
+    <h2 class="text-white text-4xl md:text-5xl font-bold text-center mb-16">
+      Cronograma
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0">
+
+      <div class="flex flex-col text-white md:pr-8">
+        <h3 class="text-lg font-bold mb-8 text-center md:text-left">10/10/2026 (sábado)</h3>
+        
+        <ul class="space-y-6 text-sm text-gray-300">
+          <li><strong class="text-white">09:00</strong> - Abertura da GRC e Início do Check-in.</li>
+          <li><strong class="text-white">09:30</strong> - Abertura das Boxes.</li>
+          <li><strong class="text-white">10:00</strong> - Início da Inspeção de Segurança (Obrigatório para as categorias de Combate).</li>
+          <li><strong class="text-white">16:00</strong> - Início das Competições nas categorias Seguidor de Linha, Trekking, Micromouse).</li>
+          <li><strong class="text-white">20:00</strong> - Término das Atividades do Dia.</li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col text-white md:px-8 mt-8 md:mt-0 pt-8 md:pt-0 border-t-2 md:border-t-0 md:border-x-2 border-white/30">
+        <h3 class="text-lg font-bold mb-8 text-center md:text-left">11/10/2026 (domingo)</h3>
+        
+        <ul class="space-y-6 text-sm text-gray-300">
+          <li><strong class="text-white">08:00</strong> - Abertura das Boxes.</li>
+          <li><strong class="text-white">10:00</strong> - Início das Competições nas categorias de Combate.</li>
+          <li><strong class="text-white">13:00</strong> - Intervalo.</li>
+          <li><strong class="text-white">14:00</strong> - Reinício das Competições.</li>
+          <li><strong class="text-white">15:00</strong> - Início das partidas de Micro-Hockey.</li>
+          <li><strong class="text-white">17:00</strong> - Início da chave de Sumô LEGO.</li>
+          <li><strong class="text-white">20:00</strong> - Término das Atividades do Dia.</li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col text-white md:pl-8 mt-8 md:mt-0 pt-8 md:pt-0 border-t-2 md:border-t-0 border-white/30">
+        <h3 class="text-lg font-bold mb-8 text-center md:text-left">12/10/2026 (segunda-feira)</h3>
+        
+        <ul class="space-y-6 text-sm text-gray-300">
+          <li><strong class="text-white">08:00</strong> - Abertura das Boxes.</li>
+          <li><strong class="text-white">09:00</strong> - Retomada das Competições (Finais de todas as modalidades).</li>
+          <li><strong class="text-white">13:00</strong> - Intervalo.</li>
+          <li><strong class="text-white">14:00</strong> - Reinício das Competições.</li>
+          <li><strong class="text-white">16:00</strong> - Término das Competições.</li>
+          <li><strong class="text-white">16:30</strong> - Cerimônia de Premiação.</li>
+          <li><strong class="text-white">17:30</strong> - Encerramento Oficial.</li>
+          <li><strong class="text-white">19:30</strong> - Fechamento do Local do Evento / Saída do Campus.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SEÇÃO 5 - Localização-->
+
+<section id="localizacao" class="relative py-20 px-8 bg-cover bg-center scroll-mt-24" style="background-image: url('images/fundo_verde.png');">
+  
+  <div class="max-w-6xl mx-auto flex flex-col items-center">
+    
+    <div class="bg-[#1b4d24] text-white text-3xl md:text-4xl font-bold py-4 px-10 rounded-2xl mb-12 shadow-lg text-center">
+      Como chegar no evento?
+    </div>
+
+    <div class="w-full h-80 md:h-[450px] rounded-xl overflow-hidden shadow-2xl mb-10 border-4 border-[#1b4d24]/20">
+      <iframe 
+        src="https://maps.google.com/maps?q=IFF%20Campus%20Campos%20Centro&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="w-full text-white text-left px-2 md:px-0">
+      <p class="font-bold text-lg md:text-xl mb-4 drop-shadow-sm">
+        Rua Dr. Siqueira, 273 - Parque Dom Bosco, Campos dos Goytacazes, RJ
+      </p>
+      
+      <p class="text-base md:text-lg leading-relaxed text-justify md:text-left drop-shadow-sm max-w-5xl">
+        A competição acontecerá no IFF Campus Campos Centro. Além da fácil localização, 
+        poderemos contar com a infraestrutura da instituição, segurança e monitoramento 
+        por câmeras durante toda a competição.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SEÇÃO 6 - Apoio-->
+
+<section id="contato" class="bg-[#111111] py-20 px-8 text-white scroll-mt-24">
+  <div class="max-w-6xl mx-auto">
+    
+    <div class="flex flex-col items-center mb-24">
+      <h2 class="text-2xl md:text-3xl font-bold mb-12 drop-shadow-md">Apoio:</h2>
+      
+      <div class="flex flex-col md:flex-row items-center justify-center gap-16 md:gap-24 w-full">
+        <img src="images/faperj_logo.png" alt="FAPERJ" class="h-20 md:h-28 object-contain hover:scale-105 transition-transform">
+        
+        <img src="images/iff_logo.png" alt="Instituto Federal Fluminense" class="h-20 md:h-28 object-contain hover:scale-105 transition-transform">
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between items-center md:items-start max-w-4xl mx-auto gap-12 md:gap-0 pt-12 border-t border-white/10">
+      
+      <div class="flex-shrink-0">
+        <img src="images/grc_logo.png" alt="GRC Logo" class="h-16 md:h-20 object-contain hover:scale-105 transition-transform">
+      </div>
+
+      <div class="flex flex-col items-center md:items-start">
+        <h3 class="text-lg md:text-xl font-bold mb-4">Contato:</h3>
+        <div class="flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+          </svg>
+          <a href="mailto:goytaborgs.centro@iff.edu.br" class="text-gray-300 hover:text-[#3eb142] transition-colors text-sm md:text-base font-medium">
+            goytaborgs.centro@iff.edu.br
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center md:items-start">
+        <h3 class="text-lg md:text-xl font-bold mb-4">Redes:</h3>
+        <div class="flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg>
+          <a href="https://instagram.com/goytaborgs" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-[#3eb142] transition-colors text-sm md:text-base font-medium">
+            @goytaborgs
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</body>
+
 </html>
