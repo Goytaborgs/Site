@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscrição - Competição de Robótica</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição - Competição de Robótica</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <style>
   /* Esconde a setinha padrão da tag <details> no HTML */
-  details > summary {
+  details>summary {
     list-style: none;
   }
-  details > summary::-webkit-details-marker {
+
+  details>summary::-webkit-details-marker {
     display: none;
   }
 </style>
 
 <nav class="sticky top-0 z-50 bg-[#121212] border-b border-black shadow-md">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    
+
     <div class="flex-shrink-0 cursor-pointer hover:opacity-90 transition-opacity">
       <a href="#">
         <img src="images/LogoGRCnavbar.png" alt="GRC Goytarobo Challenge" class="h-10 w-auto">
@@ -30,403 +32,501 @@
       <a href="#sobre" class="text-gray-300 hover:text-white text-sm font-medium transition-colors">Sobre</a>
       <a href="#categorias" class="text-gray-300 hover:text-white text-sm font-medium transition-colors">Categorias</a>
       <a href="#cronograma" class="text-gray-300 hover:text-white text-sm font-medium transition-colors">Cronograma</a>
-      <a href="#localizacao" class="text-gray-300 hover:text-white text-sm font-medium transition-colors">Localização</a>
+      <a href="#localizacao"
+        class="text-gray-300 hover:text-white text-sm font-medium transition-colors">Localização</a>
       <a href="#contato" class="text-gray-300 hover:text-white text-sm font-medium transition-colors">Contato</a>
     </div>
 
-    </div>
+  </div>
 </nav>
 
 
 <!-- SEÇÃO 1 - Inicio -->
 
-  <body class="bg-gray-900"> 
-    <section id="sobre" class="relative py-16 px-8 flex justify-center items-center bg-cover bg-center min-h-screen" style="background-image: url('images/fundo_verde.png');">
-      <div class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<body class="bg-gray-900">
+  <section id="sobre" class="relative py-16 px-8 flex justify-center items-center bg-cover bg-center min-h-screen"
+    style="background-image: url('images/fundo_verde.png');">
+    <div class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
-        <div class="flex justify-center md:justify-end">
-          <img src="images/Logo_GRC.png" alt="Logo da GRC" class="w-90 md:w-[600px] h-auto object-contain drop-shadow-xl hover:scale-125 transition-transform duration-300 mx-auto">
+      <div class="flex justify-center md:justify-end">
+        <img src="images/Logo_GRC.png" alt="Logo da GRC"
+          class="w-90 md:w-[600px] h-auto object-contain drop-shadow-xl hover:scale-125 transition-transform duration-300 mx-auto">
+      </div>
+
+      <div class="text-white text-center md:text-left flex flex-col items-center md:items-start space-y-4">
+        <h1 class="text-5xl md:text-6xl font-extrabold tracking-wide drop-shadow-md leading-tight">
+          10, 11 e 12<br>DE OUTUBRO
+        </h1>
+
+        <p class="text-xl md:text-2xl mt-4 font-light">
+          A <span class="font-bold">maior competição de robótica<br>do interior do RJ</span>, está de volta!
+        </p>
+
+        <div class="mt-8 w-full max-w-xs">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAwO0T4Wh6HrwvXaxjxJBDBpmPeFzHnY2ujC2t_0zp5wHPGQ/viewform"
+            target="_blank"
+            class="block w-full text-center bg-[#1a1a1a] text-white text-2xl font-bold py-3 px-8 rounded-full border-4 border-white hover:bg-black hover:text-green-400 transition-colors duration-300 shadow-xl">
+            SE INSCREVA!
+          </a>
         </div>
 
-        <div class="text-white text-center md:text-left flex flex-col items-center md:items-start space-y-4">
-          <h1 class="text-5xl md:text-6xl font-extrabold tracking-wide drop-shadow-md leading-tight">
-            10, 11 e 12<br>DE OUTUBRO
-          </h1>
-          
-          <p class="text-xl md:text-2xl mt-4 font-light">
-            A <span class="font-bold">maior competição de robótica<br>do interior do RJ</span>, está de volta!
-          </p>
+        <p class="text-sm mt-2 text-center w-full max-w-xs drop-shadow-sm">
+          Inscrições abertas <span class="font-bold">de 19 de maio<br>até 31 de agosto.</span>
+        </p>
+      </div>
+    </div>
+  </section>
 
-          <div class="mt-8 w-full max-w-xs">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAwO0T4Wh6HrwvXaxjxJBDBpmPeFzHnY2ujC2t_0zp5wHPGQ/viewform" target="_blank" class="block w-full text-center bg-[#1a1a1a] text-white text-2xl font-bold py-3 px-8 rounded-full border-4 border-white hover:bg-black hover:text-green-400 transition-colors duration-300 shadow-xl">
-              SE INSCREVA!
+  <section id="sobre-evento" class="relative py-20 px-8 scroll-mt-24 bg-[#121212]"
+    style="background-image: url('images/fundo_escuro_camuflado.png');">
+    <div class=" max-w-4xl mx-auto">
+
+      <div class="flex justify-center mb-12">
+        <div class="border-4 border-[#3da13b] rounded-2xl px-6 py-4 bg-[#1a1a1a] shadow-xl text-center">
+          <h2 class="text-white text-2xl md:text-4xl font-bold tracking-wide">
+            Bem-vindos a 3º Edição da GRC!
+          </h2>
+        </div>
+      </div>
+
+      <div class="space-y-6 text-gray-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+        <p>
+          Mobilizem suas equipes e preparem seus robôs! Estamos organizando três dias de competição na cidade de Campos
+          dos Goytacazes, <strong class="text-white">nos dias 10, 11 e 12 de outubro de 2026.</strong>
+        </p>
+
+        <p>
+          E quanto custam as inscrições dos robôs e competidores? Nenhum valor. Isso mesmo: as <strong
+            class="text-white">inscrições serão totalmente gratuitas.</strong>
+        </p>
+
+        <p>
+          Além disso, disponibilizaremos <strong class="text-white">alojamento gratuito para os 200 primeiros
+            competidores
+            inscritos.</strong> Portanto, garantam suas vagas o quanto antes.
+        </p>
+
+        <p>
+          Estamos muito animados com a terceira edição da GRC, uma competição de robótica que reúne diversas categorias,
+          envolvendo robôs autônomos e rádio-controlados. Tudo está sendo preparado com grande dedicação para
+          proporcionar
+          uma experiência inesquecível a todos os participantes.
+        </p>
+
+        <p class="text-lg md:text-xl font-bold text-white pt-4">
+          Venham fazer parte deste grande evento!
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 2 - Sobre -->
+
+  <section class="relative py-16 px-8 flex justify-center items-center bg-cover bg-center"
+    style="background-image: url('images/Sobre_Fundo.png');">
+    <div class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+      <div class="text-white flex flex-col items-start">
+        <div class="bg-[#2a4522] text-white text-3xl md:text-4xl font-bold py-3 px-6 rounded-2xl mb-6 shadow-lg">
+          O que é a GRC?
+        </div>
+
+        <p class="text-lg leading-relaxed text-justify drop-shadow-sm font-medium">
+          A Goyta Robô Challenge (GRC) é a competição sediada no Instituto Federal Fluminense (IFF), tendo o próprio
+          instituto como um dos seus principais apoiadores, junto a FAPERJ. O evento reúne equipes para competirem em
+          categorias populares do meio da robótica competitiva, além de promover uma mostra tecnológica.
+        </p>
+      </div>
+
+      <div class="relative flex flex-col items-center">
+        <div
+          class="absolute top-0 right-0 -mt-4 mr-3 md:-mr-1 bg-[#2a4522] text-white text-sm font-bold py-1 px-4 rounded-full z-20 shadow-md">
+          Edição Anterior
+        </div>
+
+        <div class="relative w-full max-w-md rounded-xl overflow-hidden shadow-2xl bg-black/20">
+
+          <img src="images/equipe.png" alt="Equipe na GRC"
+            class="w-full aspect-square object-cover opacity-90 hover:opacity-100 transition-opacity">
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3 - Categorias-->
+
+  <section id="categorias" class="relative py-20 px-8 bg-cover bg-center bg-[#0d130d]"
+    style="background-image: url('images/fundo_escuro_camuflado.png');">
+
+    <div class="flex justify-center mb-20">
+      <h2
+        class="text-white text-3xl md:text-4xl font-bold py-3 px-10 rounded-2xl border-2 border-[#3eb142] bg-[#1a1a1a] shadow-lg">
+        Categorias
+      </h2>
+    </div>
+
+    <div class="max-w-6xl mx-auto flex flex-col space-y-24">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <div class="relative w-full max-w-md mx-auto md:ml-0 md:mr-auto">
+          <div
+            class="absolute top-0 left-0 -mt-3 ml-4 bg-[#56c85e] text-white text-xs font-bold py-1 px-4 rounded-full z-20 shadow-md">
+            Beetleweight
+          </div>
+
+          <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
+            <img src="images/combate_img.jpg" alt="Robô de Combate" class="w-full h-full object-cover">
+
+          </div>
+
+        </div>
+
+        <div class="text-white flex flex-col items-start md:pl-8">
+          <div
+            class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
+            Combate
+          </div>
+          <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
+            Categoria em que robôs se enfrentam em arenas, utilizando armas e estratégias para imobilizar ou destruir o
+            adversário. Exige resistência mecânica, eletrônica avançada e pilotagem precisa. A competição contará com as
+            classes Fairyweight, Antweight, Beetleweight, como também Cupim.
+          </p>
+          <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+Combate.pdf" target="_blank"
+            class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
+            Regras
+          </a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <div class="text-white flex flex-col items-start md:pr-8 order-2 md:order-1">
+          <div
+            class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
+            Seguidores
+          </div>
+          <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
+            Os robôs devem percorrer uma pista seguindo uma linha no chão de forma totalmente autônoma. O desafio
+            envolve velocidade, sensores e programação eficiente. A competição contará com as classes Seguidor e
+            Perseguidor de Linha.
+          </p>
+          <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+Seguidor+de+Linha.pdf"
+            target="_blank"
+            class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
+            Regras
+          </a>
+        </div>
+
+        <div class="relative w-full max-w-md mx-auto md:mr-0 md:ml-auto order-1 md:order-2">
+          <div
+            class="absolute top-0 right-0 -mt-3 mr-4 bg-[#56c85e] text-white text-xs font-bold py-1 px-4 rounded-full z-20 shadow-md">
+            Seguidor de Linha
+          </div>
+
+          <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
+            <img src="images/seguidor_img.jpg" alt="Robô Seguidor" class="w-full h-full object-cover">
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <div class="relative w-full max-w-md mx-auto md:ml-0 md:mr-auto">
+          <div
+            class="absolute top-0 left-0 -mt-3 ml-4 bg-[#56c85e] text-white text-xs font-bold py-1 px-4 rounded-full z-20 shadow-md">
+            Mini Auto
+          </div>
+
+          <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
+            <img src="images/sumo_img.jpg" alt="Robô Sumô" class="w-full h-full object-cover">
+
+          </div>
+
+        </div>
+
+        <div class="text-white flex flex-col items-start md:pl-8">
+          <div
+            class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
+            Sumô
+          </div>
+          <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
+            Inspirada no esporte japonês, essa modalidade coloca dois robôs em disputa dentro de uma arena circular. O
+            objetivo é empurrar o oponente para fora da área de combate. A competição contará com as classes de Sumô
+            Lego, Mini Auto, e Mini RC.
+          </p>
+          <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+Sumo.pdf" target="_blank"
+            class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
+            Regras
+          </a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <div class="text-white flex flex-col items-start md:pr-8 order-2 md:order-1">
+          <div
+            class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
+            Hockey Micro
+          </div>
+          <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
+            Categoria em que uma equipe de robôs controlados remotamente disputam partidas semelhantes ao hóquei. As
+            equipes precisam marcar gols utilizando estratégia, agilidade e trabalho em conjunto.
+          </p>
+          <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+Hockey.pdf" target="_blank"
+            class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
+            Regras
+          </a>
+        </div>
+
+        <div class="relative w-full max-w-md mx-auto md:mr-0 md:ml-auto order-1 md:order-2">
+          <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
+            <img src="images/hockey_img.jpg" alt="Robôs de Hockey Micro" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <div class="relative w-full max-w-md mx-auto md:ml-0 md:mr-auto">
+          <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
+            <img src="images/trekking_img.jpg" alt="Robô de Trekking" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <div class="text-white flex flex-col items-start md:pl-8">
+          <div
+            class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
+            Trekking
+          </div>
+          <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
+            Os robôs enfrentam percursos com obstáculos e desafios variados, simulando exploração em terrenos difíceis.
+            A prova valoriza autonomia, sensores e navegação inteligente.
+          </p>
+          <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+Trekking.pdf" target="_blank"
+            class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
+            Regras
+          </a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <div class="text-white flex flex-col items-start md:pr-8 order-2 md:order-1">
+          <div
+            class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
+            Artbot
+          </div>
+          <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
+            Categoria voltada à criação de robôs com foco artístico e interativo, capazes de produzir desenhos,
+            pinturas, performances ou experiências visuais. Une criatividade, programação e engenharia para transformar
+            tecnologia em expressão artística.
+          </p>
+          <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+ArtBot.pdf" target="_blank"
+            class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
+            Regras
+          </a>
+        </div>
+
+        <div class="relative w-full max-w-md mx-auto md:mr-0 md:ml-auto order-1 md:order-2">
+          <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
+            <img src="images/artbot_img.jpg" alt="Robô Artbot" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+        <div class="relative w-full max-w-md mx-auto md:ml-0 md:mr-auto">
+          <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
+            <img src="images/micromouse.png" alt="Robô de Trekking" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <div class="text-white flex flex-col items-start md:pl-8">
+          <div
+            class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
+            Micromouse
+          </div>
+          <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
+            Categoria em que pequenos robôs autônomos precisam encontrar a saída de um labirinto no menor tempo
+            possível. O desafio exige algoritmos de navegação, mapeamento e tomada de decisão rápida.
+          </p>
+          <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/RoboCore_Micromouse_Regras.pdf"
+            target="_blank"
+            class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
+            Regras
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <br><br><br><br><br><br>
+
+    <!-- SEÇÃO 4 - Cronograma -->
+
+
+    <div id="cronograma"
+      class="max-w-7xl mx-auto bg-[#2d2d2d] rounded-[2.5rem] p-10 md:p-16 shadow-2xl relative py-20 px-8 scroll-mt-24">
+
+      <h2 class="text-white text-4xl md:text-5xl font-bold text-center mb-16">
+        Cronograma
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0">
+
+        <div class="flex flex-col text-white md:pr-8">
+          <h3 class="text-lg font-bold mb-8 text-center md:text-left">10/10/2026 (sábado)</h3>
+
+          <ul class="space-y-6 text-sm text-gray-300">
+            <li><strong class="text-white">09:00</strong> - Abertura da GRC e Início do Check-in.</li>
+            <li><strong class="text-white">09:30</strong> - Abertura das Boxes.</li>
+            <li><strong class="text-white">10:00</strong> - Início da Inspeção de Segurança (Obrigatório para as
+              categorias de Combate).</li>
+            <li><strong class="text-white">16:00</strong> - Início das Competições nas categorias Seguidor de Linha,
+              Trekking, Micromouse).</li>
+            <li><strong class="text-white">20:00</strong> - Término das Atividades do Dia.</li>
+          </ul>
+        </div>
+
+        <div
+          class="flex flex-col text-white md:px-8 mt-8 md:mt-0 pt-8 md:pt-0 border-t-2 md:border-t-0 md:border-x-2 border-white/30">
+          <h3 class="text-lg font-bold mb-8 text-center md:text-left">11/10/2026 (domingo)</h3>
+
+          <ul class="space-y-6 text-sm text-gray-300">
+            <li><strong class="text-white">08:00</strong> - Abertura das Boxes.</li>
+            <li><strong class="text-white">10:00</strong> - Início das Competições nas categorias de Combate.</li>
+            <li><strong class="text-white">13:00</strong> - Intervalo.</li>
+            <li><strong class="text-white">14:00</strong> - Reinício das Competições.</li>
+            <li><strong class="text-white">15:00</strong> - Início das partidas de Micro-Hockey.</li>
+            <li><strong class="text-white">17:00</strong> - Início da chave de Sumô LEGO.</li>
+            <li><strong class="text-white">20:00</strong> - Término das Atividades do Dia.</li>
+          </ul>
+        </div>
+
+        <div
+          class="flex flex-col text-white md:pl-8 mt-8 md:mt-0 pt-8 md:pt-0 border-t-2 md:border-t-0 border-white/30">
+          <h3 class="text-lg font-bold mb-8 text-center md:text-left">12/10/2026 (segunda-feira)</h3>
+
+          <ul class="space-y-6 text-sm text-gray-300">
+            <li><strong class="text-white">08:00</strong> - Abertura das Boxes.</li>
+            <li><strong class="text-white">09:00</strong> - Retomada das Competições (Finais de todas as modalidades).
+            </li>
+            <li><strong class="text-white">13:00</strong> - Intervalo.</li>
+            <li><strong class="text-white">14:00</strong> - Reinício das Competições.</li>
+            <li><strong class="text-white">16:00</strong> - Término das Competições.</li>
+            <li><strong class="text-white">16:30</strong> - Cerimônia de Premiação.</li>
+            <li><strong class="text-white">17:30</strong> - Encerramento Oficial.</li>
+            <li><strong class="text-white">19:30</strong> - Fechamento do Local do Evento / Saída do Campus.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 5 - Localização-->
+
+  <section id="localizacao" class="relative py-20 px-8 bg-cover bg-center scroll-mt-24"
+    style="background-image: url('images/fundo_verde.png');">
+
+    <div class="max-w-6xl mx-auto flex flex-col items-center">
+
+      <div
+        class="bg-[#1b4d24] text-white text-3xl md:text-4xl font-bold py-4 px-10 rounded-2xl mb-12 shadow-lg text-center">
+        Como chegar no evento?
+      </div>
+
+      <div class="w-full h-80 md:h-[450px] rounded-xl overflow-hidden shadow-2xl mb-10 border-4 border-[#1b4d24]/20">
+        <iframe src="https://maps.google.com/maps?q=IFF%20Campus%20Campos%20Centro&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div class="w-full text-white text-left px-2 md:px-0">
+        <p class="font-bold text-lg md:text-xl mb-4 drop-shadow-sm">
+          Rua Dr. Siqueira, 273 - Parque Dom Bosco, Campos dos Goytacazes, RJ
+        </p>
+
+        <p class="text-base md:text-lg leading-relaxed text-justify md:text-left drop-shadow-sm max-w-5xl">
+          A competição acontecerá no IFF Campus Campos Centro. Além da fácil localização,
+          poderemos contar com a infraestrutura da instituição, segurança e monitoramento
+          por câmeras durante toda a competição.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 6 - Apoio-->
+
+  <section id="contato" class="bg-[#111111] py-20 px-8 text-white scroll-mt-24">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="flex flex-col items-center mb-24">
+        <h2 class="text-2xl md:text-3xl font-bold mb-12 drop-shadow-md">Apoio:</h2>
+
+        <div class="flex flex-col md:flex-row items-center justify-center gap-16 md:gap-24 w-full">
+          <img src="images/faperj_logo.png" alt="FAPERJ"
+            class="h-20 md:h-28 object-contain hover:scale-105 transition-transform">
+
+          <img src="images/iff_logo.png" alt="Instituto Federal Fluminense"
+            class="h-20 md:h-28 object-contain hover:scale-105 transition-transform">
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row justify-between items-center md:items-start max-w-4xl mx-auto gap-12 md:gap-0 pt-12 border-t border-white/10">
+
+        <div class="flex-shrink-0">
+          <img src="images/grc_logo.png" alt="GRC Logo"
+            class="h-16 md:h-20 object-contain hover:scale-105 transition-transform">
+        </div>
+
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="text-lg md:text-xl font-bold mb-4">Contato:</h3>
+          <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+            </svg>
+            <a href="mailto:goytaborgs.centro@iff.edu.br"
+              class="text-gray-300 hover:text-[#3eb142] transition-colors text-sm md:text-base font-medium">
+              goytaborgs.centro@iff.edu.br
             </a>
           </div>
-          
-          <p class="text-sm mt-2 text-center w-full max-w-xs drop-shadow-sm">
-            Inscrições abertas <span class="font-bold">de XX de maio<br>até XX de junho.</span>
-          </p>
-        </div>
-      </div>
-    </section>
-
-<!-- SEÇÃO 2 - Sobre -->
-
-<section class="relative py-16 px-8 flex justify-center items-center bg-cover bg-center" style="background-image: url('images/Sobre_Fundo.png');">
-  <div class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-
-    <div class="text-white flex flex-col items-start">
-      <div class="bg-[#2a4522] text-white text-3xl md:text-4xl font-bold py-3 px-6 rounded-2xl mb-6 shadow-lg">
-        O que é a GRC?
-      </div>
-      
-      <p class="text-lg leading-relaxed text-justify drop-shadow-sm font-medium">
-        A Goyta Robô Challenge (GRC) é a competição sediada no Instituto Federal Fluminense (IFF), tendo o próprio instituto como um dos seus principais apoiadores, junto a FAPERJ. O evento reúne equipes para competirem em categorias populares do meio da robótica competitiva, além de promover uma mostra tecnológica.
-      </p>
-    </div>
-
-    <div class="relative flex flex-col items-center">
-      <div class="absolute top-0 right-0 -mt-4 mr-3 md:-mr-1 bg-[#2a4522] text-white text-sm font-bold py-1 px-4 rounded-full z-20 shadow-md">
-        Edição Anterior
-      </div>
-
-      <div class="relative w-full max-w-md rounded-xl overflow-hidden shadow-2xl bg-black/20">
-        
-        <img src="images/equipe.png" alt="Equipe na GRC" class="w-full aspect-square object-cover opacity-90 hover:opacity-100 transition-opacity">
-
         </div>
 
-      </div>
-
-  </div>
-</section>
-
-<!-- SEÇÃO 3 - Categorias-->
-
-<section id="categorias" class="relative py-20 px-8 bg-cover bg-center bg-[#0d130d]" style="background-image: url('images/fundo_escuro_camuflado.png');">
-  
-  <div class="flex justify-center mb-20">
-    <h2 class="text-white text-3xl md:text-4xl font-bold py-3 px-10 rounded-2xl border-2 border-[#3eb142] bg-[#1a1a1a] shadow-lg">
-      Categorias
-    </h2>
-  </div>
-
-  <div class="max-w-6xl mx-auto flex flex-col space-y-24">
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      
-      <div class="relative w-full max-w-md mx-auto md:ml-0 md:mr-auto">
-        <div class="absolute top-0 left-0 -mt-3 ml-4 bg-[#56c85e] text-white text-xs font-bold py-1 px-4 rounded-full z-20 shadow-md">
-          Beetleweight
-        </div>
-        
-        <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
-          <img src="images/combate_img.jpg" alt="Robô de Combate" class="w-full h-full object-cover">
-          
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="text-lg md:text-xl font-bold mb-4">Redes:</h3>
+          <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+            <a href="https://instagram.com/goytaborgs" target="_blank" rel="noopener noreferrer"
+              class="text-gray-300 hover:text-[#3eb142] transition-colors text-sm md:text-base font-medium">
+              @goytaborgs
+            </a>
           </div>
-        
         </div>
 
-      <div class="text-white flex flex-col items-start md:pl-8">
-        <div class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
-          Combate
-        </div>
-        <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
-          Categoria em que robôs se enfrentam em arenas, utilizando armas e estratégias para imobilizar ou destruir o adversário. Exige resistência mecânica, eletrônica avançada e pilotagem precisa. A competição contará com as classes Fairyweight, Antweight, Beetleweight, como também Cupim.
-        </p>
-        <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+Combate.pdf" target="_blank" class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
-          Regras
-        </a>
       </div>
     </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      
-      <div class="text-white flex flex-col items-start md:pr-8 order-2 md:order-1">
-        <div class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
-          Seguidores
-        </div>
-        <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
-          Os robôs devem percorrer uma pista seguindo uma linha no chão de forma totalmente autônoma. O desafio envolve velocidade, sensores e programação eficiente. A competição contará com as classes Seguidor e Perseguidor de Linha.
-        </p>
-        <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+Seguidor+de+Linha.pdf" target="_blank" class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
-          Regras
-        </a>
-      </div>
-
-      <div class="relative w-full max-w-md mx-auto md:mr-0 md:ml-auto order-1 md:order-2">
-        <div class="absolute top-0 right-0 -mt-3 mr-4 bg-[#56c85e] text-white text-xs font-bold py-1 px-4 rounded-full z-20 shadow-md">
-          Seguidor de Linha
-        </div>
-        
-        <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
-          <img src="images/seguidor_img.jpg" alt="Robô Seguidor" class="w-full h-full object-cover">
-          
-          </div>
-        
-        </div>
-
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      
-      <div class="relative w-full max-w-md mx-auto md:ml-0 md:mr-auto">
-        <div class="absolute top-0 left-0 -mt-3 ml-4 bg-[#56c85e] text-white text-xs font-bold py-1 px-4 rounded-full z-20 shadow-md">
-          Mini Auto
-        </div>
-        
-        <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
-          <img src="images/sumo_img.jpg" alt="Robô Sumô" class="w-full h-full object-cover">
-          
-          </div>
-        
-        </div>
-
-      <div class="text-white flex flex-col items-start md:pl-8">
-        <div class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
-          Sumô
-        </div>
-        <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
-          Inspirada no esporte japonês, essa modalidade coloca dois robôs em disputa dentro de uma arena circular. O objetivo é empurrar o oponente para fora da área de combate. A competição contará com as classes de Sumô Lego, Mini Auto, e Mini RC.
-        </p>
-        <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+Sumo.pdf" target="_blank" class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
-          Regras
-        </a>
-      </div>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      
-      <div class="text-white flex flex-col items-start md:pr-8 order-2 md:order-1">
-        <div class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
-          Hockey Micro
-        </div>
-        <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
-          Categoria em que uma equipe de robôs controlados remotamente disputam partidas semelhantes ao hóquei. As equipes precisam marcar gols utilizando estratégia, agilidade e trabalho em conjunto.
-        </p>
-        <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+Hockey.pdf" target="_blank" class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
-          Regras
-        </a>
-      </div>
-
-      <div class="relative w-full max-w-md mx-auto md:mr-0 md:ml-auto order-1 md:order-2">
-        <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
-          <img src="images/hockey_img.jpg" alt="Robôs de Hockey Micro" class="w-full h-full object-cover">
-        </div>
-      </div>
-
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      
-      <div class="relative w-full max-w-md mx-auto md:ml-0 md:mr-auto">
-        <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
-          <img src="images/trekking_img.jpg" alt="Robô de Trekking" class="w-full h-full object-cover">
-        </div>
-      </div>
-
-      <div class="text-white flex flex-col items-start md:pl-8">
-        <div class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
-          Trekking
-        </div>
-        <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
-          Os robôs enfrentam percursos com obstáculos e desafios variados, simulando exploração em terrenos difíceis. A prova valoriza autonomia, sensores e navegação inteligente.
-        </p>
-        <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+Trekking.pdf" target="_blank" class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
-          Regras
-        </a>
-      </div>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      
-      <div class="text-white flex flex-col items-start md:pr-8 order-2 md:order-1">
-        <div class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
-          Artbot
-        </div>
-        <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
-          Categoria voltada à criação de robôs com foco artístico e interativo, capazes de produzir desenhos, pinturas, performances ou experiências visuais. Une criatividade, programação e engenharia para transformar tecnologia em expressão artística.
-        </p>
-        <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/Regras+-+ArtBot.pdf" target="_blank" class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
-          Regras
-        </a>
-      </div>
-
-      <div class="relative w-full max-w-md mx-auto md:mr-0 md:ml-auto order-1 md:order-2">
-        <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
-          <img src="images/artbot_img.jpg" alt="Robô Artbot" class="w-full h-full object-cover">
-        </div>
-      </div>
-
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      
-      <div class="relative w-full max-w-md mx-auto md:ml-0 md:mr-auto">
-        <div class="relative rounded-xl overflow-hidden shadow-2xl bg-black/30 aspect-square">
-          <img src="images/micromouse.png" alt="Robô de Trekking" class="w-full h-full object-cover">
-        </div>
-      </div>
-
-      <div class="text-white flex flex-col items-start md:pl-8">
-        <div class="bg-[#3eb142] text-white text-3xl font-bold py-3 px-8 rounded-2xl mb-6 text-center md:text-left shadow-lg w-full md:w-auto">
-          Micromouse
-        </div>
-        <p class="text-sm md:text-base leading-relaxed text-justify mb-8 text-gray-200">
-          Categoria em que pequenos robôs autônomos precisam encontrar a saída de um labirinto no menor tempo possível. O desafio exige algoritmos de navegação, mapeamento e tomada de decisão rápida.
-        </p>
-        <a href="https://robocore-eventos.s3.sa-east-1.amazonaws.com/public/RoboCore_Micromouse_Regras.pdf" target="_blank" class="bg-[#1a1a1a] text-white font-bold py-2 px-8 rounded-full border-2 border-[#3eb142] hover:bg-[#3eb142] transition-colors shadow-md">
-          Regras
-        </a>
-      </div>
-    </div>
-
-  </div>
-  <br><br><br><br><br><br>
-
-<!-- SEÇÃO 4 - Cronograma -->
-
-
-  <div id="cronograma" class="max-w-7xl mx-auto bg-[#2d2d2d] rounded-[2.5rem] p-10 md:p-16 shadow-2xl relative py-20 px-8 scroll-mt-24">
-    
-    <h2 class="text-white text-4xl md:text-5xl font-bold text-center mb-16">
-      Cronograma
-    </h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0">
-
-      <div class="flex flex-col text-white md:pr-8">
-        <h3 class="text-lg font-bold mb-8 text-center md:text-left">10/10/2026 (sábado)</h3>
-        
-        <ul class="space-y-6 text-sm text-gray-300">
-          <li><strong class="text-white">09:00</strong> - Abertura da GRC e Início do Check-in.</li>
-          <li><strong class="text-white">09:30</strong> - Abertura das Boxes.</li>
-          <li><strong class="text-white">10:00</strong> - Início da Inspeção de Segurança (Obrigatório para as categorias de Combate).</li>
-          <li><strong class="text-white">16:00</strong> - Início das Competições nas categorias Seguidor de Linha, Trekking, Micromouse).</li>
-          <li><strong class="text-white">20:00</strong> - Término das Atividades do Dia.</li>
-        </ul>
-      </div>
-
-      <div class="flex flex-col text-white md:px-8 mt-8 md:mt-0 pt-8 md:pt-0 border-t-2 md:border-t-0 md:border-x-2 border-white/30">
-        <h3 class="text-lg font-bold mb-8 text-center md:text-left">11/10/2026 (domingo)</h3>
-        
-        <ul class="space-y-6 text-sm text-gray-300">
-          <li><strong class="text-white">08:00</strong> - Abertura das Boxes.</li>
-          <li><strong class="text-white">10:00</strong> - Início das Competições nas categorias de Combate.</li>
-          <li><strong class="text-white">13:00</strong> - Intervalo.</li>
-          <li><strong class="text-white">14:00</strong> - Reinício das Competições.</li>
-          <li><strong class="text-white">15:00</strong> - Início das partidas de Micro-Hockey.</li>
-          <li><strong class="text-white">17:00</strong> - Início da chave de Sumô LEGO.</li>
-          <li><strong class="text-white">20:00</strong> - Término das Atividades do Dia.</li>
-        </ul>
-      </div>
-
-      <div class="flex flex-col text-white md:pl-8 mt-8 md:mt-0 pt-8 md:pt-0 border-t-2 md:border-t-0 border-white/30">
-        <h3 class="text-lg font-bold mb-8 text-center md:text-left">12/10/2026 (segunda-feira)</h3>
-        
-        <ul class="space-y-6 text-sm text-gray-300">
-          <li><strong class="text-white">08:00</strong> - Abertura das Boxes.</li>
-          <li><strong class="text-white">09:00</strong> - Retomada das Competições (Finais de todas as modalidades).</li>
-          <li><strong class="text-white">13:00</strong> - Intervalo.</li>
-          <li><strong class="text-white">14:00</strong> - Reinício das Competições.</li>
-          <li><strong class="text-white">16:00</strong> - Término das Competições.</li>
-          <li><strong class="text-white">16:30</strong> - Cerimônia de Premiação.</li>
-          <li><strong class="text-white">17:30</strong> - Encerramento Oficial.</li>
-          <li><strong class="text-white">19:30</strong> - Fechamento do Local do Evento / Saída do Campus.</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- SEÇÃO 5 - Localização-->
-
-<section id="localizacao" class="relative py-20 px-8 bg-cover bg-center scroll-mt-24" style="background-image: url('images/fundo_verde.png');">
-  
-  <div class="max-w-6xl mx-auto flex flex-col items-center">
-    
-    <div class="bg-[#1b4d24] text-white text-3xl md:text-4xl font-bold py-4 px-10 rounded-2xl mb-12 shadow-lg text-center">
-      Como chegar no evento?
-    </div>
-
-    <div class="w-full h-80 md:h-[450px] rounded-xl overflow-hidden shadow-2xl mb-10 border-4 border-[#1b4d24]/20">
-      <iframe 
-        src="https://maps.google.com/maps?q=IFF%20Campus%20Campos%20Centro&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-        width="100%" 
-        height="100%" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-
-    <div class="w-full text-white text-left px-2 md:px-0">
-      <p class="font-bold text-lg md:text-xl mb-4 drop-shadow-sm">
-        Rua Dr. Siqueira, 273 - Parque Dom Bosco, Campos dos Goytacazes, RJ
-      </p>
-      
-      <p class="text-base md:text-lg leading-relaxed text-justify md:text-left drop-shadow-sm max-w-5xl">
-        A competição acontecerá no IFF Campus Campos Centro. Além da fácil localização, 
-        poderemos contar com a infraestrutura da instituição, segurança e monitoramento 
-        por câmeras durante toda a competição.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- SEÇÃO 6 - Apoio-->
-
-<section id="contato" class="bg-[#111111] py-20 px-8 text-white scroll-mt-24">
-  <div class="max-w-6xl mx-auto">
-    
-    <div class="flex flex-col items-center mb-24">
-      <h2 class="text-2xl md:text-3xl font-bold mb-12 drop-shadow-md">Apoio:</h2>
-      
-      <div class="flex flex-col md:flex-row items-center justify-center gap-16 md:gap-24 w-full">
-        <img src="images/faperj_logo.png" alt="FAPERJ" class="h-20 md:h-28 object-contain hover:scale-105 transition-transform">
-        
-        <img src="images/iff_logo.png" alt="Instituto Federal Fluminense" class="h-20 md:h-28 object-contain hover:scale-105 transition-transform">
-      </div>
-    </div>
-
-    <div class="flex flex-col md:flex-row justify-between items-center md:items-start max-w-4xl mx-auto gap-12 md:gap-0 pt-12 border-t border-white/10">
-      
-      <div class="flex-shrink-0">
-        <img src="images/grc_logo.png" alt="GRC Logo" class="h-16 md:h-20 object-contain hover:scale-105 transition-transform">
-      </div>
-
-      <div class="flex flex-col items-center md:items-start">
-        <h3 class="text-lg md:text-xl font-bold mb-4">Contato:</h3>
-        <div class="flex items-center gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-          </svg>
-          <a href="mailto:goytaborgs.centro@iff.edu.br" class="text-gray-300 hover:text-[#3eb142] transition-colors text-sm md:text-base font-medium">
-            goytaborgs.centro@iff.edu.br
-          </a>
-        </div>
-      </div>
-
-      <div class="flex flex-col items-center md:items-start">
-        <h3 class="text-lg md:text-xl font-bold mb-4">Redes:</h3>
-        <div class="flex items-center gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-          </svg>
-          <a href="https://instagram.com/goytaborgs" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-[#3eb142] transition-colors text-sm md:text-base font-medium">
-            @goytaborgs
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+  </section>
 
 </body>
 
