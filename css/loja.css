@@ -1,0 +1,16 @@
+.linha{
+    display: flex;
+    flex-direction: row;
+    padding: 2% 5%;
+}
+.produto {
+    margin: 10px;
+    padding: 2%;
+    height: 300px;
+    width: 500px;
+    min-height: 320px;
+    min-width: 144px;
+    background-color: #f3f9ff;
+    border-radius: 10px;
+    box-shadow: -3px 5px 2px #003310aa;
+}
