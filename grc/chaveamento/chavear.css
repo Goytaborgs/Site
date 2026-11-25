@@ -1,0 +1,98 @@
+.bloco {
+    height: 92px;
+    width: 208px;
+    background-color: #f6fff895;
+    border: 1px solid #10771a;
+    border-radius: 2.5vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 2.5vw;
+}
+.blocosuperior {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.chamada, .timing {
+    width: 90%;
+    font-size: 100%;
+    padding:0 7%;
+}
+.timing {
+    background-color: #10771a;
+    text-align: right;
+}
+.chamada{
+    background-color: #10771ac0;
+}
+.classeMeia {
+    padding: 2px 0;
+}
+.blocoMeio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 75% 15%;
+    align-items: center;
+    background-color: #f6fff8;
+    color: black;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+.divisoria {
+    border: none;
+    height: 1px;
+    background-color: #000000;
+    margin: 0;
+}
+.itema {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 75%;
+    min-width: 0;
+}
+.pontos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 40%;
+    min-width: 0;
+}
+.nomesRE {
+    padding-left: 2%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 0;
+    margin-left: 6%;
+}
+.robo {
+    font-size: 16px;
+    width: 110%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.equipa {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.75);
+    width: 110%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.blocoinferior {
+    width: 100%;
+    height: 5%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #10771a;
+    color: white;
+}
