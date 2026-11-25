@@ -3,7 +3,7 @@
     width: 208px;
     background-color: #f6fff895;
     border: 1px solid #10771a;
-    border-radius: 2.5vh;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
