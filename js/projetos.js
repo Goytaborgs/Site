@@ -118,7 +118,7 @@ $(function () {
     }
   }
 
-  document.getElementById("ActiveMembers").innerHTML += htmlSaida;
+  document.getElementById("Projetos").innerHTML += htmlSaida;
 
   window.atualizarAlternanciaCards = function () {
     $(".project-box:visible").each(function (index) {
