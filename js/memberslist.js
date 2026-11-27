@@ -1,21 +1,28 @@
 //    NOME     |               CARGO                  |               Curso               | Entrou | Saiu | caminho da imagem | instagram
 gbl_text = [
   `
-Jorge de Lacerda | Software | Capitão Geral | Engenharia de Controle e Automação | 2023 | - | images/membros/Jorge_Henrique.jpeg | I:jorge_de_lacerda / E:ilacerda.jorge@gsuite.iff.edu.br
-Laura Rangel | Comunicação | Vice Capitã Geral / Ex Capitã de Comunicação 2024.2 | Engenharia de Computação | 2023 | - | images/membros/Laura_Maria.jpg | I:laura_rangel252 / E:laura.maria.lf.rangel@gmail.com
-Heverton Souza| Software | Capitão de Software | Engenharia de Computação | 2023 | - | images/membros/Heverton_Souza.jpg | I:heverton.souza.01 / G:Heverton-Souza / L:heverton-souza-b29b90208 / E:hevertonsilvadesouza@gmail.com
-Luana Chalita Falquer | Gestão | Capitã de Gestão | Engenharia de Controle e Automação | 2024 | - | images/membros/Luana_Chalita_Falquer.jpg |
-Marllon Batista | Eletrônica | Capitão de Eletrônica | Engenharia de Controle e Automação | 2023 | - | images/membros/Marllon_Batista.jpeg | I:marllonbatista_ / G:marllonbatista / L:marllon-batista-99ba76278
-Myllena Alves | Comunicação | Capitã de Comunicação | Design Gráfico | 2024 | - | images/membros/Myllena_Alves.jpg | L: myllena-alves-design / B: myllenaalves2
-Victor Hugo Mury Jorge | Mecânica | Capitão de Mecânica | Engenharia de Controle e Automação | 2023 | - | images/membros/default.jpg | I:Victorhmj
+Yasmin Barcelos Rangel |Software | Capitã Geral | Engenharia da Computação | 2025 | - | images/membros/default.jpg  | - |
+Caroline Leal | Mecânica | Vice Capitã Geral| Engenharia Mecânica | 2024 | - | images/membros/default.jpg |
+Carlos Henrique Júnior |  Comunicação | Capitão da Comunicação | Bacharelado em Design | 2025 | - | images/membros/Carlos_Henrique_de_Souza_Júnior.jpg | I:c.hjunior / E:henrique.junior.sf@gmail.com / L:carlos-henrique-de-souza-j%C3%BAnior-1673a2163 |
+Breno Tavares Inacio | Eletrônica | Capitão de Eletrônica | Engenharia Elétrica | 2025 | - | images/membros/Breno_Tavares.jpg | L:brenotavaresinacio E:breno.i@gsuite.iff.edu.br |
+Gustavo Rimes | Gestão | Capitão de Gestão | Engenharia Mecânica | 2024 | - | images/membros/default.jpg |
+Ezequias Fernandes | Mecânica |Capitão da Mecânica | Engenharia Mecânica | 2024 | - | images/membros/default.jpg | - |
+Pedro Thalles | Eletrônica | Capitão dos Rádios Controlados | Engenharia de Controle | 2025 | - | images/membros/Pedro_Thalles.jpg | - |
+Theo Nascimento | Software | Capitão do Software Embarcado | Engenharia de Computação | 2025 | - | images/membros/default.jpg | - |
+Kauã Vieira de Souza Araújo | Software | Capitão do Software Web | Engenharia de Computação | 2026 | - | images/membros/default.jpg | - |
 `,
   `
+Jorge de Lacerda | Software | Ex Capitão Geral  | Engenharia de Controle e Automação | 2023 | - | images/membros/Jorge_Henrique.jpeg | I:jorge_de_lacerda / E:ilacerda.jorge@gsuite.iff.edu.br
+Laura Rangel | Comunicação | Ex Vice Capitã Geral / Ex Capitã de Comunicação 2024.2 | Engenharia de Computação | 2023 | - | images/membros/Laura_Maria.jpg | I:laura_rangel252 / E:laura.maria.lf.rangel@gmail.com
+Heverton Souza| Software | Ex Capitão de Software | Engenharia de Computação | 2023 | - | images/membros/Heverton_Souza.jpg | I:heverton.souza.01 / G:Heverton-Souza / L:heverton-souza-b29b90208 / E:hevertonsilvadesouza@gmail.com
+Luana Chalita Falquer | Gestão | Ex Capitã de Gestão | Engenharia de Controle e Automação | 2024 | - | images/membros/Luana_Chalita_Falquer.jpg |
+Marllon Batista | Eletrônica | Ex Capitão de Eletrônica | Engenharia de Controle e Automação | 2023 | - | images/membros/Marllon_Batista.jpeg | I:marllonbatista_ / G:marllonbatista / L:marllon-batista-99ba76278
+Myllena Alves | Comunicação | Ex Capitã de Comunicação | Design Gráfico | 2024 | - | images/membros/Myllena_Alves.jpg | L: myllena-alves-design / B: myllenaalves2
+Victor Hugo Mury Jorge | Mecânica | Ex-Capitão de Mecânica | Engenharia de Controle e Automação | 2023 | - | images/membros/default.jpg | I:Victorhmj
 Alex Tavares | Eletrônica | | Engenharia de Controle e Automação | - | - | images/membros/default.jpg |
 André Falcão  | Mecânica | | Engenharia Mecânica | 2024 | - | images/membros/André_Falcão.jpg |
 Bruno Pessanha | Mecânica | | Engenharia de Controle e Automação | 2024 | - | images/membros/Bruno_Pessanha.png |
-Caroline Leal | Mecânica | | Engenharia Mecânica | 2024 | - | images/membros/default.jpg |
 Dênys Pessanha dos Santos | Eletrônica | | Engenharia de Computação | 2023 | - | images/membros/Denys_Pessanha.jpeg | I:denys_gtr_
-Diogo Moraes | Eletrônica | Ex Capitão de Eletrônica 2023 - 2024 | Engenharia de Controle e Automação | 2022 | - | images/membros/Diogo_Moraes.jpg | I:diogo__s9
 Eduardo Correa Peres | Eletrônica | | Engenharia de Computação | 2022 | - | images/membros/Dudu_Peres.jpg |
 Erick Bersot | Comunicação | | Engenharia Elétrica | 2024 | - | images/membros/Erick_De_souza_bersot.jpeg | L:erick-de-souza-bersot-808907197 / E:erickdesouzabersot943@gmail.com
 Ester de Almeida Gomes | Eletrônica | | Engenharia de Controle e Automação | 2022 | - | images/membros/Ester_Almeida.jpg | I:esterdalmeida_ / L:ester-de-almeida-gomes-52099517b / E:ester.dalmeidagomes@gmail.com
@@ -25,14 +32,13 @@ Gabriel Nunes | Software | | Engenharia de Computação | 2024 | - | images/memb
 Gabriel Rolim | Eletrônica | | Engenharia de Controle e Automação | 2020 | - | images/membros/Gabriel_Rolim.jpg | I:gabrielfrancarolim / L:gabriel-r-a32772108 / E:enggabrielrolim@gmail.com
 Gabriel Souza | Eletrônica | | Engenharia Elétrica  | 2023 | - | images/membros/Gabriel_Souza.jpg |
 Gabrielly Torres | Eletrônica | | Engenharia de Computação | 2024 | - | images/membros/Gabrielly_Torres.jpg |
-Gustavo Rimes | Gestão | | Engenharia Mecânica | 2024 | - | images/membros/default.jpg |
 Iarley Santos | Software | Ex Vice Capitão Geral 2022 - 2023 | Engenharia de Controle e Automação | 2021 | - | images/membros/Iarley.jpg| L:iarley-santos-678345168 / E:iarleyconceicaodossantos@gmail.com
 Ivan Henrique | Eletrônica | | Engenharia Elétrica | 2024 | - | images/membros/Ivan_Henrique_Thomaz.jpg | I:ivan_hmuniz
 Ingrid Coutinho | Eletrônica | | Engenharia de Controle e Automação | 2023 | - | images/membros/Ingrid_Souza.jpg | L:ingrid-c-163475105 / E:ingrid.ssc1@gmail.com
 Jade Bretas | Gestão | Ex Vice Capitã Geral 2023 - 2024| Engenharia de Controle e Automação | 2023 | - | images/membros/Jade_Bretas.jpeg | L:jade-bretas-3844431ab / E:jade.bretas@gsuite.iff.edu.br
 Jander de Sá | Eletrônica | | Engenharia de Controle e Automação | 2023 | - | images/membros/Jander_de_Sá.jpeg | I:jander_sa / E:desajander@gmail.com
 João Pedro Azeredo | Eletrônica | | Engenharia de Controle e Automação | 2024 | - | images/membros/João_Pedro_Azeredo.jpg |
-Jônatas Pedro Cardoso Siqueira  | Mecânica | Vice Capitão Geral  | Engenharia Mecânica | 2024 | - | images/membros/Jônatas.jpg | I:jonatas_3ds / L:jônatas-pedro-cardoso-siqueira-692660320
+Jônatas Pedro Cardoso Siqueira  | Mecânica | Ex Vice Capitão Geral  | Engenharia Mecânica | 2024 | - | images/membros/Jônatas.jpg | I:jonatas_3ds / L:jônatas-pedro-cardoso-siqueira-692660320
 Julia Ribeiro Baptista | Software | Ex Capitã Geral 2023 - 2024 / Ex Capitã de Software - 2023.2 | Engenharia de Computação | 2022 | - | images/membros/Julia_Baptista.jpg | I:juliabapptista / G:JuhRBaptista / L:júlia-baptista-84b65a232 / E:juliabapptista@gmail.com /
 Krishna Lotério | Mecânica | | Engenharia de Controle e Automação | 2024 | - | images/membros/default.jpg |
 Larisa Barreto | Gestão | | Engenharia de Controle e Automação | 2024 | - | images/membros/Larisa_Barreto_Clemente.jpeg |
@@ -50,17 +56,25 @@ Pedro Barbosa | Software | | Engenharia de Controle e Automação | 2024 | - | i
 Rogerio Gomes | Eletrônica | | Engenharia de Controle e Automação | 2019 | - | images/membros/default.jpg |
 Sarah | Eletrônica | | Engenharia de Controle e Automação | 2023 | - | images/membros/default.jpg |
 Vinícius Zanella da Fonseca | Software | | Licenciatura em Matemática | 2023 | - | images/membros/Vinícius_Fonseca.png |
-Vitor Monteiro | Software | | Engenharia de Computação | 2023 | - | images/membros/Vitor_Sepulveda.jpg | I:vitor.eu.mesmo
 Wesley Velasco | Eletrônica | | Engenharia de Controle e Automação | 2020 | - | images/membros/Wesley_Velasco.jpg | I:wesley_velasc0 / E:wesley01velasco@gmail.com
 Willian Bernardes | Eletrônica | | Engenharia Elétrica | 2024 | - | images/membros/default.jpg |
 Yasmin Vithória Fernandes Pessanha | | Gestão | Licenciatura em Educação Física | 2025 | - | images/membros/Yasmin_Victória.jpg | I:yasmin_crf28 / E:vithoriayasmin2@gmail.com |
-Pedro Thalles | Eletrônica | Rádios Controlados | Engenharia de Controle | 2025 | - | images/membros/Pedro_Thalles.jpg | - |
-Carlos Henrique Júnior | Capitão da Comunicação | Comunicação | Bacharelado em Design | 2025 | - | images/membros/Carlos_Henrique_de_Souza_Júnior.jpg | I:c.hjunior / E:henrique.junior.sf@gmail.com / L:carlos-henrique-de-souza-j%C3%BAnior-1673a2163 |
-Yasmin Barcelos Rangel | | Software | Engenharia da Computação | 2025 | - | images/membros/default.jpg  | - |
 Júlia Ferreira | Eletrônica | | Engenharia Elétrica | 2025 | - | images/membros/default.jpg | - |
 Phablo Abreu da Cruz | Software | | Engenharia de Controle e Automação | 2025 | - | images/membros/default.jpg | I:phablo.abreu L:phablo-abreu-da-cruz-891691303 E:phablo.eng@hotmail.com |
 Giovanna Lima Barrada | Eletrônica | | Engenharia Elétrica | 2025 | - | images/membros/default.jpg | L:giovanna-barrada E:barradagiovanna@gmail.com | 
-Breno Tavares Inacio | Eletrônica | Capitania de Eletrônica | Engenharia Elétrica | 2025 | - | images/membros/Breno_Tavares.jpg | L:brenotavaresinacio E:breno.i@gsuite.iff.edu.br |
+Caio Vinícius | Eletrônica | | Engenharia Elétrica | 2026 | - | images/membros/default.jpg |  | 
+João Marcos | Eletrônica | | Engenharia Elétrica | 2026 | - | images/membros/default.jpg |  | 
+Maryana Machado | Eletrônica | | Engenharia de Controle e Automação | 2026 | - | images/membros/default.jpg |  | 
+Pâmela Santos | Comunicação | | Design Gráfico | 2026 | - | images/membros/default.jpg |  | 
+João Gabriel | Comunicação | | Licenciatura em Química | 2026 | - | images/membros/default.jpg |  | 
+Brian Peres | Mecânica | | Engenharia Mecânica | 2026 | - | images/membros/default.jpg |  | 
+Carolina Ribeiro | Mecânica | | Engenharia de Controle e Automação | 2026 | - | images/membros/default.jpg |  | 
+Fernanda Panisset | Mecânica | | Engenharia Mecânica | 2026 | - | images/membros/default.jpg |  | 
+Gustavo Cândido | Mecânica | | Engenharia de Controle e Automação | 2026 | - | images/membros/default.jpg |  | 
+Maria Luiza | Mecânica | | Engenharia Mecânica | 2026 | - | images/membros/default.jpg |  | 
+Nicolas Carusi | Mecânica | | Engenharia Mecânica | 2026 | - | images/membros/default.jpg |  | 
+Davi Ramos | Software | | Engenharia de Controle e Automação | 2026 | - | images/membros/default.jpg | - |
+Miria Rangel | Software | | Engenharia de Computação | 2026 | - | images/membros/default.jpg | - |
 `,
 ];
 // SAIU EM: 2024 - Giulia Mota | Comunicacao | Capitã de Comunicação | Engenharia de Controle e Automação | 2023 | - | images/membros/Giulia_Mota.jpeg |
@@ -68,3 +82,7 @@ Breno Tavares Inacio | Eletrônica | Capitania de Eletrônica | Engenharia Elét
 // SAIU EM: 2024 - Manoel Ribeiro | Eletrônica | Ex Capitão Geral 2022 - 2023 / Ex Capitão de Eletrônica 2021 - 2022 | Engenharia de Controle e Automação | 2020 | - | images/membros/Manoel_Victor.jpeg | I:manoel.vrp / G:manoel99 / L:manoel-victor-ribeiro / E:manoelvictorpinto3@gmail.com
 // SAIU EM: 2024 - Victor Hugo Nogueira Salvador | Mecânica | Ex Capitão Geral 2021 - 2022 / Ex - Capitão de Mecânica 2020 - 2021 | Engenharia de Controle e Automação | 2019 | - | images/membros/Victor_Salvador.jpg | I:vhnsalvador / E:victor.hugo.salvador99@gmail.com
 // SAIU EM: 2025 - Raphael Castelar Saraiva de Almeida| Gestão | Ex Capitão Geral / Ex Capitão de Gestão 2023 - 2024| Sistemas de Informação | 2023 | - | images/membros/Raphael_Castelar.jpg | L:raphael-castelar
+// SAIU EM: ???  - Diogo Moraes | Eletrônica | Ex Capitão de Eletrônica 2023 - 2024 | Engenharia de Controle e Automação | 2022 | - | images/membros/Diogo_Moraes.jpg | I:diogo__s9
+// SAIU EM: ???  - Vitor Monteiro | Software | | Engenharia de Computação | 2023 | - | images/membros/Vitor_Sepulveda.jpg | I:vitor.eu.mesmo
+// L:caio-vinicius-891691303 E:caio.vinicius@gmail.com
+//
