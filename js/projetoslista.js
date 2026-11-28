@@ -1,3 +1,4 @@
+// Categoria |Controle|Nome|Imagem|Troféus (1-ouro) separado por barras|{descrição entre aspas }|
 gbl_text = [
   `
 Trekking | aut | MORATO | images/robos/Morato.jpg | 1/2/3 | {                 
@@ -174,10 +175,10 @@ FeatherWeight | rc | URURAU | images/robos/Ururau.JPG | 0 | {
      `              
 ];
 
-// Trekking | aut | BOB | images/robos/Equipe-Rocket.jpg | 3 | {
+// Trekking | aut | BOB | images/robos/Bob.jpg  | 3 | {
 //                       Depois vejo isso
 //                       }
-// Hockey | rc | Baronesa | images/robos/Bob.jpg | 3 | {
+// Hockey | rc | Equipe Rocket | images/robos/Equipe-Rocket.jpg | 3 | {
 //                       Depois vejo isso
 //                       }
 //    
